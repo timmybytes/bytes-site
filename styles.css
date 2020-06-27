@@ -1,0 +1,49 @@
+body {
+    background: f2f4f3; 	/* parchment-white */
+    color: #474056;			/* orange */
+    font-family: 'Roboto';
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 50px;
+}
+
+h1 {
+	color: #ef3054;
+	font-family: 'Nunito';
+	font-weight: 800;
+	text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+	color: #ef3054;
+	font-family: 'Nunito';
+	font-weight: 600;
+	font-style: italic; 
+}
+
+.center {
+	text-align: center;
+}
+
+nav {
+	text-align: left;
+}
+
+table, th, td {
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+hr {
+	background-color: #474056;
+	border: none;
+	height: .5px;
+}
+
+footer {
+	margin: 25px auto;
+	text-align: center;
+}
