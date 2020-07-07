@@ -1,0 +1,158 @@
+// Colors
+// -------------------------
+// #ef3054: Red Crayola (h1/h2)
+// #20A4F3: Carolina Blue (a:hover)
+// #5f5f5f: Davys Grey (code -> replace)
+// #f2f4f3: Cultures (background)
+// #605c70: Independence (text shadow)
+// #7c7c7c: Gray Web (footer)
+// #000000: Black (hr)
+
+$Red : #ef3054;
+$Blue : #20A4F3;
+$Grey : #5f5f5f;
+$White : #f2f4f3;
+$DarkGray : #605c70;
+$FootGray : #7c7c7c;
+$Black : #2e2c2f;
+
+// Main Elements
+// -------------------------
+html {
+  background-color: $White;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 960px;
+  position: relative; /* Fix for absolute positioning */
+}
+
+body {
+  align-items: center;
+  // height: 100vh;
+  justify-content: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  // flex: 1 1 auto;
+}
+
+h1 {
+  background-color: $White;
+  color: $Red;
+  font-family: "Nunito", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  margin: 0;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  text-shadow: 1px 1px 1px $DarkGray;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 5rem;;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 4rem;;
+  }
+}
+
+h2 {
+  background-color: $Red;
+  color: $White;
+  font-family: "Nunito", sans-serif;
+  font-size: 5vw;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  padding: 0.5vw 5vw 0.5vw 5vw;
+  text-align: center;
+  text-shadow: 1px 1px 1px $DarkGray;
+  text-transform: lowercase;
+}
+
+h3 {
+  color: $Red;
+  font-family: "Nunito", sans-serif;
+  font-size: 4vmax;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  padding: .5vw 5vw .5vw .5vw;
+  text-align: left;
+  text-shadow: 1px 1px 1px $DarkGray;
+  text-transform: lowercase;
+}
+
+hr {
+  background-color: $Black;
+  border: none;
+  height: 0.5px;
+  margin: auto;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vmax;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+  line-height: 1.5em;
+  text-align: justify-all;
+  margin-bottom: 10px;
+}
+
+img.round {
+	border-radius: 50%;
+	display: block;
+	height: auto;
+	max-width: 25%;
+	margin: auto;
+}
+
+code {
+  color: $Grey;
+  font-weight: 300;
+}
+
+a {
+	font-weight: bold;
+	color: $Blue;
+}
+
+a:hover {
+	color: $Red;
+}
+
+// Footer
+// -------------------------
+footer {
+  clear: both;
+  color: $FootGray;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: $White;
+  bottom: 0;
+  color: $White;
+  font-family: "Roboto", sans-serif;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}

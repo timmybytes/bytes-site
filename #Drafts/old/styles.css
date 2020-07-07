@@ -1,0 +1,285 @@
+@use 'colors';
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS HSL */
+/* SCSS RGB */
+html {
+  font-size: 100%;
+  /*16px*/
+}
+
+body {
+  background-color: #f6f3ea;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 200;
+  line-height: 1.65;
+  color: #323133;
+}
+
+p {
+  margin-bottom: 1.15rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 200;
+  line-height: 1.15;
+}
+
+h1 {
+  font-weight: 800;
+  text-align: center;
+  font-style: italic;
+  font-size: 6.209em;
+}
+
+span {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 3.157em;
+}
+
+h3 {
+  font-size: 2.369em;
+}
+
+h4 {
+  font-size: 1.777em;
+}
+
+h5 {
+  font-size: 1.333em;
+}
+
+small, .text_small {
+  font-size: 0.75em;
+}
+
+code {
+  font-family: monospace;
+  color: #c7434e;
+  font-weight: 900;
+}
+
+form {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+}
+
+footer {
+  color: #323133;
+  font-size: small;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+html {
+  background-color: #f6f3ea;
+  margin: auto;
+  max-width: 660px;
+  padding: 30px;
+}
+
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+img.round {
+  border: solid;
+  border-width: 0px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 3px #6b6b6b;
+          box-shadow: 1px 1px 3px #6b6b6b;
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 25%;
+}
+
+img.round:hover {
+  color: #323133;
+  -webkit-box-shadow: 1px 1px 3px #f6f3ea;
+          box-shadow: 1px 1px 3px #f6f3ea;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+h1 {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  color: #323133;
+  overflow: hidden;
+}
+
+span {
+  margin: 0;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  color: #c7434e;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2.subtitle {
+  background-color: #323133;
+  color: #c7434e;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+h2 {
+  color: #c7434e;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+
+nav {
+  background-color: #f6f3ea;
+  border-color: #323133;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-box-shadow: 1px 1px 3px #6b6b6b;
+          box-shadow: 1px 1px 3px #6b6b6b;
+  margin-bottom: 40px;
+}
+
+#navbar {
+  padding: 20px 20px 20px 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: center;
+  top: 0;
+  z-index: 10;
+}
+
+a.navlinks {
+  color: #323133;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: -1px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c7434e;
+  font-weight: bold;
+}
+
+h3 {
+  color: #323133;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 30px;
+  padding-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+hr {
+  color: #323133;
+  border: none;
+  height: 0.5px;
+  margin: auto;
+}
+
+p {
+  color: #323133;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 0.25px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+  text-align: justify-all;
+}
+
+code {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  display: none;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  border: solid;
+  border-width: 1px;
+  border-color: #323133;
+  margin-top: 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+footer {
+  clear: both;
+  color: #323133;
+  margin: 0 0 10px 0;
+}
+
+.footer {
+  padding-top: 70px;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
