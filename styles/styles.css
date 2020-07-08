@@ -77,9 +77,8 @@ small,
   color: #323133;
   font-size: 48px;
   margin: auto;
-  margin-bottom: 45px;
   margin-top: 50px;
-  padding: 90px 0;
+  padding: 30px 0;
 }
 
 span.title {
@@ -103,7 +102,7 @@ span.title {
 }
 
 code {
-  font-family: "Fira Code";
+  font-family: "Fira Code", monospace;
   font-weight: bold;
   margin: auto;
   text-align: center;
@@ -112,20 +111,14 @@ code {
   display: block;
 }
 
-li {
-  margin-left: 90px;
-}
-
 @media only screen and (max-width: 505px) {
   body {
     padding-bottom: 100px;
   }
   h1.title,
   span.title {
-    font-size: xx-large;
-    margin-bottom: 20px;
+    font-size: xxx-large;
     padding-top: 20px;
-    padding-bottom: 20px;
   }
   div.box-2 {
     top: 10px;
@@ -166,9 +159,6 @@ li {
   h1.title,
   span.title {
     font-size: xx-large;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   div.box-2 {
     top: 10px;
@@ -205,6 +195,7 @@ li {
 html {
   font-size: 18px;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 body {
@@ -272,6 +263,11 @@ ul {
           order: 1;
 }
 
+div.box-1.neu_parent {
+  margin-bottom: 20px;
+  margin-top: 140px;
+}
+
 div.neu_parent.box-2 {
   background-color: #F6F3EA;
 }
@@ -287,7 +283,7 @@ div.neu_parent.box-2 {
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 35px;
   z-index: 6;
 }
@@ -297,9 +293,7 @@ div.social {
   display: -ms-flexbox;
   display: flex;
   min-width: auto;
-  margin-top: 50px;
-  padding-top: 0px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -308,7 +302,6 @@ div.social {
 div.social i {
   padding: 10px 10px 10px 10px;
   margin: 0;
-  height: 100px;
   z-index: 4;
 }
 
@@ -514,10 +507,6 @@ hr {
   .sticky-friend {
     height: 50px;
   }
-  div.box-2 {
-    top: 10px;
-    height: 30px;
-  }
   .navlinks li {
     padding: 0;
     margin: 0;
@@ -573,20 +562,23 @@ hr {
   p {
     max-width: 283px;
   }
+  div.social {
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 405px) {
   .neu_parent {
     border-radius: 50px;
     background: #f6f3ea;
-    -webkit-box-shadow: 2px 2px 5px #eae7de, -2px -2px 5px #fffff6;
-            box-shadow: 2px 2px 5px #eae7de, -2px -2px 5px #fffff6;
+    -webkit-box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
+            box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
   }
   .sticky-friend {
-    height: 50px;
+    height: 90px;
   }
   div.box-2 {
-    top: 10px;
+    top: 40px;
     height: 30px;
   }
   nav ul {
@@ -633,7 +625,6 @@ hr {
         justify-content: space-around;
   }
   div.neu_parent.box-2 {
-    height: 30px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -660,5 +651,45 @@ footer {
   text-align: center;
   font-size: xx-small;
   color: #6B6B6B;
+}
+
+body.borders div {
+  border: 1px solid black;
+  padding: 2px 2px 2px 2px;
+}
+
+body.borders div.sticky-friend {
+  border: 1px solid black;
+  padding: 2px 2px 2px 2px;
+}
+
+body.borders h1 {
+  border: 1px solid blue;
+  padding: 2px 2px 2px 2px;
+}
+
+body.borders nav {
+  border: 1px solid #c7434e;
+  padding: 2px 2px 2px 2px;
+}
+
+body.borders ul {
+  border: 1px solid green;
+  padding: 2px 2px 2px 2px;
+}
+
+body.borders li {
+  border: 1px solid cyan;
+  padding: 2px 2px 2px 2px;
+}
+
+body.borders p {
+  border: 1px solid purple;
+  padding: 2px 2px 2px 2px;
+}
+
+body.borders i {
+  border: 1px solid purple;
+  padding: 2px 2px 2px 2px;
 }
 /*# sourceMappingURL=styles.css.map */
