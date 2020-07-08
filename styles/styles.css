@@ -43,7 +43,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: #C7434E;
   font-style: italic;
 }
 
@@ -54,6 +53,7 @@ h1 {
 
 h2 {
   font-size: 3.157em;
+  color: #C7434E;
 }
 
 h3 {
@@ -65,7 +65,13 @@ h4 {
 }
 
 h5 {
+  margin-top: 0;
   font-size: 1.333em;
+  color: #6B6B6B;
+}
+
+h6 {
+  color: #6B6B6B;
 }
 
 small,
@@ -73,11 +79,15 @@ small,
   font-size: 0.75em;
 }
 
+abbr {
+  -webkit-text-decoration-color: #C9C8C8;
+          text-decoration-color: #C9C8C8;
+}
+
 .title {
   color: #323133;
-  font-size: 48px;
+  font-size: 4rem;
   margin: auto;
-  margin-top: 50px;
   padding: 30px 0;
 }
 
@@ -205,6 +215,16 @@ body {
   padding: 20px;
 }
 
+a {
+  color: #669BBC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C7434E;
+  text-decoration: none;
+}
+
 /* ------------FLEX--------- */
 .container-1 {
   -webkit-box-orient: vertical;
@@ -219,7 +239,7 @@ div.container-1 {
 }
 
 div.container-1 p {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 div.container-1 code {
@@ -265,7 +285,18 @@ ul {
 
 div.box-1.neu_parent {
   margin-bottom: 20px;
-  margin-top: 140px;
+  margin-top: 40px;
+  padding-top: 50px;
+}
+
+.box-1 img {
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #F6F3EA;
+  -webkit-box-shadow: -20px -20px 30px #eae7de,  20px 20px 30px #fffff6;
+          box-shadow: -20px -20px 30px #eae7de,  20px 20px 30px #fffff6;
+  width: 150px;
+  margin: auto;
 }
 
 div.neu_parent.box-2 {
@@ -300,7 +331,7 @@ div.social {
 }
 
 div.social i {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
   margin: 0;
   z-index: 4;
 }
@@ -320,7 +351,6 @@ div.social i {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
-  margin-top: 320px;
   padding-top: 20px;
   border-radius: 50px;
   background: #f6f3ea;
@@ -330,26 +360,26 @@ div.social i {
   -webkit-box-ordinal-group: 6;
       -ms-flex-order: 5;
           order: 5;
-  margin-top: 300px;
 }
 
 .box-5 {
   -webkit-box-ordinal-group: 7;
       -ms-flex-order: 6;
           order: 6;
-  margin-top: 300px;
 }
 
 .box-6 {
   -webkit-box-ordinal-group: 8;
       -ms-flex-order: 7;
           order: 7;
-  margin-top: 300px;
+}
+
+.box-6 ul {
+  margin-left: 60px;
 }
 
 /* -----------NAV ---------- */
 div.box-2 {
-  top: 40px;
   padding: 5px 25px 5px 25px;
 }
 
@@ -379,18 +409,18 @@ ul.navlinks {
 }
 
 .navlinks a {
-  color: #6b6b6b;
+  color: #6B6B6B;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
 }
 
 .navlinks a:visited {
-  color: #6b6b6b;
+  color: #6B6B6B;
 }
 
 .navlinks a:hover {
-  color: #c7434e;
+  color: #C7434E;
   font-weight: bold;
 }
 
@@ -415,7 +445,7 @@ i.fa {
   text-align: left;
   vertical-align: bottom;
   background: none;
-  color: #323133;
+  color: #2A658B;
 }
 
 .fa:hover {
@@ -453,6 +483,9 @@ hr {
 @media only screen and (max-width: 550px) {
   p {
     max-width: 367px;
+  }
+  .box-6 ul {
+    margin-left: 30px;
   }
 }
 
@@ -565,6 +598,9 @@ hr {
   div.social {
     padding-top: 20px;
   }
+  .box-6 ul {
+    margin-left: 0px;
+  }
 }
 
 @media only screen and (max-width: 405px) {
@@ -651,45 +687,5 @@ footer {
   text-align: center;
   font-size: xx-small;
   color: #6B6B6B;
-}
-
-body.borders div {
-  border: 1px solid black;
-  padding: 2px 2px 2px 2px;
-}
-
-body.borders div.sticky-friend {
-  border: 1px solid black;
-  padding: 2px 2px 2px 2px;
-}
-
-body.borders h1 {
-  border: 1px solid blue;
-  padding: 2px 2px 2px 2px;
-}
-
-body.borders nav {
-  border: 1px solid #c7434e;
-  padding: 2px 2px 2px 2px;
-}
-
-body.borders ul {
-  border: 1px solid green;
-  padding: 2px 2px 2px 2px;
-}
-
-body.borders li {
-  border: 1px solid cyan;
-  padding: 2px 2px 2px 2px;
-}
-
-body.borders p {
-  border: 1px solid purple;
-  padding: 2px 2px 2px 2px;
-}
-
-body.borders i {
-  border: 1px solid purple;
-  padding: 2px 2px 2px 2px;
 }
 /*# sourceMappingURL=styles.css.map */

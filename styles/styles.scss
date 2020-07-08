@@ -27,6 +27,16 @@ body {
   padding: 20px;
 }
 
+a {
+  color: $ColorSecondary;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $ColorPrimary;
+  text-decoration: none;
+}
+
 /* ------------FLEX--------- */
 .container-1 {
   flex-direction: column;
@@ -38,7 +48,7 @@ div.container-1 {
 }
 
 div.container-1 p {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 div.container-1 code {
@@ -74,7 +84,18 @@ ul {
 
 div.box-1.neu_parent {
   margin-bottom: 20px;
-  margin-top: 140px;
+  margin-top: 40px;
+  padding-top: 50px;
+}
+
+.box-1 img {
+  display: block;
+  border-radius: 50%;
+  border: 2px solid $ColorLight;
+  box-shadow:  -20px -20px 30px #eae7de, 
+             20px 20px 30px #fffff6;
+  width: 150px;
+  margin: auto;
 }
 
 div.neu_parent.box-2 {
@@ -98,16 +119,13 @@ div.neu_parent.box-2 {
 div.social {
   display: flex;
   min-width: auto;
-  // margin-top: 20px;
-  // padding-top: 20px;
   padding-bottom: 20px;
   justify-content: center;
 }
 
 div.social i {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
   margin: 0;
-  // height: 100px;
   z-index: 4;
 }
 
@@ -122,7 +140,7 @@ div.social i {
 
 .box-3 {
   order: 4;
-  margin-top: 320px;
+  // margin-top: 320px;
   padding-top: 20px;
   border-radius: 50px;
   background: #f6f3ea;
@@ -130,22 +148,27 @@ div.social i {
 
 .box-4 {
   order: 5;
-  margin-top: 300px;
+  // margin-top: 300px;
 }
 
 .box-5 {
   order: 6;
-  margin-top: 300px;
+  // margin-top: 300px;
 }
 
 .box-6 {
   order: 7;
-  margin-top: 300px;
+  // margin-top: 300px;
 }
+
+.box-6 ul {
+  margin-left: 60px;
+}
+
 /* -----------NAV ---------- */
 // Outer container
 div.box-2 {
-  top: 40px;
+  // top: 40px;
   padding: 5px 25px 5px 25px;
 }
 
@@ -172,18 +195,18 @@ ul.navlinks {
 }
 
 .navlinks a {
-  color: #6b6b6b;
+  color: $ColorShadow;
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
 }
 
 .navlinks a:visited {
-  color: #6b6b6b;
+  color: $ColorShadow;
 }
 
 .navlinks a:hover {
-  color: #c7434e;
+  color: $ColorPrimary;
   font-weight: bold;
 }
 
@@ -209,7 +232,7 @@ i.fa {
   text-align: left;
   vertical-align: bottom;
   background: none;
-  color: $ColorDark;
+  color: $ColorSecondaryShade;
 }
 
 .fa:hover {
@@ -250,6 +273,9 @@ hr {
   p {
     max-width: 367px;
   }
+  .box-6 ul {
+  margin-left: 30px;
+}
 }
 @media only screen and (max-width: 500px) {
   div.box-2 {
@@ -358,6 +384,9 @@ hr {
   div.social {
     padding-top: 20px;
   }
+  .box-6 ul {
+  margin-left: 0px;
+  }
 }
 
 @media only screen and (max-width: 405px) {
@@ -443,36 +472,36 @@ footer {
   color: $ColorShadow;
 }
 
-// ---------BORDERS - FOR TESTS--------
-body.borders div {
-  border: 1px solid black;
-  padding: 2px 2px 2px 2px;
-}
-body.borders div.sticky-friend {
-  border: 1px solid black;
-  padding: 2px 2px 2px 2px;
-}
-body.borders h1 {
-  border: 1px solid blue;
-  padding: 2px 2px 2px 2px;
-}
-body.borders nav {
-  border: 1px solid #c7434e;
-  padding: 2px 2px 2px 2px;
-}
-body.borders ul {
-  border: 1px solid green;
-  padding: 2px 2px 2px 2px;
-}
-body.borders li {
-  border: 1px solid cyan;
-  padding: 2px 2px 2px 2px;
-}
-body.borders p {
-  border: 1px solid purple;
-  padding: 2px 2px 2px 2px;
-}
-body.borders i {
-  border: 1px solid purple;
-  padding: 2px 2px 2px 2px;
-}
+// ---------BORDERS - FOR LAYOUT TESTS--------
+// body.borders div {
+//   border: 1px solid black;
+//   padding: 2px 2px 2px 2px;
+// }
+// body.borders div.sticky-friend {
+//   border: 1px solid black;
+//   padding: 2px 2px 2px 2px;
+// }
+// body.borders h1 {
+//   border: 1px solid blue;
+//   padding: 2px 2px 2px 2px;
+// }
+// body.borders nav {
+//   border: 1px solid #c7434e;
+//   padding: 2px 2px 2px 2px;
+// }
+// body.borders ul {
+//   border: 1px solid green;
+//   padding: 2px 2px 2px 2px;
+// }
+// body.borders li {
+//   border: 1px solid cyan;
+//   padding: 2px 2px 2px 2px;
+// }
+// body.borders p {
+//   border: 1px solid purple;
+//   padding: 2px 2px 2px 2px;
+// }
+// body.borders i {
+//   border: 1px solid purple;
+//   padding: 2px 2px 2px 2px;
+// }
