@@ -15,8 +15,6 @@
 html {
   font-size: 18px;
   scroll-behavior: smooth;
-  // height: 100%;
-  // overflow: hidden;
   position: relative;
 }
 
@@ -168,7 +166,7 @@ div.social i {
 /* -----------NAV ---------- */
 // Outer container
 div.box-2 {
-  // top: 40px;
+  top: 40px;
   padding: 5px 25px 5px 25px;
 }
 
@@ -251,6 +249,11 @@ hr {
   );
   width: 100%;
   margin-bottom: 40px;
+}
+
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*---------------MEDIA QUERIES----------------- */

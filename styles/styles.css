@@ -28,50 +28,50 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.navlinks {
+h6 {
   margin: 2.75rem 0 1.05rem;
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 400;
   line-height: 1.15;
-  scroll-margin-top: 5em;
   text-align: center;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-style: italic;
 }
 
 h1 {
   font-size: 4.209em;
   color: #323133;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 3.157em;
   color: #C7434E;
+  font-weight: 600;
 }
 
 h3 {
+  margin-top: 0;
   font-size: 2.369em;
+  color: #6B6B6B;
+  font-weight: 600;
 }
 
 h4 {
+  margin-top: 0;
   font-size: 1.777em;
+  color: #343434;
+  font-weight: 400;
 }
 
 h5 {
   margin-top: 0;
   font-size: 1.333em;
   color: #6B6B6B;
+  font-weight: 400;
 }
 
 h6 {
   color: #6B6B6B;
+  font-weight: 400;
 }
 
 small,
@@ -89,10 +89,12 @@ abbr {
   font-size: 4rem;
   margin: auto;
   padding: 30px 0;
+  text-shadow: -0.5px -0.5px 0px #0C0908;
 }
 
 span.title {
   color: #C7434E;
+  text-shadow: -0.5px -0.5px 0px #840A13;
 }
 
 .navlinks a {
@@ -141,12 +143,10 @@ code {
   }
   h2 {
     font-size: xx-large;
-    font-weight: 700;
     font-style: normal;
   }
   h3 {
     font-size: x-large;
-    font-weight: 500;
     color: #343434;
   }
   p {
@@ -163,9 +163,6 @@ code {
 }
 
 @media only screen and (max-width: 405px) {
-  body {
-    padding-bottom: 100px;
-  }
   h1.title,
   span.title {
     font-size: xx-large;
@@ -181,13 +178,15 @@ code {
   }
   h2 {
     font-size: xx-large;
-    font-weight: 700;
-    font-style: normal;
   }
   h3 {
     font-size: x-large;
-    font-weight: 500;
-    color: #343434;
+  }
+  h4 {
+    font-size: large;
+  }
+  h5 {
+    font-size: small;
   }
   p {
     font-size: 16px;
@@ -198,7 +197,6 @@ code {
     padding-top: 30px;
     text-align: center;
     font-size: xx-small;
-    color: #6B6B6B;
   }
 }
 
@@ -380,6 +378,7 @@ div.social i {
 
 /* -----------NAV ---------- */
 div.box-2 {
+  top: 40px;
   padding: 5px 25px 5px 25px;
 }
 
@@ -459,6 +458,11 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   width: 100%;
   margin-bottom: 40px;
+}
+
+.section {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*---------------MEDIA QUERIES----------------- */
