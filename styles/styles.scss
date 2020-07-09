@@ -1,11 +1,7 @@
 // TODO: 
 // • Clean-up redundancies, segregate media queries, organize
-// • nav margin-top for mobile so pop pops are visible: Check
-// • code {font-family: ‘Fira Code’, monospace;}: Done
-// • adjust width for mobile to prevent drifting: Check
-// • li get rid of indent: Done
 // • adjust mobile scroll top 
-// * add circle profile pic above h1.title
+// 
 
 
 @import "colors";
@@ -46,7 +42,7 @@ div.container-1 {
 }
 
 div.container-1 p {
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
 div.container-1 code {
@@ -90,8 +86,6 @@ div.box-1.neu_parent {
   display: block;
   border-radius: 50%;
   border: 2px solid $ColorLight;
-  box-shadow:  -20px -20px 30px #eae7de, 
-             20px 20px 30px #fffff6;
   width: 150px;
   margin: auto;
 }
@@ -170,6 +164,11 @@ div.box-2 {
   padding: 5px 25px 5px 25px;
 }
 
+// div.box-2.neu_parent {
+//   box-shadow: 0 0 3px #eae7de, 
+//   0 0 3px #fffff6;
+// }
+
 nav ul {
   list-style: none;
   margin: 0 2px;
@@ -237,7 +236,7 @@ i.fa {
   color: $ColorPrimary;
 }
 
-// ----------------------OTHER----------------------
+// ----------------------BODY ELEMENTS----------------------
 hr {
   border: 0;
   height: 1px;
@@ -254,6 +253,14 @@ hr {
 .section {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+p {
+  margin-bottom: 3.15rem; //! Non-Font
+  margin: auto; //! Non-Font
+  max-width: 600px; //! Non-Font
+  text-align: left; //! Non-Font
+  padding-bottom: 20px; //! Non-Font
 }
 
 /*---------------MEDIA QUERIES----------------- */
@@ -303,17 +310,17 @@ hr {
     padding-right: 10px;
   }
   .navlinks a {
-    color: $ColorSecondary;
+    // color: $ColorSecondary;
     text-decoration: none;
     font-weight: 400;
     font-size: 0.8rem;
   }
   .navlinks a:visited {
-    color: $ColorSecondary;
+    // color: $ColorSecondary;
   }
   .navlinks a:hover {
-    color: $ColorPrimary;
-    font-weight: bold;
+    // color: $ColorPrimary;
+    // font-weight: bold;
   }
   p {
     max-width: 367px;
@@ -321,7 +328,7 @@ hr {
   .neu_parent {
     border-radius: 50px;
     background: #f6f3ea;
-    box-shadow: 2px 2px 5px #eae7de, -2px -2px 5px #fffff6;
+    box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
   }
   .sticky-friend {
     height: 50px;
@@ -335,17 +342,17 @@ hr {
     margin: 0;
   }
   .navlinks a {
-    color: $ColorSecondary;
+    // color: $ColorSecondary;
     padding: 0;
     margin: 0;
     font-weight: 600;
     font-size: 12px;
   }
   .navlinks a:visited {
-    color: $ColorSecondary;
+    // color: $ColorSecondary;
   }
   .navlinks a:hover {
-    color: $ColorPrimary;
+    // color: $ColorPrimary;
     font-weight: 200;
   }
   ul.navlinks {
@@ -369,10 +376,10 @@ hr {
     text-align: left;
     vertical-align: bottom;
     background: none;
-    color: $ColorDark;
+    // color: $ColorDark;
   }
   .fa:hover {
-    color: $ColorPrimary;
+    // color: $ColorPrimary;
   }
 }
 
@@ -393,11 +400,11 @@ hr {
 }
 
 @media only screen and (max-width: 405px) {
-  .neu_parent {
-    border-radius: 50px;
-    background: #f6f3ea;
-    box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
-  }
+  // .neu_parent {
+  //   border-radius: 50px;
+  //   background: #f6f3ea;
+  //   box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
+  // }
   .sticky-friend {
     height: 90px;
   }
@@ -419,17 +426,17 @@ hr {
     margin: 0;
   }
   .navlinks a {
-    color: $ColorSecondary;
+    // color: $ColorSecondary;
     padding: 0;
     margin: 0;
     font-weight: 600;
     font-size: 12px;
   }
   .navlinks a:visited {
-    color: $ColorSecondary;
+    // color: $ColorSecondary;
   }
   .navlinks a:hover {
-    color: $ColorPrimary;
+    // color: $ColorPrimary;
     font-weight: 200;
   }
   ul.navlinks {
@@ -446,7 +453,6 @@ hr {
     justify-content: space-around;
   }
   div.neu_parent.box-2 {
-    // height: 30px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -461,10 +467,10 @@ hr {
     text-align: left;
     vertical-align: bottom;
     background: none;
-    color: $ColorDark;
+    // color: $ColorDark;
   }
   .fa:hover {
-    color: $ColorPrimary;
+    // color: $ColorPrimary;
   }
 }
 // ----------FOOTER------------------

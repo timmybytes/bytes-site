@@ -1,7 +1,5 @@
 @use 'colors';
-@use 'mixins'
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;515;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@use 'mixins';
 html {
   font-size: 100%;
 }
@@ -9,18 +7,10 @@ html {
 /*16px*/
 body {
   background-color: #F6F3EA;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Robot Condensed", sans-serif;
   font-weight: 200;
   line-height: 1.65;
   color: #323133;
-}
-
-p {
-  margin-bottom: 3.15rem;
-  margin: auto;
-  max-width: 600px;
-  text-align: left;
-  padding-bottom: 20px;
 }
 
 h1,
@@ -33,6 +23,7 @@ h6 {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   line-height: 1.15;
+  margin: 0 20px 0 20px;
   text-align: center;
 }
 
@@ -237,7 +228,7 @@ div.container-1 {
 }
 
 div.container-1 p {
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
 div.container-1 code {
@@ -291,8 +282,6 @@ div.box-1.neu_parent {
   display: block;
   border-radius: 50%;
   border: 2px solid #F6F3EA;
-  -webkit-box-shadow: -20px -20px 30px #eae7de,  20px 20px 30px #fffff6;
-          box-shadow: -20px -20px 30px #eae7de,  20px 20px 30px #fffff6;
   width: 150px;
   margin: auto;
 }
@@ -465,6 +454,14 @@ hr {
   padding-bottom: 10px;
 }
 
+p {
+  margin-bottom: 3.15rem;
+  margin: auto;
+  max-width: 600px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
 /*---------------MEDIA QUERIES----------------- */
 @media only screen and (max-width: 750px) {
   p {
@@ -520,17 +517,9 @@ hr {
     padding-right: 10px;
   }
   .navlinks a {
-    color: #669BBC;
     text-decoration: none;
     font-weight: 400;
     font-size: 0.8rem;
-  }
-  .navlinks a:visited {
-    color: #669BBC;
-  }
-  .navlinks a:hover {
-    color: #C7434E;
-    font-weight: bold;
   }
   p {
     max-width: 367px;
@@ -538,8 +527,8 @@ hr {
   .neu_parent {
     border-radius: 50px;
     background: #f6f3ea;
-    -webkit-box-shadow: 2px 2px 5px #eae7de, -2px -2px 5px #fffff6;
-            box-shadow: 2px 2px 5px #eae7de, -2px -2px 5px #fffff6;
+    -webkit-box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
+            box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
   }
   .sticky-friend {
     height: 50px;
@@ -549,17 +538,12 @@ hr {
     margin: 0;
   }
   .navlinks a {
-    color: #669BBC;
     padding: 0;
     margin: 0;
     font-weight: 600;
     font-size: 12px;
   }
-  .navlinks a:visited {
-    color: #669BBC;
-  }
   .navlinks a:hover {
-    color: #C7434E;
     font-weight: 200;
   }
   ul.navlinks {
@@ -584,10 +568,6 @@ hr {
     text-align: left;
     vertical-align: bottom;
     background: none;
-    color: #323133;
-  }
-  .fa:hover {
-    color: #C7434E;
   }
 }
 
@@ -608,12 +588,6 @@ hr {
 }
 
 @media only screen and (max-width: 405px) {
-  .neu_parent {
-    border-radius: 50px;
-    background: #f6f3ea;
-    -webkit-box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
-            box-shadow: 4px 4px 5px #eae7de, -4px -4px 5px #fffff6;
-  }
   .sticky-friend {
     height: 90px;
   }
@@ -637,17 +611,12 @@ hr {
     margin: 0;
   }
   .navlinks a {
-    color: #669BBC;
     padding: 0;
     margin: 0;
     font-weight: 600;
     font-size: 12px;
   }
-  .navlinks a:visited {
-    color: #669BBC;
-  }
   .navlinks a:hover {
-    color: #C7434E;
     font-weight: 200;
   }
   ul.navlinks {
@@ -679,10 +648,6 @@ hr {
     text-align: left;
     vertical-align: bottom;
     background: none;
-    color: #323133;
-  }
-  .fa:hover {
-    color: #C7434E;
   }
 }
 
