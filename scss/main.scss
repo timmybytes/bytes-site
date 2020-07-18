@@ -40,6 +40,11 @@ main {
   position: sticky;
   z-index: 1;
   background: $ColorPrimary;
+  overflow-y: scroll;
+  scroll-snap-points-y: repeat(320px);
+  scroll-snap-destination: 0 0;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
   & ul.navbar__list {
     @include font-rules(h2, 400, italic, center);
     padding: 0 0 $Size2 0;
@@ -215,14 +220,17 @@ article {
   }
 }
 
-.about {
+.about article {
   -webkit-scroll-snap-coordinate: 0% 0%;
+  scroll-snap-align: start;
 }
-.work {
+.work article {
   -webkit-scroll-snap-coordinate: 0% 0%;
+  scroll-snap-align: start;
 }
-.contact {
+.contact article {
   -webkit-scroll-snap-coordinate: 0% 0%;
+  scroll-snap-align: start;
 }
 
 article.work {

@@ -103,6 +103,15 @@ main {
   position: sticky;
   z-index: 1;
   background: #ee6868;
+  overflow-y: scroll;
+  -ms-scroll-snap-points-y: repeat(320px);
+      scroll-snap-points-y: repeat(320px);
+  -ms-scroll-snap-destination: 0 0;
+      scroll-snap-destination: 0 0;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
 }
 
 .navbar ul.navbar__list {
@@ -389,16 +398,19 @@ article {
   padding: 0 16px 0 16px;
 }
 
-.about {
+.about article {
   -webkit-scroll-snap-coordinate: 0% 0%;
+  scroll-snap-align: start;
 }
 
-.work {
+.work article {
   -webkit-scroll-snap-coordinate: 0% 0%;
+  scroll-snap-align: start;
 }
 
-.contact {
+.contact article {
   -webkit-scroll-snap-coordinate: 0% 0%;
+  scroll-snap-align: start;
 }
 
 article.work {
