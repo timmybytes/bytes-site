@@ -86,14 +86,6 @@ main {
   justify-items: stretch;
 }
 
-#about,
-#work,
-#contact {
-  scroll-margin-top: 64px;
-  scroll-snap-margin: 64px;
-  height: 100vh;
-}
-
 .navbar {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -132,7 +124,7 @@ main {
 
 .navbar a.navbar__link {
   color: #1d1d1d;
-  font-size: 24px;
+  font-size: 32px;
   text-decoration: none;
   text-transform: lowercase;
   padding: 0 16px 0 16px;
@@ -172,6 +164,7 @@ main {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   min-width: 75vw;
+  margin-top: 192px;
 }
 
 @media (max-width: 999px) {
@@ -330,14 +323,13 @@ article {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  margin: 100vh auto;
-  padding: 16px;
+  margin: 16px;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
 }
 
 .cards .cards__post {
-  margin: auto 0 256px;
+  margin: 0 0 256px;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -348,6 +340,20 @@ article {
   font-weight: 800;
   font-style: italic;
   text-align: center;
+  font-size: 64px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.cards .cards__post .cards__post-sub-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: normal;
+  text-align: left;
+  text-shadow: 1px 1px #EFF3FF;
+  font-size: 48px;
+  margin: 12px 0;
 }
 
 .cards .cards__post .cards__post-content {
@@ -356,11 +362,18 @@ article {
   font-weight: 300;
   font-style: normal;
   text-align: left;
+  font-size: 24px;
+}
+
+.cards .cards__post .cards__post-content > h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 12px 0;
 }
 
 .cards .cards__post p {
   margin: 0 auto 12px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .cards .cards__post a {
@@ -370,6 +383,7 @@ article {
   font-weight: 600;
   font-style: normal;
   text-align: left;
+  font-size: 24px;
   text-decoration: none;
   color: #EFF3FF;
 }
@@ -383,37 +397,26 @@ article {
   display: block;
   margin: 0 auto 16px;
   border-radius: 10%;
-  width: 192px;
+  width: 384px;
 }
 
-.cards .cards__post .cards__post-social {
+.cards .cards__post div.cards__post-social {
   color: #EFF3FF;
+  text-align: center;
+  padding-top: 32px;
 }
 
-.cards .cards__post .cards__post-social:hover {
+.cards .cards__post i {
+  padding: 0 16px 0 16px;
+  margin: 0;
+}
+
+.cards .cards__post i:hover {
   color: #1d1d1d;
 }
 
-.cards .cards__post .cards__post-social i {
-  padding: 0 16px 0 16px;
-}
-
-.about article {
-  -webkit-scroll-snap-coordinate: 0% 0%;
-  scroll-snap-align: start;
-}
-
-.work article {
-  -webkit-scroll-snap-coordinate: 0% 0%;
-  scroll-snap-align: start;
-}
-
-.contact article {
-  -webkit-scroll-snap-coordinate: 0% 0%;
-  scroll-snap-align: start;
-}
-
 article.work {
+  top: 12px;
   display: -ms-grid;
   display: grid;
   -webkit-box-orient: vertical;
@@ -422,24 +425,13 @@ article.work {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-items: space-between;
 }
 
-footer {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  bottom: 0;
-  color: #1d1d1d;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  font-style: normal;
-  text-align: center;
-  font-size: 16px;
-  margin-top: 24px;
-  opacity: 0.9;
-  position: relative;
-  text-align: center;
+article.work .tech_icons i {
+  color: #EFF3FF;
+  padding: 16px;
+  text-shadow: 1px 1px #1d1d1d;
 }
 
 .strike {
@@ -447,6 +439,22 @@ footer {
 }
 
 hr {
+  margin: 0 0 16px 0;
   color: #1d1d1d;
+}
+
+#about,
+#work,
+#contact {
+  scroll-margin-top: 64px;
+  scroll-snap-margin: 64px;
+}
+
+article.cards__post {
+  scroll-snap-align: start;
+}
+
+section.cards {
+  scroll-snap-align: start;
 }
 /*# sourceMappingURL=main.css.map */

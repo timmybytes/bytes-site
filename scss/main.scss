@@ -25,14 +25,6 @@ main {
   justify-items: stretch;
 }
 
-#about,
-#work,
-#contact {
-  scroll-margin-top: $Size8;
-  scroll-snap-margin: $Size8;
-  height: 100vh;
-}
-
 // *Nav----------------------
 .navbar {
   grid-column: 1/4;
@@ -56,7 +48,7 @@ main {
   }
   & a.navbar__link {
     color: $ColorDark;
-    font-size: $Size5;
+    font-size: $Size6;
     text-decoration: none;
     text-transform: lowercase;
     padding: 0 $Size4 0 $Size4;
@@ -87,6 +79,7 @@ main {
 .bio {
   grid-column: 2/3;
   min-width: 75vw;
+  margin-top: $Size11;
   @include media("<1000px") {
     margin: $Size10 $Size5 $Size8 $Size5;
   }
@@ -176,25 +169,42 @@ article {
 
 .cards {
   grid-column: 2/3;
-  margin: 100vh auto;
-  padding: $Size4;
+  margin: $Size4;
   justify-self: stretch;
   & .cards__post {
-    margin: auto 0 $Size12;
+    margin: 0 0 $Size12;
     justify-self: center;
+    // justify-items: left;
     & .cards__post-header {
       @include font-rules(h1, 800, italic, center);
+      font-size: $Size8;
+      margin-top: $Size6;
+      margin-bottom: $Size7;
+    }
+    & .cards__post-sub-header {
+      @include font-rules(h3, 800, normal, left);
+      text-shadow: 1px 1px $ColorLight;
+      font-size: $Size7;
+      margin: $Size3 0;
     }
     & .cards__post-content {
       @include font-rules(body, 300, normal, left);
+      font-size: $Size5;
+      & > h5 {
+        // @include font-rules(h4, 700, normal, left);
+        font-size: $Size5;
+        font-weight: 600;
+        margin: $Size3 0;
+      }
     }
     & p {
       margin: 0 auto $Size3;
-      line-height: 1.5;
+      line-height: 1.2;
     }
     & a {
       text-shadow: 1px 1px $ColorDark;
       @include font-rules(body, 600, normal, left);
+      font-size: $Size5;
       text-decoration: none;
       color: $ColorLight;
       &:hover {
@@ -206,72 +216,34 @@ article {
       display: block;
       margin: 0 auto $Size4;
       border-radius: 10%;
-      width: $Size11;
+      width: $Size13;
     }
-    & .cards__post-social {
+    & div.cards__post-social {
       color: $ColorLight;
+      text-align: center;
+      padding-top: $Size6;
+    }
+    i {
+      padding: 0 $Size4 0 $Size4;
+      margin: 0;
       &:hover {
         color: $ColorDark;
-      }
-      i {
-        padding: 0 $Size4 0 $Size4;
       }
     }
   }
 }
 
-.about article {
-  -webkit-scroll-snap-coordinate: 0% 0%;
-  scroll-snap-align: start;
-}
-.work article {
-  -webkit-scroll-snap-coordinate: 0% 0%;
-  scroll-snap-align: start;
-}
-.contact article {
-  -webkit-scroll-snap-coordinate: 0% 0%;
-  scroll-snap-align: start;
-}
-
 article.work {
+  top: $Size3;
   display: grid;
   flex-direction: column;
   flex-wrap: wrap;
-}
-
-// table.work__table {
-//   padding: $Size2 $Size3;
-//   flex-wrap: wrap;
-// }
-
-// caption {
-//   font-weight: 800;
-// }
-
-// td {
-//   // font-size: 3vw;
-//   color: $ColorDark;
-//   text-align: left;
-//   // border: 1px solid $ColorDark;
-//   padding: $Size1 $Size3;
-// }
-// th {
-//   color: $ColorPrimary;
-//   background: $ColorDark;
-//   text-align: center;
-//   padding: 0;
-// }
-
-footer {
-  grid-column: 2/3;
-  bottom: 0;
-  color: $ColorDark;
-  @include font-rules(body, 100, normal, center);
-  font-size: $Size4;
-  margin-top: $Size5;
-  opacity: 0.9;
-  position: relative;
-  text-align: center;
+  justify-items: space-between;
+  & .tech_icons i {
+    color: $ColorLight;
+    padding: $Size4;
+    text-shadow: 1px 1px $ColorDark;
+  }
 }
 
 // *Misc----------------------
@@ -280,5 +252,21 @@ footer {
 }
 
 hr {
+  margin: 0 0 $Size4 0;
   color: $ColorDark;
+}
+
+#about,
+#work,
+#contact {
+  scroll-margin-top: $Size8;
+  scroll-snap-margin: $Size8;
+  // height: 100vh;
+}
+article.cards__post {
+  scroll-snap-align: start;
+}
+
+section.cards {
+  scroll-snap-align: start;
 }
