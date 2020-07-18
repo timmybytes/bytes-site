@@ -215,6 +215,16 @@ article {
   }
 }
 
+.about {
+  -webkit-scroll-snap-coordinate: 0% 0%;
+}
+.work {
+  -webkit-scroll-snap-coordinate: 0% 0%;
+}
+.contact {
+  -webkit-scroll-snap-coordinate: 0% 0%;
+}
+
 article.work {
   display: grid;
   flex-direction: column;

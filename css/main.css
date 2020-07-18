@@ -389,6 +389,18 @@ article {
   padding: 0 16px 0 16px;
 }
 
+.about {
+  -webkit-scroll-snap-coordinate: 0% 0%;
+}
+
+.work {
+  -webkit-scroll-snap-coordinate: 0% 0%;
+}
+
+.contact {
+  -webkit-scroll-snap-coordinate: 0% 0%;
+}
+
 article.work {
   display: -ms-grid;
   display: grid;
