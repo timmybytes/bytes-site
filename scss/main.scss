@@ -165,6 +165,10 @@ main {
   }
 }
 
+article {
+  scroll-snap-type: proximity;
+}
+
 .cards {
   grid-column: 2/3;
   margin: 100vh auto;
