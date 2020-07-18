@@ -90,6 +90,7 @@ main {
 #work,
 #contact {
   scroll-margin-top: 64px;
+  scroll-snap-margin: 64px;
   height: 100vh;
 }
 
@@ -309,6 +310,11 @@ main {
   .bio .bio__tagline a {
     font-size: 24px;
   }
+}
+
+article {
+  -ms-scroll-snap-type: proximity;
+      scroll-snap-type: proximity;
 }
 
 .cards {
