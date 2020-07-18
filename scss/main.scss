@@ -30,6 +30,9 @@ main {
 #contact {
   scroll-margin-top: $Size8;
   height: 100vh;
+  @include media("<500px") {
+    scroll-margin-top: $Size10;
+  }
 }
 
 // *Nav----------------------
