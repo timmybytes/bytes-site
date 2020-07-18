@@ -29,10 +29,8 @@ main {
 #work,
 #contact {
   scroll-margin-top: $Size8;
+  scroll-snap-margin: $Size8;
   height: 100vh;
-  @include media("<500px") {
-    scroll-margin-top: $Size14;
-  }
 }
 
 // *Nav----------------------
