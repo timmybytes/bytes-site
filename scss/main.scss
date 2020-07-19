@@ -248,8 +248,8 @@ article {
     text-decoration: none;
     color: $ColorDark;
     @include media("<450px") {
-        font-size: $Size4;
-      }
+      font-size: $Size4;
+    }
   }
 }
 
@@ -260,8 +260,8 @@ article.work {
   grid-template-columns: minmax(1rem, 1vw, 1rem);
   justify-items: space-between;
   @include media("<450px") {
-        font-size: $Size4;
-      }
+    font-size: $Size4;
+  }
   & .tech_icons i {
     color: $ColorLight;
     padding: $Size4;
@@ -278,12 +278,12 @@ article.work {
     list-style-position: inside;
     line-height: 1.5;
     @include media("<450px") {
-        font-size: $Size4;
-      }
+      font-size: $Size4;
+    }
   }
   & .work__job {
     margin: $Size3 0 $Size3 0;
-    & ul.work__job-title{
+    & ul.work__job-title {
       color: $ColorLight;
       font-size: $Size5;
       font-weight: 600;
@@ -298,7 +298,23 @@ article.work {
   }
 }
 
-.work__
+.work__writing {
+  .work__writing-sec-prose {
+    .work__writing-item-prose {
+      list-style-image: url(/img/book.svg);
+    }
+  }
+  .work__writing-sec-academic {
+    .work__writing-item-academic {
+      list-style-image: url(/img/award.svg);
+    }
+  }
+      .work__writing-sec-copy {
+        .work__writing-item-copy {
+          list-style-image: url(/img/template.svg);
+        }
+      }
+}
 
 // *Misc----------------------
 .strike {
@@ -313,5 +329,4 @@ hr {
 #about,
 #work,
 #contact {
-
 }

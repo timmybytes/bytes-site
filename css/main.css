@@ -514,7 +514,18 @@ article.work .work__job li.work__job-detail {
   text-shadow: 1px 1px #ee6868;
 }
 
-.work__
+.work__writing .work__writing-sec-prose .work__writing-item-prose {
+  list-style-image: url(/img/book.svg);
+}
+
+.work__writing .work__writing-sec-academic .work__writing-item-academic {
+  list-style-image: url(/img/award.svg);
+}
+
+.work__writing .work__writing-sec-copy .work__writing-item-copy {
+  list-style-image: url(/img/template.svg);
+}
+
 .strike {
   text-decoration: line-through;
 }
