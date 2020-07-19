@@ -191,6 +191,17 @@ article {
         font-size: $Size6;
       }
     }
+    & .cards__post-sub-header-hi {
+      @include font-rules(h3, 800, normal, center);
+      color: $ColorLight;
+      text-shadow: 1px 1px $ColorDark;
+      font-size: $Size7;
+      margin: 0 0 $Size4;
+      padding-top: $Size5;
+      @include media("<450px") {
+        font-size: $Size6;
+      }
+    }
     & .cards__post-content {
       @include font-rules(body, 300, normal, left);
       font-size: $Size5;
@@ -204,7 +215,7 @@ article {
     }
     & p {
       margin: 0 auto $Size3;
-      line-height: 1.2;
+      line-height: 1.4;
     }
     & a {
       text-shadow: 1px 1px $ColorDark;
@@ -219,7 +230,7 @@ article {
     }
     & img.cards__post-photo {
       display: block;
-      margin: 0 auto $Size4;
+      margin: 0 auto $Size5;
       border-radius: 50%;
       background: $ColorLight;
       width: $Size13;
@@ -241,6 +252,10 @@ article {
       margin: 0;
       &:hover {
         color: $ColorDark;
+      }
+      @include media("<475px") {
+        padding: $Size4 0 $Size4 $Size6;
+        margin-bottom: $Size7;
       }
     }
   }
