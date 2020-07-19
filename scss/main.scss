@@ -196,7 +196,7 @@ article {
       font-size: $Size5;
       & > h5 {
         color: $ColorLight;
-        font-size: $Size5;
+        font-size: $Size6;
         font-weight: 600;
         margin: $Size3 0;
         text-shadow: 1px 1px $ColorDark;
@@ -263,9 +263,9 @@ article.work {
     font-size: $Size4;
   }
   & .tech_icons i {
-    color: $ColorLight;
+    color: $ColorDark;
     padding: $Size4;
-    text-shadow: 1px 1px $ColorDark;
+    text-shadow: 1px 1px $ColorLight;
   }
   & .music_icons i {
     color: $ColorLight;
@@ -279,6 +279,23 @@ article.work {
     line-height: 1.5;
     @include media("<450px") {
       font-size: $Size4;
+    }
+  }
+  .work__dev-projects {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    img.work__dev-projects-img {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 auto;
+    }
+    p.work__dev-projects-blurb {
+      font-size: $Size5;
+    }
+    & strong {
+      font-size: $Size5;
+      font-style: italic;
     }
   }
   & .work__job {
@@ -309,11 +326,15 @@ article.work {
       list-style-image: url(/img/award.svg);
     }
   }
-      .work__writing-sec-copy {
-        .work__writing-item-copy {
-          list-style-image: url(/img/template.svg);
-        }
-      }
+  .work__writing-sec-copy {
+    .work__writing-item-copy {
+      list-style-image: url(/img/template.svg);
+    }
+  }
+}
+
+// *Contact
+.contact {
 }
 
 // *Misc----------------------
@@ -324,6 +345,10 @@ article.work {
 hr {
   margin: 0 0 $Size4 0;
   color: $ColorDark;
+}
+
+strong {
+  font-weight: 600;
 }
 
 #about,

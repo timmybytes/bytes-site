@@ -374,7 +374,7 @@ article {
 
 .cards .cards__post .cards__post-content > h5 {
   color: #EFF3FF;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
   margin: 12px 0;
   text-shadow: 1px 1px #1d1d1d;
@@ -468,9 +468,9 @@ article.work {
 }
 
 article.work .tech_icons i {
-  color: #EFF3FF;
+  color: #1d1d1d;
   padding: 16px;
-  text-shadow: 1px 1px #1d1d1d;
+  text-shadow: 1px 1px #EFF3FF;
 }
 
 article.work .music_icons i {
@@ -494,6 +494,28 @@ article.work li {
   article.work li {
     font-size: 16px;
   }
+}
+
+article.work .work__dev-projects {
+  display: -ms-grid;
+  display: grid;
+  padding: 0;
+  margin: 0;
+}
+
+article.work .work__dev-projects img.work__dev-projects-img {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+article.work .work__dev-projects p.work__dev-projects-blurb {
+  font-size: 24px;
+}
+
+article.work .work__dev-projects strong {
+  font-size: 24px;
+  font-style: italic;
 }
 
 article.work .work__job {
@@ -533,5 +555,9 @@ article.work .work__job li.work__job-detail {
 hr {
   margin: 0 0 16px 0;
   color: #1d1d1d;
+}
+
+strong {
+  font-weight: 600;
 }
 /*# sourceMappingURL=main.css.map */
