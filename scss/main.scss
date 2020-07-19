@@ -220,7 +220,8 @@ article {
     & img.cards__post-photo {
       display: block;
       margin: 0 auto $Size4;
-      border-radius: 10%;
+      border-radius: 50%;
+      background: $ColorLight;
       width: $Size13;
       @include media("<450px") {
         width: $Size12;
@@ -233,6 +234,7 @@ article {
       color: $ColorLight;
       text-align: center;
       padding-top: $Size6;
+      margin-bottom: $Size5;
     }
     i {
       padding: 0 $Size4 0 $Size4;

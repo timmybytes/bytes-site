@@ -405,7 +405,8 @@ article {
 .cards .cards__post img.cards__post-photo {
   display: block;
   margin: 0 auto 16px;
-  border-radius: 10%;
+  border-radius: 50%;
+  background: #EFF3FF;
   width: 384px;
 }
 
@@ -425,6 +426,7 @@ article {
   color: #EFF3FF;
   text-align: center;
   padding-top: 32px;
+  margin-bottom: 24px;
 }
 
 .cards .cards__post i {
