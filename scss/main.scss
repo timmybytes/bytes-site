@@ -286,9 +286,12 @@ article.work {
     padding: 0;
     margin: 0;
     img.work__dev-projects-img {
-      width: 100%;
+      max-width: 100%;
       margin: 0 auto;
       padding: 0 auto;
+      @include media("<100px") {
+        max-width: 100%;
+      }
     }
     p.work__dev-projects-blurb {
       font-size: $Size5;

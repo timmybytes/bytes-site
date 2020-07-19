@@ -504,9 +504,15 @@ article.work .work__dev-projects {
 }
 
 article.work .work__dev-projects img.work__dev-projects-img {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 auto;
+}
+
+@media (max-width: 99px) {
+  article.work .work__dev-projects img.work__dev-projects-img {
+    max-width: 100%;
+  }
 }
 
 article.work .work__dev-projects p.work__dev-projects-blurb {
