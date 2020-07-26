@@ -9,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: #EFF3FF;
+  color: #eff3ff;
 }
 
 * {
@@ -61,6 +61,106 @@ a {
   .include-media-test:after {
     content: "Retina" !important;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #eff3ff;
+}
+
+* {
+  font-size: 16px;
+}
+
+/**
+*
+* Testing
+*
+**/
+@media (max-width: 320px) {
+  .include-media-test {
+    background-color: #def;
+  }
+  .include-media-test:before {
+    content: "<=phone";
+  }
+}
+
+@media (min-width: 321px) {
+  .include-media-test {
+    background-color: #abc;
+  }
+  .include-media-test:before {
+    content: ">phone";
+  }
+}
+
+@media (min-width: 815px) and (max-width: 1023px) {
+  .include-media-test {
+    background-color: #fed;
+  }
+  .include-media-test:before {
+    content: ">=815px, <desktop";
+  }
+}
+
+@media (min-width: 1024px) {
+  .include-media-test {
+    background-color: #fab;
+  }
+  .include-media-test:before {
+    content: ">=desktop";
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .include-media-test:after {
+    content: "Retina" !important;
+  }
+}
+
+.blog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [one] minmax(1em, 1fr) [two] minmax(1fr, 56em) [three] minmax(1em, 1fr) [four];
+      grid-template-columns: [one] minmax(1em, 1fr) [two] minmax(1fr, 56em) [three] minmax(1em, 1fr) [four];
+  grid-gap: 1em;
+  padding: 2px 16px;
+}
+
+.blog__card {
+  grid-column: three;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 30vh;
+  width: 25vw;
+  padding: 32px;
+  margin: 24px;
+}
+
+.blog__card.blog__card:hover {
+  -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog__card-head {
+  font-size: 32px;
+}
+
+.dark-mode {
+  background: #1d1d1d !important;
+  color: #ee6868 !important;
 }
 
 html {
@@ -145,18 +245,18 @@ main {
 }
 
 .navbar a.navbar__link.active {
-  color: #EFF3FF;
+  color: #eff3ff;
   text-shadow: 1px 1px #1d1d1d;
 }
 
 .navbar a.navbar__link.active:hover {
   color: #1d1d1d;
-  text-shadow: 1px 1px #EFF3FF;
+  text-shadow: 1px 1px #eff3ff;
 }
 
 .navbar a.navbar__link:hover {
   color: #1d1d1d;
-  text-shadow: 1px 1px #EFF3FF;
+  text-shadow: 1px 1px #eff3ff;
 }
 
 .bio {
@@ -283,7 +383,7 @@ main {
 }
 
 .bio .bio__tagline a:hover {
-  color: #EFF3FF;
+  color: #eff3ff;
   text-shadow: 1px 1px #1d1d1d;
 }
 
@@ -351,7 +451,7 @@ article {
   font-weight: 800;
   font-style: normal;
   text-align: left;
-  text-shadow: 1px 1px #EFF3FF;
+  text-shadow: 1px 1px #eff3ff;
   font-size: 48px;
   margin: 16px 0;
   padding-top: 96px;
@@ -369,7 +469,7 @@ article {
   font-weight: 800;
   font-style: normal;
   text-align: center;
-  color: #EFF3FF;
+  color: #eff3ff;
   text-shadow: 1px 1px #1d1d1d;
   font-size: 48px;
   margin: 0 0 16px;
@@ -392,7 +492,7 @@ article {
 }
 
 .cards .cards__post .cards__post-content > h5 {
-  color: #EFF3FF;
+  color: #eff3ff;
   font-size: 32px;
   font-weight: 600;
   margin: 12px 0;
@@ -413,19 +513,19 @@ article {
   text-align: left;
   font-size: 24px;
   text-decoration: none;
-  color: #EFF3FF;
+  color: #eff3ff;
 }
 
 .cards .cards__post a:hover {
   color: #1d1d1d;
-  text-shadow: 1px 1px #EFF3FF;
+  text-shadow: 1px 1px #eff3ff;
 }
 
 .cards .cards__post img.cards__post-photo {
   display: block;
   margin: 0 auto 24px;
   border-radius: 50%;
-  background: #EFF3FF;
+  background: #eff3ff;
   width: 384px;
 }
 
@@ -442,7 +542,7 @@ article {
 }
 
 .cards .cards__post div.cards__post-social {
-  color: #EFF3FF;
+  color: #eff3ff;
   text-align: center;
   padding-top: 32px;
   margin-bottom: 24px;
@@ -498,11 +598,11 @@ article.work {
 article.work .tech_icons i {
   color: #1d1d1d;
   padding: 16px;
-  text-shadow: 1px 1px #EFF3FF;
+  text-shadow: 1px 1px #eff3ff;
 }
 
 article.work .music_icons i {
-  color: #EFF3FF;
+  color: #eff3ff;
   padding: 24px;
   text-shadow: 1px 1px #1d1d1d;
 }
@@ -557,7 +657,7 @@ article.work .work__job {
 }
 
 article.work .work__job ul.work__job-title {
-  color: #EFF3FF;
+  color: #eff3ff;
   font-size: 24px;
   font-weight: 600;
   text-shadow: 1px 1px #1d1d1d;

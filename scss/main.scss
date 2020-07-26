@@ -3,8 +3,15 @@
 @import "fonts";
 @import "mixins";
 @import "breakpoints";
+@import "blog";
 
 // *Main----------------------
+
+.dark-mode {
+  background: $ColorDark !important;
+  color: $ColorPrimary !important;
+}
+
 html {
   scroll-behavior: smooth;
 }

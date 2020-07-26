@@ -1,0 +1,52 @@
+@import "config";
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "breakpoints";
+
+.blog {
+  display: grid;
+  grid-template-columns:
+    [one] minmax(1em, 1fr)
+    [two] minmax(1fr, 56em) [three]
+    minmax(1em, 1fr) [four];
+  grid-gap: 1em;
+  padding: 2px 16px;
+}
+
+.blog__card {
+  grid-column: three;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 30vh;
+  width: 25vw;
+  padding: $Size6;
+  margin: $Size5;
+  &.blog__card:hover {
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+.blog__card-head {
+  font-size: $Size6;
+}
+.blog__card-content {
+}
+.blog__card-img {
+}
+.blog__card-link {
+}
+.blog__card-link-item {
+}
+
+.blog__page {
+}
+.blog__page-head {
+}
+.blog__page-content {
+}
+.blog__page-img {
+}
+.blog__page-link {
+}
+.blog__page-social-icons {
+}
