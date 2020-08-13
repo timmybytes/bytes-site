@@ -1,3 +1,4 @@
+// test
 @import "config";
 @import "colors";
 @import "fonts";
@@ -64,8 +65,8 @@ main {
       font-size: $Size5;
     }
     @include media("<450px") {
-      font-size: $Size4;
-      padding: 0 $Size3 0 $Size3;
+      // font-size: $Size4;
+      padding: 0 $Size1 0 $Size1;
     }
     &.active {
       color: $ColorLight;
@@ -181,12 +182,21 @@ article {
   & .cards__post {
     margin: 0 0 $Size12;
     justify-self: center;
-    // justify-items: left;
+    & .cards__post-header-tilt {
+      display: flex;
+      justify-content: center;
+
+      background: $ColorDark;
+      transform: rotate(-3deg);
+      margin-top: $Size6;
+      margin-bottom: $Size7;
+    }
     & .cards__post-header {
       @include font-rules(h1, 800, italic, center);
       font-size: $Size8;
-      margin-top: $Size6;
-      margin-bottom: $Size7;
+      color: $ColorPrimary;
+      transform: rotate(2deg);
+      text-shadow: 3px 3px 0px $ColorDark;
     }
     & .cards__post-sub-header {
       @include font-rules(h3, 800, normal, left);
@@ -254,15 +264,23 @@ article {
       padding-top: $Size6;
       margin-bottom: $Size5;
     }
-    i {
-      padding: 0 $Size4 0 $Size4;
+    a {
       margin: 0;
-      &:hover {
-        color: $ColorDark;
-      }
-      @include media("<475px") {
-        padding: $Size4 0 $Size4 $Size6;
-        margin-bottom: $Size7;
+      padding: 0;
+      i {
+        font-size: $Size7;
+        margin: $Size1;
+        padding: $Size1 $Size2;
+        padding: 0;
+        text-shadow: 1px 1px $ColorDark;
+        @include media("<400px") {
+          font-size: $Size6;
+          padding: $Size1 $Size1;
+        }
+        &:hover {
+          text-shadow: 1px 1px $ColorLight;
+          color: $ColorDark;
+        }
       }
     }
   }
@@ -286,15 +304,37 @@ article.work {
   @include media("<450px") {
     font-size: $Size4;
   }
+  & .tech_icons {
+    justify-self: center;
+    padding-top: $Size3;
+    padding-bottom: $Size4;
+  }
   & .tech_icons i {
     color: $ColorDark;
-    padding: $Size4;
+    font-size: $Size7;
+    margin: $Size1;
+    padding: $Size1 $Size2;
     text-shadow: 1px 1px $ColorLight;
+    @include media("<400px") {
+      font-size: $Size6;
+    }
+  }
+  & .music_icons {
+    display: flex;
+    flex-direction: row;
+    padding-top: $Size3;
+    padding-bottom: $Size4;
+    justify-content: space-between;
   }
   & .music_icons i {
     color: $ColorLight;
-    padding: $Size5;
+    font-size: $Size7;
+    margin: $Size1;
+    padding: $Size1 $Size2;
     text-shadow: 1px 1px $ColorDark;
+    @include media("<400px") {
+      font-size: $Size6;
+    }
   }
   & li {
     @include font-rules(body, 300, normal, left);
@@ -335,9 +375,14 @@ article.work {
     }
     & li.work__job-detail {
       color: $ColorDark;
-      list-style-image: url(/img/id.svg);
+      // list-style-image: url(/img/id.svg);
+      list-style-type: none;
       font-size: $Size5;
       text-shadow: 1px 1px $ColorPrimary;
+      & i {
+        margin: 0 $Size2 0 0;
+        padding: 0;
+      }
     }
   }
 }
