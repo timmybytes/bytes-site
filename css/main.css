@@ -533,7 +533,7 @@ article {
   font-weight: 300;
   font-style: normal;
   text-align: left;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .cards .cards__post .cards__post-content > h5 {
@@ -546,7 +546,7 @@ article {
 
 .cards .cards__post p {
   margin: 0 auto 12px;
-  line-height: 1.4;
+  line-height: 1.7;
 }
 
 .cards .cards__post a {
@@ -556,7 +556,7 @@ article {
   font-weight: 400;
   font-style: normal;
   text-align: left;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   color: #eff3ff;
 }
@@ -624,7 +624,7 @@ article {
   font-weight: 400;
   font-style: normal;
   text-align: left;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   color: #1d1d1d;
 }
@@ -705,7 +705,7 @@ article.work li {
   font-weight: 300;
   font-style: normal;
   text-align: left;
-  font-size: 24px;
+  font-size: 18px;
   list-style-position: inside;
   line-height: 1.5;
 }
@@ -723,6 +723,29 @@ article.work .work__dev-projects {
   margin: 0;
 }
 
+article.work .work__dev-projects h6 {
+  font-size: 24px;
+  color: #1d1d1d;
+  font-weight: 500;
+  margin: 32px 0 4px;
+  text-shadow: 1px 1px 1px #eff3ff;
+  text-align: center;
+}
+
+@media (max-width: 449px) {
+  article.work .work__dev-projects h6 {
+    font-size: 18px;
+  }
+}
+
+article.work .work__dev-projects hr {
+  border: none;
+  height: 1px;
+  color: #1d1d1d;
+  background-color: #1d1d1d;
+  margin-top: 3px;
+}
+
 article.work .work__dev-projects img.work__dev-projects-img {
   max-width: 100%;
   margin: 0 auto;
@@ -736,11 +759,11 @@ article.work .work__dev-projects img.work__dev-projects-img {
 }
 
 article.work .work__dev-projects p.work__dev-projects-blurb {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 article.work .work__dev-projects strong {
-  font-size: 24px;
+  font-size: inherit;
   font-style: italic;
 }
 

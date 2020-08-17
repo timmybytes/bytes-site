@@ -221,7 +221,7 @@ article {
     }
     & .cards__post-content {
       @include font-rules(body, 300, normal, left);
-      font-size: $Size5;
+      font-size: $FontSize__large;
       & > h5 {
         color: $ColorLight;
         font-size: $Size6;
@@ -232,12 +232,12 @@ article {
     }
     & p {
       margin: 0 auto $Size3;
-      line-height: 1.4;
+      line-height: 1.7;
     }
     & a {
       text-shadow: 1px 1px $ColorDark;
       @include font-rules(body, 400, normal, left);
-      font-size: $Size5;
+      font-size: $FontSize__large;
       text-decoration: none;
       color: $ColorLight;
       &:hover {
@@ -286,7 +286,7 @@ article {
   }
   & p.cards__post-content-about {
     @include font-rules(body, 400, normal, left);
-    font-size: $Size5;
+    font-size: $FontSize__large;
     text-decoration: none;
     color: $ColorDark;
     @include media("<450px") {
@@ -338,7 +338,7 @@ article.work {
   }
   & li {
     @include font-rules(body, 300, normal, left);
-    font-size: $Size5;
+    font-size: $FontSize__large;
     list-style-position: inside;
     line-height: 1.5;
     @include media("<450px") {
@@ -349,6 +349,24 @@ article.work {
     display: grid;
     padding: 0;
     margin: 0;
+    h6 {
+      font-size: $Size5;
+      color: $ColorDark;
+      font-weight: 500;
+      margin: $Size6 0 $Size1;
+      text-shadow: 1px 1px 1px $ColorLight;
+      text-align: center;
+      @include media("<450px") {
+        font-size: $FontSize__large;
+      }
+    }
+    hr {
+      border: none;
+      height: 1px;
+      color: $ColorDark;
+      background-color: $ColorDark;
+      margin-top: 3px;
+    }
     img.work__dev-projects-img {
       max-width: 100%;
       margin: 0 auto;
@@ -358,10 +376,10 @@ article.work {
       }
     }
     p.work__dev-projects-blurb {
-      font-size: $Size5;
+      font-size: $FontSize__large;
     }
     & strong {
-      font-size: $Size5;
+      font-size: inherit;
       font-style: italic;
     }
   }
