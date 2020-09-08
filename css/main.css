@@ -247,6 +247,12 @@ main {
           box-shadow: 0px 0px 4px #1d1d1d;
 }
 
+@media (max-width: 499px) {
+  .navbar ul.navbar__list {
+    padding: 16px 12px 0 12px;
+  }
+}
+
 .navbar .navbar__item {
   list-style-type: none;
   display: inline;
@@ -254,7 +260,7 @@ main {
 
 .navbar a.navbar__link {
   color: #1d1d1d;
-  font-size: 32px;
+  font-size: 48px;
   text-decoration: none;
   text-transform: lowercase;
   padding: 0 16px 0 16px;
@@ -263,7 +269,8 @@ main {
 
 @media (max-width: 499px) {
   .navbar a.navbar__link {
-    font-size: 24px;
+    padding: 0 12px 0 12px;
+    font-size: 28px;
   }
 }
 
@@ -439,6 +446,42 @@ main {
 
 @media (max-width: 449px) {
   .bio .bio__tagline a {
+    font-size: 24px;
+  }
+}
+
+.bio__tagline-icons {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin: 24px auto;
+  max-width: 400px;
+  justify-items: center;
+}
+
+.bio__tagline-icons a {
+  font-size: 32px;
+  padding: 8px;
+  color: #1d1d1d;
+}
+
+.bio__tagline-icons a:hover {
+  color: #eff3ff;
+  text-shadow: 1px 1px #1d1d1d;
+}
+
+@media (max-width: 449px) {
+  .bio__tagline-icons a {
+    padding: 12px;
     font-size: 24px;
   }
 }
