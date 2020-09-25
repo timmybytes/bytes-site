@@ -3,10 +3,10 @@
 }
 
 // Font Families
-$FontHeadings: 'Roboto', sans-serif;
-$FontBody: 'Roboto', sans-serif;
-$FontCode: 'Source Code Pro', monospace;
-$FontSerif: 'Cormorant Garamond', serif;
+$FontHeadings: "Roboto", sans-serif;
+$FontBody: "Roboto", sans-serif;
+$FontCode: "Source Code Pro", monospace;
+$FontSerif: "Cormorant Garamond", serif;
 
 // Size Scale (px)
 // 12
@@ -37,70 +37,61 @@ $FontSize__large: 18px;
 $FontSize__xlarge: 20px;
 
 @mixin font-rules($type, $weight, $style, $align) {
-  @if $type =='h1' {
+  @if $type == "h1" {
     font-family: $FontHeadings;
     font-size: $FontSize__h1;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type =='h2' {
+  } @else if $type == "h2" {
     font-family: $FontHeadings;
     font-size: $FontSize__h2;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type =='h3' {
+  } @else if $type == "h3" {
     font-family: $FontHeadings;
     font-size: $FontSize__h3;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type =='h4' {
+  } @else if $type == "h4" {
     font-family: $FontHeadings;
     font-size: $FontSize__h4;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type =='h5' {
+  } @else if $type == "h5" {
     font-family: $FontHeadings;
     font-size: $FontSize__h5;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type =='h6' {
+  } @else if $type == "h6" {
     font-family: $FontHeadings;
     font-size: $FontSize__h6;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type =='body' {
+  } @else if $type == "body" {
     font-family: $FontBody;
     font-size: $FontSize__body;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type == 'code' {
+  } @else if $type == "code" {
     font-family: $FontCode;
     font-size: $FontSize__code;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else if $type == 'serif' {
+  } @else if $type == "serif" {
     font-family: $FontSerif;
     font-size: $FontSize__quote;
     font-weight: $weight;
     font-style: $style;
     text-align: $align;
-  }
-  @else {
+  } @else {
     font-family: $FontBody;
     font-size: 16px;
     font-weight: 400;
