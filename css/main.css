@@ -200,7 +200,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   text-align: left;
   background: #ee6868;
@@ -253,6 +253,17 @@ main {
   }
 }
 
+@media (max-width: 399px) {
+  .navbar ul.navbar__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .navbar .navbar__item {
   list-style-type: none;
   display: inline;
@@ -276,6 +287,7 @@ main {
 
 @media (max-width: 449px) {
   .navbar a.navbar__link {
+    font-size: 24px;
     padding: 0 4px 0 4px;
   }
 }
@@ -283,6 +295,12 @@ main {
 .navbar a.navbar__link:hover {
   color: #ee6868;
   text-shadow: 4px 4px #1d1d1d;
+}
+
+@media (max-width: 449px) {
+  .navbar a.navbar__link:hover {
+    text-shadow: 2px 2px #1d1d1d;
+  }
 }
 
 .active {
@@ -342,7 +360,7 @@ main {
   color: #ee6868;
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
-  text-shadow: 3px 3px 0px #1d1d1d;
+  text-shadow: 2px 2px 0px #1d1d1d;
 }
 
 @media (max-width: 1299px) {
@@ -572,7 +590,7 @@ article {
 .cards .cards__post .cards__post-content {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   text-align: left;
   font-size: 18px;

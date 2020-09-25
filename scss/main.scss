@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  @include font-rules(body, 300, normal, left);
+  @include font-rules(body, 400, normal, left);
   background: $ColorPrimary;
   color: $ColorDark;
   max-height: 100vh;
@@ -52,6 +52,10 @@ main {
     @include media("<500px") {
       padding: $Size4 $Size3 $Size4 $Size3;
     }
+    @include media("<400px") {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   & .navbar__item {
     list-style-type: none;
@@ -69,12 +73,15 @@ main {
       font-size: $Size6 - 4;
     }
     @include media("<450px") {
-      // font-size: $Size4;
+      font-size: $Size5;
       padding: 0 $Size1 0 $Size1;
     }
     &:hover {
       color: $ColorPrimary;
       text-shadow: 4px 4px $ColorDark;
+      @include media("<450px") {
+        text-shadow: 2px 2px $ColorDark;
+      }
     }
   }
 }
@@ -114,7 +121,7 @@ main {
     font-size: $Size11;
     color: $ColorPrimary;
     transform: rotate(2deg);
-    text-shadow: 3px 3px 0px $ColorDark;
+    text-shadow: 2px 2px 0px $ColorDark;
     @include media("<1300px") {
       font-size: $Size10;
     }
@@ -248,7 +255,7 @@ article {
       }
     }
     & .cards__post-content {
-      @include font-rules(body, 300, normal, left);
+      @include font-rules(body, 400, normal, left);
       font-size: $FontSize__large;
       & > h5 {
         color: $ColorLight;
