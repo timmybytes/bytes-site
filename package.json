@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/timmybytes/timmybytes-website/issues"
   },
-  "homepage": "https://github.com/timmybytes/timmybytes-website#readme"
+  "homepage": "https://github.com/timmybytes/timmybytes-website#readme",
+  "dependencies": {
+    "lighthouse": "^6.3.0"
+  }
 }
