@@ -50,7 +50,7 @@ main {
     padding: $Size4 0 $Size4 0;
     box-shadow: 0px 0px 4px $ColorDark;
     @include media("<500px") {
-      padding: $Size4 $Size3 0 $Size3;
+      padding: $Size4 $Size3 $Size4 $Size3;
     }
   }
   & .navbar__item {
@@ -72,18 +72,19 @@ main {
       // font-size: $Size4;
       padding: 0 $Size1 0 $Size1;
     }
-    &.active {
-      color: $ColorLight;
-      text-shadow: 1px 1px $ColorDark;
-      &:hover {
-        color: $ColorDark;
-        text-shadow: 1px 1px $ColorLight;
-      }
-    }
     &:hover {
-      color: $ColorDark;
-      text-shadow: 1px 1px $ColorLight;
+      color: $ColorPrimary;
+      text-shadow: 4px 4px $ColorDark;
     }
+  }
+}
+
+.active {
+  border-bottom: 6px solid $ColorDark;
+  // color: $ColorDark;
+  &:hover {
+    color: $ColorPrimary;
+    text-shadow: 1px 1px $ColorDark;
   }
 }
 
@@ -450,9 +451,9 @@ article.work {
   }
 }
 
-// *Contact
-.contact {
-}
+// // *Contact
+// .contact {
+// }
 
 // *Misc----------------------
 .strike {
@@ -468,7 +469,7 @@ strong {
   font-weight: 600;
 }
 
-#about,
-#work,
-#contact {
-}
+// #about,
+// #work,
+// #contact {
+// }

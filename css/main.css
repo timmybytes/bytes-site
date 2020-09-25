@@ -249,7 +249,7 @@ main {
 
 @media (max-width: 499px) {
   .navbar ul.navbar__list {
-    padding: 16px 12px 0 12px;
+    padding: 16px 12px 16px 12px;
   }
 }
 
@@ -280,19 +280,18 @@ main {
   }
 }
 
-.navbar a.navbar__link.active {
-  color: #eff3ff;
-  text-shadow: 1px 1px #1d1d1d;
-}
-
-.navbar a.navbar__link.active:hover {
-  color: #1d1d1d;
-  text-shadow: 1px 1px #eff3ff;
-}
-
 .navbar a.navbar__link:hover {
-  color: #1d1d1d;
-  text-shadow: 1px 1px #eff3ff;
+  color: #ee6868;
+  text-shadow: 4px 4px #1d1d1d;
+}
+
+.active {
+  border-bottom: 6px solid #1d1d1d;
+}
+
+.active:hover {
+  color: #ee6868;
+  text-shadow: 1px 1px #1d1d1d;
 }
 
 .bio {
