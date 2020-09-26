@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Timothy Merritt's personal portfolio site for web development, writing, and music."
+    />
     <link rel="shortcut icon" href="/img/favicon_io/favicon.ico" type="image/x-icon" />
     <link
       rel="preload"
@@ -52,7 +56,7 @@
           <h4 id="developer" class="cards__post-sub-header">developer</h4>
           <hr />
           <div class="cards__post-content work__writing">
-            <h5>Projects</h5>
+            <h5 class="work__writing-section-head">Projects</h5>
             <div class="work__dev-projects">
               <h6>
                 Keeper App &lt;
@@ -60,96 +64,131 @@
                 <i class="fab fa-html5 fa-1x"></i>
                 <i class="fab fa-css3-alt fa-1x"></i>
                 <i class="fab fa-js-square fa-1x"></i>
-                <i class="fab fa-node-js fa-1x"></i>
-                <i class="fab fa-npm fa-1x"></i> &gt;
+                <i class="fab fa-node-js fa-1x"></i> &gt;
               </h6>
               <!-- <hr /> -->
               <a href="https://timmybytes.github.io/Keeper-App/"
                 ><img
                   rel="preload"
                   class="work__dev-projects-img"
-                  src="/img/projects/Keeper-App/KeeperApp.png"
+                  src="/img/projects/Keeper-App/KeeperApp-sm.png"
                   alt="Keeper App screenshot"
               /></a>
+
               <p class="work__dev-projects-blurb">
-                <a class="link" href="https://timmybytes.github.io/Keeper-App/"
-                  ><strong>Keeper</strong></a
-                >
+                <a class="link" href="https://timmybytes.github.io/Keeper-App/">Keeper</a>
                 is a React clone/imitation of Google Keep, using Hooks, state, and props to
                 conditionally render functional componenets as notes. The app was made alongside the
                 curriculum of Angela Yu's
-                <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
+                <a
+                  class="link"
+                  href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
                   >Web Dev Bootcamp</a
-                >, and uses a few <a href="https://material-ui.com/">Material-UI</a> components and
+                >, and uses a few
+                <a class="link" href="https://material-ui.com/">Material-UI</a> components and
                 icons.
-                <br />
-                <a class="link" href="https://timmybytes.github.io/Keeper-App/">Demo</a>
-                <br />
-                <a class="link" href="https://github.com/timmybytes/Keeper-App">Github</a>
               </p>
+
+              <div class="link__demos-container">
+                <div class="link__demos-link-wrapper">
+                  <a class="link__demos-link" href="https://timmybytes.github.io/Keeper-App/"
+                    >Demo</a
+                  >
+                </div>
+                <div class="link__demos-link-wrapper">
+                  <a class="link__demos-link" href="https://github.com/timmybytes/Keeper-App"
+                    >Github</a
+                  >
+                </div>
+              </div>
+
               <h6>
                 Bat-Slider App &lt;
                 <i class="fab fa-react fa-1x"></i>
                 <i class="fab fa-html5 fa-1x"></i>
                 <i class="fab fa-css3-alt fa-1x"></i>
                 <i class="fab fa-js-square fa-1x"></i>
-                <i class="fab fa-node-js fa-1x"></i>
-                <i class="fab fa-npm fa-1x"></i> &gt;
+                <i class="fab fa-node-js fa-1x"></i> &gt;
               </h6>
               <!-- <hr /> -->
               <a href="https://timmybytes.github.io/react-bat-slider-app/"
                 ><img
                   rel="preload"
                   class="work__dev-projects-img"
-                  src="/img/projects/react-bat-slider-app/bat-slider-screenshot2.png"
+                  src="/img/projects/react-bat-slider-app/bat-slider-screenshot2-sm.png"
                   alt="screenshot of the Bat-Slider app"
               /></a>
               <p class="work__dev-projects-blurb">
                 <a class="link" href="https://timmybytes.github.io/react-bat-slider-app/"
-                  ><strong>Bat-Slider</strong></a
+                  >Bat-Slider</a
                 >
                 is a React app that uses an rc-slider and React Hooks to dynamically render content
                 based on the many Batman suits seen in film since 1943. The goal of the project was
                 to get more comfortable with changing state, JSON objects, CSS Flexbox, npm, and
                 GitHub deployment, while having a little fun with my love for superheroes. Check out
                 the demo to learn how the Caped Crusader’s duds have evolved over the years.
-                <br />
-                <a class="link" href="https://timmybytes.github.io/react-bat-slider-app/">Demo</a>
-                <br />
-                <a class="link" href="https://github.com/timmybytes/react-bat-slider-app">Github</a>
               </p>
+
+              <div class="link__demos-container">
+                <div class="link__demos-link-wrapper">
+                  <a
+                    class="link__demos-link"
+                    href="https://timmybytes.github.io/react-bat-slider-app/"
+                    >Demo</a
+                  >
+                </div>
+                <div class="link__demos-link-wrapper">
+                  <a
+                    class="link__demos-link"
+                    href="https://github.com/timmybytes/react-bat-slider-app"
+                    >Github</a
+                  >
+                </div>
+              </div>
+
               <h6>
                 Job List App &lt;
                 <i class="fab fa-react fa-1x"></i>
                 <i class="fab fa-html5 fa-1x"></i>
                 <i class="fab fa-css3-alt fa-1x"></i>
                 <i class="fab fa-js-square fa-1x"></i>
-                <i class="fab fa-node-js fa-1x"></i>
-                <i class="fab fa-npm fa-1x"></i> &gt;
+                <i class="fab fa-node-js fa-1x"></i> &gt;
               </h6>
               <!-- <hr /> -->
               <a href="https://timmybytes.github.io/react-job-list-app/"
                 ><img
                   rel="preload"
                   class="work__dev-projects-img"
-                  src="/img/projects/react-job-list-app/app_screenshot.png"
+                  src="/img/projects/react-job-list-app/app_screenshot-sm.png"
                   alt="screenshot of the Job List web app"
               /></a>
               <p class="work__dev-projects-blurb">
-                <a class="link" href="https://timmybytes.github.io/react-job-list-app/"
-                  ><strong>Job List</strong></a
-                >
+                <a class="link" href="https://timmybytes.github.io/react-job-list-app/">Job List</a>
                 is a simple React app for entering names and jobs into a dynamic list, with the
                 option to delete entries. The app uses stateful Class Components to create an array
                 of inputed Names/Jobs and render then as a list. Based on
-                <a href="https://www.taniarascia.com/getting-started-with-react/"
+                <a class="link" href="https://www.taniarascia.com/getting-started-with-react/"
                   >Tania Rascia's tutorial</a
                 >, with my own styling additions.
-                <br />
-                <a class="link" href="https://timmybytes.github.io/react-job-list-app/">Demo</a>
-                <br />
-                <a class="link" href="https://github.com/timmybytes/react-job-list-app">Github</a>
               </p>
+
+              <div class="link__demos-container">
+                <div class="link__demos-link-wrapper">
+                  <a
+                    class="link__demos-link"
+                    href="https://timmybytes.github.io/react-job-list-app/"
+                    >Demo</a
+                  >
+                </div>
+                <div class="link__demos-link-wrapper">
+                  <a
+                    class="link__demos-link"
+                    href="https://github.com/timmybytes/react-job-list-app"
+                    >Github</a
+                  >
+                </div>
+              </div>
+
               <h6>Hank Math &lt; <i class="fab fa-python fa-1x"></i> &gt;</h6>
               <!-- <hr /> -->
               <a href="https://github.com/timmybytes/Hank_Math"
@@ -160,37 +199,26 @@
                   alt="screenshot of the 'hank math' quiz game"
               /></a>
               <p class="work__dev-projects-blurb">
-                <a class="link" href="https://github.com/timmybytes/Hank_Math"
-                  ><strong>Hank Math!</strong></a
-                >
+                <a class="link" href="https://github.com/timmybytes/Hank_Math">Hank Math!</a>
                 is a simple quiz game I built for my son to practice his math skills. The program is
                 written in Python, randomly creates addition/subtraction problems, keeps score, and
                 records results in a separate file after each playthough.
-                <br />
-                <a class="link" href="https://github.com/timmybytes/Hank_Math">Github</a>
               </p>
-            </div>
-            <h5>Skills</h5>
-            <p class="cards__post-content">
-              I am experienced in the following tools and technologies:
-            </p>
-            <div class="tech_icons">
-              <i class="fab fa-html5 fa-2x"></i>
-              <i class="fab fa-css3-alt fa-2x"></i>
-              <i class="fab fa-js-square fa-2x"></i>
-              <i class="fab fa-node-js fa-2x"></i>
-              <i class="fab fa-npm fa-2x"></i>
-              <i class="fab fa-react fa-2x"></i>
-              <i class="fab fa-python fa-2x"></i>
-              <i class="fab fa-sass fa-2x"></i>
-              <i class="fab fa-git-alt fa-2x"></i>
+
+              <div class="link__demos-container">
+                <div class="link__demos-link-wrapper">
+                  <a class="link__demos-link" href="https://github.com/timmybytes/Hank_Math"
+                    >Github</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
           <!-- *Writer -->
           <h4 id="writer" class="cards__post-sub-header">writer</h4>
           <hr />
           <div class="cards__post-content work__writing">
-            <h5>Prose</h5>
+            <h5 class="work__writing-section-head">Prose</h5>
             <ul class="work__writing-sec-prose">
               <li class="work__writing-item-prose">
                 The Sun and Her Shadow - Deep Overstock #3 (2018)
@@ -201,7 +229,7 @@
               <li class="work__writing-item-prose">Invisible Enemies - Alchemy (2011)</li>
               <li class="work__writing-item-prose">Fields of Fire - Alembic (2010)</li>
             </ul>
-            <h5>Academic</h5>
+            <h5 class="work__writing-section-head">Academic</h5>
             <ul class="work__writing-sec-academic">
               <li class="work__writing-item-academic">
                 An Apple Cleft in Two: Batman & Joker as Shadows of a Self
@@ -214,7 +242,7 @@
                 The Subversion of Avatar-Attachment in Naughty Dog’s The Last of Us
               </li>
             </ul>
-            <h5>Copy</h5>
+            <h5 class="work__writing-section-head">Copy</h5>
             <ul class="work__writing-sec-copy">
               <li class="work__writing-item-copy">Coming Up Comics Reviews & Interviews</li>
             </ul>
@@ -222,25 +250,30 @@
           <!-- *Music -->
           <h4 id="musician" class="cards__post-sub-header">musician</h4>
           <hr />
+          <h5 class="work__writing-section-head">Animal Politik</h5>
           <p class="cards__post-content">
             I'm a member of
-            <a href="https://animalpolitik.org">Animal Politik</a>, a music collective, where I
-            write songs, sing, play guitar, and various other instruments. You can get our music
-            from the services below, or download it for free from our website.
+            <a class="link" href="https://animalpolitik.org">Animal Politik</a>, a music collective,
+            where I write songs, sing, play guitar, and various other instruments. You can get our
+            music from the services below, or download it for free from our website.
           </p>
           <div class="music_icons">
             <a
               href="https://open.spotify.com/artist/72RvQ5IlKW2zrVlPuxSr9h?si=uJERNuCQSdy_kBjSd1dnYA"
+              aria-label="Link to Spotify"
               ><i class="fab fa-spotify fa-2x"></i
             ></a>
-            <a href="https://music.apple.com/us/album/fait-accompli/1494227034"
+            <a
+              href="https://music.apple.com/us/album/fait-accompli/1494227034"
+              aria-label="Link to Apple Music"
               ><i class="fab fa-apple fa-2x"></i
             ></a>
-            <a href="https://soundcloud.com/user-511973193"
+            <a href="https://soundcloud.com/user-511973193" aria-label="Link to SoundCloud"
               ><i class="fab fa-soundcloud fa-2x"></i
             ></a>
             <a
               href="https://play.google.com/store/music/album/Animal_Politik_Fait_Accompli?id=Bj6lgszm3zgdlgzb4x2oigkgj7u"
+              aria-label="Link to Google Play"
               ><i class="fab fa-google-play fa-2x"></i
             ></a>
           </div>

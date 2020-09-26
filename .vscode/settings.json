@@ -1,0 +1,22 @@
+{
+  "cSpell.ignoreWords": [
+    "as",
+    "bou",
+    "bouças’s",
+    "code",
+    "code stac kr",
+    "crossorigin",
+    "kr",
+    "s",
+    "stac"
+  ],
+  "liveServer.settings.port": 5501,
+  //* Live SASS
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ]
+}

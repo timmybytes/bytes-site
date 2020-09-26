@@ -1,0 +1,23 @@
+{
+  "name": "timmybytes-website",
+  "version": "1.0.0",
+  "description": "Timothy Merritt's Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo No test defined"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timmybytes/timmybytes-website.git"
+  },
+  "author": "Timothy Merritt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timmybytes/timmybytes-website/issues"
+  },
+  "homepage": "https://github.com/timmybytes/timmybytes-website#readme",
+  "dependencies": {
+    "eslint": "^7.9.0",
+    "lighthouse": "^6.3.0"
+  }
+}
