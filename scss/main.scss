@@ -245,11 +245,12 @@ article {
     }
     & .cards__post-sub-header-hi {
       @include font-rules(h3, 800, normal, center);
-      color: $ColorLight;
-      text-shadow: 1px 1px $ColorDark;
+      color: $ColorDark;
+      // background-color: $ColorDark;
+      // text-shadow: 1px 1px $ColorDark;
       font-size: $Size7;
       margin: 0 0 $Size4;
-      padding-top: $Size5;
+      padding: $Size2 0;
       @include media("<450px") {
         font-size: $Size6;
       }
@@ -287,7 +288,7 @@ article {
       }
     }
     & div.cards__post-social {
-      color: $ColorLight;
+      color: $ColorDark;
       text-align: center;
       padding-top: $Size6;
       margin-bottom: $Size5;
@@ -296,18 +297,17 @@ article {
       margin: 0;
       padding: 0;
       i {
+        color: $ColorDark;
         font-size: $Size7;
         margin: $Size1;
         padding: $Size1 $Size2;
         padding: 0;
-        text-shadow: 1px 1px $ColorDark;
         @include media("<400px") {
           font-size: $Size6;
           padding: $Size1 $Size1;
         }
         &:hover {
-          text-shadow: 1px 1px $ColorLight;
-          color: $ColorDark;
+          color: $ColorLight;
         }
       }
     }
