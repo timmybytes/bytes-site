@@ -68,7 +68,7 @@ main {
     text-transform: lowercase;
     padding: 0 $Size4 0 $Size4;
     font-weight: 600;
-    @include media("<500px") {
+    @include media("<700px") {
       padding: 0 $Size3 0 $Size3;
       font-size: $Size6 - 4;
     }
@@ -257,29 +257,22 @@ article {
     & .cards__post-content {
       @include font-rules(body, 400, normal, left);
       font-size: $FontSize__large;
-      & > h5 {
-        color: $ColorLight;
-        font-size: $Size6;
-        font-weight: 600;
-        margin: $Size3 0;
-        text-shadow: 1px 1px $ColorDark;
-      }
     }
     & p {
       margin: 0 auto $Size3;
       line-height: 1.7;
     }
-    & a {
-      text-shadow: 1px 1px $ColorDark;
-      @include font-rules(body, 400, normal, left);
-      font-size: $FontSize__large;
-      text-decoration: none;
-      color: $ColorLight;
-      &:hover {
-        color: $ColorDark;
-        text-shadow: 1px 1px $ColorLight;
-      }
-    }
+    // & a {
+    //   text-shadow: 1px 1px $ColorDark;
+    //   @include font-rules(body, 400, normal, left);
+    //   font-size: $FontSize__large;
+    //   text-decoration: none;
+    //   color: $ColorLight;
+    //   &:hover {
+    //     color: $ColorDark;
+    //     text-shadow: 1px 1px $ColorLight;
+    //   }
+    // }
     & img.cards__post-photo {
       display: block;
       margin: 0 auto $Size5;
@@ -330,9 +323,17 @@ article {
   }
 }
 
+.work__writing-section-head {
+  color: $ColorPrimary;
+  background-color: $ColorDark;
+  font-size: $Size6;
+  font-weight: 600;
+  margin: $Size3 0;
+  padding: 5px;
+}
+
 // * WORK-------------------------------
 article.work {
-  // top: $Size3;
   display: grid;
   grid-template-columns: minmax(1rem, 1vw, 1rem);
   justify-items: space-between;
@@ -372,7 +373,7 @@ article.work {
     }
   }
   & li {
-    @include font-rules(body, 300, normal, left);
+    @include font-rules(body, 400, normal, left);
     font-size: $FontSize__large;
     list-style-position: inside;
     line-height: 1.5;
@@ -412,10 +413,12 @@ article.work {
     }
     p.work__dev-projects-blurb {
       font-size: $FontSize__large;
-    }
-    & strong {
-      font-size: inherit;
-      font-style: italic;
+      margin-bottom: $Size5;
+      padding: 0 0 0 $Size4;
+      @include media("<450px") {
+        padding: 0 0 0 0;
+        font-size: $FontSize__body;
+      }
     }
   }
   & .work__job {
@@ -472,11 +475,50 @@ hr {
   color: $ColorDark;
 }
 
-strong {
+.strong {
+  color: $ColorDark;
+  text-shadow: none;
+  font-size: inherit;
+  font-style: italic;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
-// #about,
-// #work,
-// #contact {
-// }
+.link {
+  color: $ColorDark;
+  border-bottom: 2px solid $ColorDark;
+  text-shadow: none;
+  font-weight: 400;
+  font-size: 18px;
+  &:hover {
+    color: $ColorLight;
+  }
+  @include media("<450px") {
+    font-size: $FontSize__body;
+  }
+}
+
+.link__demos-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: $Size4;
+}
+
+.link__demos-link-wrapper {
+  padding: $Size2;
+  border: 2px solid $ColorDark;
+  box-shadow: 2px 2px $ColorDark;
+}
+
+.link__demos-link {
+  color: $ColorDark;
+  text-shadow: none;
+  font-weight: 600;
+  font-size: $FontSize__xlarge;
+  font-style: italic;
+  padding: 80px;
+  &:hover {
+    color: $ColorLight;
+  }
+}
