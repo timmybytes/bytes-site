@@ -363,7 +363,7 @@ article.work {
     justify-content: space-between;
   }
   & .music_icons i {
-    color: $ColorLight;
+    color: $ColorDark;
     font-size: $Size7;
     margin: $Size1;
     padding: $Size1 $Size2;
@@ -424,10 +424,8 @@ article.work {
   & .work__job {
     margin: $Size3 0 $Size3 0;
     & ul.work__job-title {
-      color: $ColorLight;
       font-size: $Size5;
       font-weight: 600;
-      text-shadow: 1px 1px $ColorDark;
     }
     & li.work__job-detail {
       color: $ColorDark;
