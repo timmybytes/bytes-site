@@ -4,7 +4,7 @@
   "description": "Timothy Merritt's Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "test": "lighthouse http://127.0.0.1:5501/index.html --view"
+    "test": "echo No test defined"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/timmybytes/timmybytes-website#readme",
   "dependencies": {
+    "eslint": "^7.9.0",
     "lighthouse": "^6.3.0"
   }
 }
