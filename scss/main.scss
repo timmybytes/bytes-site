@@ -1,18 +1,14 @@
 // test
+@import "fonts";
 @import "config";
 @import "colors";
-@import "fonts";
-@import "mixins";
 @import "breakpoints";
+@import "dark-mode";
+@import "mixins";
 @import "blog";
 @import "footer";
 
 // *Main----------------------
-
-.dark-mode {
-  background: $ColorDark !important;
-  color: $ColorPrimary !important;
-}
 
 html {
   scroll-behavior: smooth;
@@ -50,12 +46,21 @@ main {
     @include font-rules(h2, 400, italic, center);
     padding: $Size4 0 $Size4 0;
     box-shadow: 0px 0px 4px $ColorDark;
-    @include media("<500px") {
+    @include media("<760px") {
       padding: $Size4 $Size3 $Size4 $Size3;
+      display: flex;
+      justify-content: flex-start;
+    }
+    @include media("<725px") {
+      padding: $Size5 $Size4 $Size4 $Size4;
+      display: flex;
+      justify-content: center;
+    }
+    @include media("<450px") {
+      justify-content: flex-start;
     }
     @include media("<400px") {
-      display: flex;
-      justify-content: space-between;
+      padding: $Size4 $Size3 $Size6 $Size3;
     }
   }
   & .navbar__item {
@@ -70,12 +75,24 @@ main {
     padding: 0 $Size4 0 $Size4;
     font-weight: 600;
     @include media("<700px") {
+      padding: 0 $Size5 0 $Size5;
+      font-size: $Size7 - 9;
+    }
+    @include media("<725px") {
       padding: 0 $Size3 0 $Size3;
-      font-size: $Size6 - 4;
+      font-size: $Size5;
     }
     @include media("<450px") {
       font-size: $Size5;
-      padding: 0 $Size1 0 $Size1;
+      padding: 0 $Size2 0 $Size2;
+    }
+    @include media("<405px") {
+      font-size: $Size4 + 5;
+      padding: 0 $Size2 0 $Size2;
+    }
+    @include media("<360px") {
+      padding: 0 $Size2 $Size1 $Size2;
+      font-size: $Size4;
     }
     &:hover {
       color: $ColorPrimary;
@@ -89,10 +106,12 @@ main {
 
 .active {
   border-bottom: 6px solid $ColorDark;
-  // color: $ColorDark;
   &:hover {
     color: $ColorPrimary;
     text-shadow: 1px 1px $ColorDark;
+  }
+  @include media("<725px") {
+    border-bottom: 3px solid $ColorDark;
   }
 }
 
@@ -221,7 +240,6 @@ article {
     & .cards__post-header-tilt {
       display: flex;
       justify-content: center;
-
       background: $ColorDark;
       transform: rotate(-3deg);
       margin-top: $Size6;
