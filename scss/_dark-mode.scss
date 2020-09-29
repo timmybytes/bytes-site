@@ -1,27 +1,27 @@
 .dark-mode {
   position: absolute;
-  translate: 5px 13px;
+  transform: translate(5px 13px);
   @include media("<760px") {
-    translate: 660px 10px;
+    transform: translate(660px 10px);
   }
   @include media("<725px") {
-    translate: 270px 0px;
+    transform: translate(270px 0px);
   }
   @include media("<590px") {
-    translate: 230px 0px;
+    transform: translate(230px 0px);
   }
   @include media("<510px") {
-    translate: 200px 0px;
+    transform: translate(200px 0px);
   }
   @include media("<450px") {
-    translate: 340px 0px;
+    transform: translate(340px 0px);
   }
   @include media("<405px") {
-    translate: 305px 0px;
+    transform: translate(305px 0px);
   }
   @include media("<360px") {
     transform: rotate(0deg);
-    translate: 250px -3px;
+    transform: translate(250px -3px);
   }
 }
 
