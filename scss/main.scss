@@ -437,9 +437,6 @@ article.work {
       max-width: 100%;
       margin: 0 auto;
       padding: 0 auto;
-      @include media('<100px') {
-        max-width: 100%;
-      }
     }
     p.work__dev-projects-blurb {
       font-size: $FontSize__large;
@@ -549,4 +546,13 @@ hr {
   &:hover {
     color: $ColorLight;
   }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container img {
+  display: inline;
 }
