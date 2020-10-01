@@ -18,5 +18,8 @@
       "extensionName": ".min.css",
       "savePath": "/css"
     }
+  ],
+  "cSpell.words": [
+    "tooltiptext"
   ]
 }
