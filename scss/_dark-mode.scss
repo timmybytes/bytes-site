@@ -1,25 +1,25 @@
 .dark-mode {
   position: absolute;
   transform: translate(5px, 13px);
-  @include media("<760px") {
+  @include media('<760px') {
     transform: translate(660px, 10px);
   }
-  @include media("<725px") {
+  @include media('<725px') {
     transform: translate(270px, 0px);
   }
-  @include media("<590px") {
+  @include media('<590px') {
     transform: translate(230px, 0px);
   }
-  @include media("<510px") {
+  @include media('<510px') {
     transform: translate(200px, 0px);
   }
-  @include media("<450px") {
+  @include media('<450px') {
     transform: translate(340px, 0px);
   }
-  @include media("<405px") {
+  @include media('<405px') {
     transform: translate(305px, 0px);
   }
-  @include media("<360px") {
+  @include media('<360px') {
     transform: rotate(0deg);
     transform: translate(250px, -3px);
   }
@@ -72,6 +72,11 @@ body.dark {
       background-color: $ColorDark;
       color: $ColorPrimary;
     }
+  }
+  .tooltip .tooltiptext {
+    background-color: $ColorPrimary;
+    color: $ColorDark;
+    text-shadow: none;
   }
   .footer {
     background-color: $ColorDark;

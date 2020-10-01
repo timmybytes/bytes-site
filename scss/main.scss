@@ -1,12 +1,13 @@
 // test
-@import "fonts";
-@import "config";
-@import "colors";
-@import "breakpoints";
-@import "dark-mode";
-@import "mixins";
-@import "blog";
-@import "footer";
+@import 'fonts';
+@import 'config';
+@import 'colors';
+@import 'breakpoints';
+@import 'dark-mode';
+@import 'mixins';
+@import 'blog';
+@import 'tooltip';
+@import 'footer';
 
 // *Main----------------------
 
@@ -46,20 +47,20 @@ main {
     @include font-rules(h2, 400, italic, center);
     padding: $Size4 0 $Size4 0;
     box-shadow: 0px 0px 4px $ColorDark;
-    @include media("<760px") {
+    @include media('<760px') {
       padding: $Size4 $Size3 $Size4 $Size3;
       display: flex;
       justify-content: flex-start;
     }
-    @include media("<725px") {
+    @include media('<725px') {
       padding: $Size5 $Size4 $Size4 $Size4;
       display: flex;
       justify-content: center;
     }
-    @include media("<450px") {
+    @include media('<450px') {
       justify-content: flex-start;
     }
-    @include media("<400px") {
+    @include media('<400px') {
       padding: $Size4 $Size3 $Size6 $Size3;
     }
   }
@@ -74,30 +75,30 @@ main {
     text-transform: lowercase;
     padding: 0 $Size4 0 $Size4;
     font-weight: 600;
-    @include media("<700px") {
+    @include media('<700px') {
       padding: 0 $Size5 0 $Size5;
       font-size: $Size7 - 9;
     }
-    @include media("<725px") {
+    @include media('<725px') {
       padding: 0 $Size3 0 $Size3;
       font-size: $Size5;
     }
-    @include media("<450px") {
+    @include media('<450px') {
       font-size: $Size5;
       padding: 0 $Size2 0 $Size2;
     }
-    @include media("<405px") {
+    @include media('<405px') {
       font-size: $Size4 + 5;
       padding: 0 $Size2 0 $Size2;
     }
-    @include media("<360px") {
+    @include media('<360px') {
       padding: 0 $Size2 $Size1 $Size2;
       font-size: $Size4;
     }
     &:hover {
       color: $ColorPrimary;
       text-shadow: 4px 4px $ColorDark;
-      @include media("<450px") {
+      @include media('<450px') {
         text-shadow: 2px 2px $ColorDark;
       }
     }
@@ -110,7 +111,7 @@ main {
     color: $ColorPrimary;
     text-shadow: 1px 1px $ColorDark;
   }
-  @include media("<725px") {
+  @include media('<725px') {
     border-bottom: 3px solid $ColorDark;
   }
 }
@@ -120,16 +121,16 @@ main {
   grid-column: 2/3;
   min-width: 75vw;
   margin-top: $Size11;
-  @include media("<1000px") {
+  @include media('<1000px') {
     margin: $Size10 $Size5 $Size8 $Size5;
   }
-  @include media("<700px") {
+  @include media('<700px') {
     margin: $Size11 $Size4 $Size7 $Size4;
   }
-  @include media("<500px") {
+  @include media('<500px') {
     margin: $Size11 $Size4 $Size6 $Size4;
   }
-  @include media("<450px") {
+  @include media('<450px') {
     margin: $Size10 $Size4 $Size5 $Size4;
   }
   & .bio__tilt {
@@ -138,23 +139,23 @@ main {
   }
   & .bio__title {
     @include font-rules(h1, 800, italic, center);
-    font-size: $Size11;
+    font-size: $Size10;
     color: $ColorPrimary;
     transform: rotate(2deg);
     text-shadow: 2px 2px 0px $ColorDark;
-    @include media("<1300px") {
+    @include media('<1300px') {
       font-size: $Size10;
     }
-    @include media("<950px") {
+    @include media('<950px') {
       font-size: $Size9;
     }
-    @include media("<700px") {
+    @include media('<700px') {
       font-size: $Size9;
     }
-    @include media("<570px") {
+    @include media('<570px') {
       font-size: $Size8;
     }
-    @include media("<450px") {
+    @include media('<450px') {
       font-size: $Size7;
     }
   }
@@ -162,19 +163,19 @@ main {
     @include font-rules(h2, 600, italic, center);
     font-size: $Size7;
     margin-top: $Size9;
-    @include media("<950px") {
+    @include media('<950px') {
       font-size: $Size6;
       margin-top: $Size8;
     }
-    @include media("<700px") {
+    @include media('<700px') {
       font-size: $Size6;
       margin-top: $Size7;
     }
-    @include media("<500px") {
+    @include media('<500px') {
       font-size: $Size6;
       margin-top: $Size6;
     }
-    @include media("<450px") {
+    @include media('<450px') {
       font-size: $Size5;
     }
     a {
@@ -184,19 +185,19 @@ main {
         color: $ColorLight;
         text-shadow: 1px 1px $ColorDark;
       }
-      @include media("<950px") {
+      @include media('<950px') {
         font-size: $Size6;
         margin-top: $Size8;
       }
-      @include media("<700px") {
+      @include media('<700px') {
         font-size: $Size6;
         margin-top: $Size7;
       }
-      @include media("<500px") {
+      @include media('<500px') {
         font-size: $Size6;
         margin-top: $Size6;
       }
-      @include media("<450px") {
+      @include media('<450px') {
         font-size: $Size5;
       }
     }
@@ -206,7 +207,7 @@ main {
 .bio__tagline-icons {
   @include font-rules(h2, 600, italic, center);
   grid-column: 2/3;
-  display: grid;
+  // display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: $Size5 auto;
   max-width: 400px;
@@ -219,7 +220,7 @@ main {
       color: $ColorLight;
       text-shadow: 1px 1px $ColorDark;
     }
-    @include media("<450px") {
+    @include media('<450px') {
       padding: $Size3;
       font-size: $Size5;
     }
@@ -235,7 +236,7 @@ article {
   margin: $Size4;
   justify-self: stretch;
   & .cards__post {
-    margin: 0 0 $Size12;
+    margin: 0;
     justify-self: center;
     & .cards__post-header-tilt {
       display: flex;
@@ -258,7 +259,7 @@ article {
       font-size: $Size7;
       margin: $Size4 0;
       padding-top: $Size9;
-      @include media("<450px") {
+      @include media('<450px') {
         font-size: $Size6;
       }
     }
@@ -270,7 +271,7 @@ article {
       font-size: $Size7;
       margin: 0 0 $Size4;
       padding: $Size2 0;
-      @include media("<450px") {
+      @include media('<450px') {
         font-size: $Size6;
       }
     }
@@ -299,10 +300,10 @@ article {
       border-radius: 50%;
       background: $ColorLight;
       width: $Size13;
-      @include media("<450px") {
+      @include media('<450px') {
         width: $Size12;
       }
-      @include media("<400px") {
+      @include media('<400px') {
         width: $Size11;
       }
     }
@@ -321,7 +322,7 @@ article {
         margin: $Size1;
         padding: $Size1 $Size2;
         padding: 0;
-        @include media("<400px") {
+        @include media('<400px') {
           font-size: $Size6;
           padding: $Size1 $Size1;
         }
@@ -336,7 +337,7 @@ article {
     font-size: $FontSize__large;
     text-decoration: none;
     color: $ColorDark;
-    @include media("<450px") {
+    @include media('<450px') {
       font-size: $Size4;
     }
   }
@@ -356,7 +357,7 @@ article.work {
   display: grid;
   grid-template-columns: minmax(1rem, 1vw, 1rem);
   justify-items: space-between;
-  @include media("<450px") {
+  @include media('<450px') {
     font-size: $Size4;
   }
   & .tech_icons {
@@ -370,7 +371,7 @@ article.work {
     margin: $Size1;
     padding: $Size1 $Size2;
     text-shadow: 1px 1px $ColorLight;
-    @include media("<400px") {
+    @include media('<400px') {
       font-size: $Size6;
     }
   }
@@ -387,7 +388,7 @@ article.work {
     margin: $Size1;
     padding: $Size1 $Size2;
     text-shadow: 1px 1px $ColorDark;
-    @include media("<400px") {
+    @include media('<400px') {
       font-size: $Size6;
     }
   }
@@ -396,7 +397,7 @@ article.work {
     font-size: $FontSize__large;
     list-style-position: inside;
     line-height: 1.5;
-    @include media("<450px") {
+    @include media('<450px') {
       font-size: $Size4;
     }
   }
@@ -411,7 +412,7 @@ article.work {
       margin: $Size6 0 $Size1;
       text-shadow: 1px 1px 1px $ColorLight;
       text-align: center;
-      @include media("<450px") {
+      @include media('<450px') {
         font-size: $FontSize__large;
       }
     }
@@ -427,7 +428,7 @@ article.work {
       max-width: 100%;
       margin: 0 auto;
       padding: 0 auto;
-      @include media("<100px") {
+      @include media('<100px') {
         max-width: 100%;
       }
     }
@@ -435,7 +436,7 @@ article.work {
       font-size: $FontSize__large;
       margin-bottom: $Size5;
       padding: 0 0 0 $Size4;
-      @include media("<450px") {
+      @include media('<450px') {
         padding: 0 0 0 0;
         font-size: $FontSize__body;
       }
@@ -511,7 +512,7 @@ hr {
   &:hover {
     color: $ColorLight;
   }
-  @include media("<450px") {
+  @include media('<450px') {
     font-size: $FontSize__body;
   }
 }
