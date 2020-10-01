@@ -1,4 +1,5 @@
 // test
+@import 'sizes';
 @import 'fonts';
 @import 'config';
 @import 'colors';
@@ -144,19 +145,22 @@ main {
     transform: rotate(2deg);
     text-shadow: 2px 2px 0px $ColorDark;
     @include media('<1300px') {
-      font-size: $Size10;
+      font-size: $Size9;
     }
     @include media('<950px') {
-      font-size: $Size9;
+      font-size: $Size8-2;
     }
     @include media('<700px') {
-      font-size: $Size9;
-    }
-    @include media('<570px') {
       font-size: $Size8;
     }
-    @include media('<450px') {
+    @include media('<570px') {
       font-size: $Size7;
+    }
+    @include media('<450px') {
+      font-size: $Size6-2;
+    }
+    @include media('<360px') {
+      font-size: $Size6;
     }
   }
   & .bio__tagline {
@@ -223,6 +227,11 @@ main {
     @include media('<450px') {
       padding: $Size3;
       font-size: $Size5;
+    }
+    i {
+      @include media('<390px') {
+        font-size: 1.2em;
+      }
     }
   }
 }
