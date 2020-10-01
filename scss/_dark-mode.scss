@@ -149,6 +149,22 @@ body.dark {
       color: $ColorLight;
     }
   }
+  .link__demos-link-wrapper {
+    padding: $Size2;
+    border: 2px solid $ColorPrimary;
+    box-shadow: 2px 2px $ColorPrimary;
+  }
+  .link__demos-link {
+    color: $ColorPrimary;
+    text-shadow: none;
+    font-weight: 600;
+    font-size: $FontSize__xlarge;
+    font-style: italic;
+    padding: 80px;
+    &:hover {
+      color: $ColorLight;
+    }
+  }
 }
 
 .toggle-label {

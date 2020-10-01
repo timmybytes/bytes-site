@@ -2,19 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="Description"
       content="Timothy Merritt's personal portfolio site for web development, writing, and music."
     />
-    <link
-      rel="shortcut icon"
-      href="/img/favicon_io/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="/img/favicon_io/favicon.ico" type="image/x-icon" />
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
@@ -44,28 +37,16 @@
             <a href="/index.html" class="navbar__link">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/pages/about.html" class="navbar__link"
-              >About</a
-            >
+            <a href="/pages/about.html" class="navbar__link">About</a>
           </li>
           <li class="navbar__item">
-            <a
-              href="/pages/work.html"
-              class="navbar__link active"
-              >Work</a
-            >
+            <a href="/pages/work.html" class="navbar__link active">Work</a>
           </li>
           <li class="navbar__item">
-            <a href="/pages/contact.html" class="navbar__link"
-              >Contact</a
-            >
+            <a href="/pages/contact.html" class="navbar__link">Contact</a>
           </li>
           <li class="navbar__item dark-mode">
-            <input
-              type="checkbox"
-              class="checkbox"
-              id="checkbox"
-            />
+            <input type="checkbox" class="checkbox" id="checkbox" />
             <label for="checkbox" class="toggle-label">
               <i class="fas fa-sun toggle-icons"></i>
               <i class="fas fa-moon toggle-icons"></i>
@@ -80,13 +61,44 @@
             <h3 class="cards__post-header">work</h3>
           </div>
           <!-- *Developer -->
-          <h4 id="developer" class="cards__post-sub-header">
-            developer
-          </h4>
+          <h4 id="developer" class="cards__post-sub-header">developer</h4>
           <hr />
           <div class="cards__post-content work__writing">
             <h5 class="work__writing-section-head">Projects</h5>
             <div class="work__dev-projects">
+              <h6>
+                Color Chooser
+                <i class="fab fa-react fa-1x"></i>
+                <i class="fab fa-html5 fa-1x"></i>
+                <i class="fab fa-css3-alt fa-1x"></i>
+                <i class="fab fa-js-square fa-1x"></i>
+                <i class="fab fa-node-js fa-1x"></i> &gt;
+              </h6>
+              <a href="https://timmybytes.github.io/color-chooser/"
+                ><img
+                  rel="preload"
+                  class="work__dev-projects-img"
+                  src="/img/projects/color-chooser/color-chooser-screentshot_opt.png"
+                  alt="Color Chooser screenshot"
+              /></a>
+              <p class="work__dev-projects-blurb">
+                <a class="link" href="https://timmybytes.github.io/color-chooser/">Color Chooser</a>
+                is a React app that randomly generates a color swatch from the user's clicks. The
+                goal of this project was to practice React Hooks and responsive layout, as well as
+                implement some of JavaScript's Math() functionality.
+              </p>
+              <div class="link__demos-container">
+                <div class="link__demos-link-wrapper">
+                  <a class="link__demos-link" href="https://timmybytes.github.io/color-chooser/"
+                    >Demo</a
+                  >
+                </div>
+                <div class="link__demos-link-wrapper">
+                  <a class="link__demos-link" href="https://github.com/timmybytes/color-chooser/"
+                    >Github</a
+                  >
+                </div>
+              </div>
               <h6>
                 Keeper App &lt;
                 <i class="fab fa-react fa-1x"></i>
@@ -99,41 +111,30 @@
                 ><img
                   rel="preload"
                   class="work__dev-projects-img"
-                  src="/img/projects/Keeper-App/KeeperApp-sm.png"
+                  src="/img/projects/Keeper-App/keeper_opt.png"
                   alt="Keeper App screenshot"
               /></a>
               <p class="work__dev-projects-blurb">
-                <a
-                  class="link"
-                  href="https://timmybytes.github.io/Keeper-App/"
-                  >Keeper</a
-                >
-                is a React clone/imitation of Google Keep, using
-                Hooks, state, and props to conditionally render
-                functional components as notes. The app was made
-                alongside the curriculum of Angela Yu's
+                <a class="link" href="https://timmybytes.github.io/Keeper-App/">Keeper</a>
+                is a React clone/imitation of Google Keep, using Hooks, state, and props to
+                conditionally render functional components as notes. The app was made alongside the
+                curriculum of Angela Yu's
                 <a
                   class="link"
                   href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
                   >Web Dev Bootcamp</a
                 >, and uses a few
-                <a class="link" href="https://material-ui.com/"
-                  >Material-UI</a
-                >
+                <a class="link" href="https://material-ui.com/">Material-UI</a>
                 components and icons.
               </p>
               <div class="link__demos-container">
                 <div class="link__demos-link-wrapper">
-                  <a
-                    class="link__demos-link"
-                    href="https://timmybytes.github.io/Keeper-App/"
+                  <a class="link__demos-link" href="https://timmybytes.github.io/Keeper-App/"
                     >Demo</a
                   >
                 </div>
                 <div class="link__demos-link-wrapper">
-                  <a
-                    class="link__demos-link"
-                    href="https://github.com/timmybytes/Keeper-App"
+                  <a class="link__demos-link" href="https://github.com/timmybytes/Keeper-App"
                     >Github</a
                   >
                 </div>
@@ -148,29 +149,22 @@
                 <i class="fab fa-node-js fa-1x"></i> &gt;
               </h6>
               <!-- <hr /> -->
-              <a
-                href="https://timmybytes.github.io/react-bat-slider-app/"
+              <a href="https://timmybytes.github.io/react-bat-slider-app/"
                 ><img
                   rel="preload"
                   class="work__dev-projects-img"
-                  src="/img/projects/react-bat-slider-app/bat-slider-screenshot2-sm.png"
+                  src="/img/projects/react-bat-slider-app/bat-slider_opt.png"
                   alt="screenshot of the Bat-Slider app"
               /></a>
               <p class="work__dev-projects-blurb">
-                <a
-                  class="link"
-                  href="https://timmybytes.github.io/react-bat-slider-app/"
+                <a class="link" href="https://timmybytes.github.io/react-bat-slider-app/"
                   >Bat-Slider</a
                 >
-                is a React app that uses an rc-slider and React
-                Hooks to dynamically render content based on the
-                many Batman suits seen in film since 1943. The
-                goal of the project was to get more comfortable
-                with changing state, JSON objects, CSS Flexbox,
-                npm, and GitHub deployment, while having a little
-                fun with my love for superheroes. Check out the
-                demo to learn how the Caped Crusader’s duds have
-                evolved over the years.
+                is a React app that uses an rc-slider and React Hooks to dynamically render content
+                based on the many Batman suits seen in film since 1943. The goal of the project was
+                to get more comfortable with changing state, JSON objects, CSS Flexbox, npm, and
+                GitHub deployment, while having a little fun with my love for superheroes. Check out
+                the demo to learn how the Caped Crusader’s duds have evolved over the years.
               </p>
 
               <div class="link__demos-container">
@@ -191,58 +185,6 @@
               </div>
 
               <h6>
-                Job List App &lt;
-                <i class="fab fa-react fa-1x"></i>
-                <i class="fab fa-html5 fa-1x"></i>
-                <i class="fab fa-css3-alt fa-1x"></i>
-                <i class="fab fa-js-square fa-1x"></i>
-                <i class="fab fa-node-js fa-1x"></i> &gt;
-              </h6>
-              <!-- <hr /> -->
-              <a
-                href="https://timmybytes.github.io/react-job-list-app/"
-                ><img
-                  rel="preload"
-                  class="work__dev-projects-img"
-                  src="/img/projects/react-job-list-app/app_screenshot-sm.png"
-                  alt="screenshot of the Job List web app"
-              /></a>
-              <p class="work__dev-projects-blurb">
-                <a
-                  class="link"
-                  href="https://timmybytes.github.io/react-job-list-app/"
-                  >Job List</a
-                >
-                is a simple React app for entering names and jobs
-                into a dynamic list, with the option to delete
-                entries. The app uses stateful Class Components
-                to create an array of Names/Jobs and render then
-                as a list. Based on
-                <a
-                  class="link"
-                  href="https://www.taniarascia.com/getting-started-with-react/"
-                  >Tania Rascia's tutorial</a
-                >, with my own styling additions.
-              </p>
-
-              <div class="link__demos-container">
-                <div class="link__demos-link-wrapper">
-                  <a
-                    class="link__demos-link"
-                    href="https://timmybytes.github.io/react-job-list-app/"
-                    >Demo</a
-                  >
-                </div>
-                <div class="link__demos-link-wrapper">
-                  <a
-                    class="link__demos-link"
-                    href="https://github.com/timmybytes/react-job-list-app"
-                    >Github</a
-                  >
-                </div>
-              </div>
-
-              <h6>
                 Hank Math &lt;
                 <i class="fab fa-python fa-1x"></i> &gt;
               </h6>
@@ -251,27 +193,19 @@
                 ><img
                   rel="preload"
                   class="work__dev-projects-img"
-                  src="/img/projects/hank_math/hank_math1.png"
+                  src="/img/projects/hank_math/hank_math_opt.png"
                   alt="screenshot of the 'hank math' quiz game"
               /></a>
               <p class="work__dev-projects-blurb">
-                <a
-                  class="link"
-                  href="https://github.com/timmybytes/Hank_Math"
-                  >Hank Math!</a
-                >
-                is a simple quiz game I built for my son to
-                practice his math skills. The program is written
-                in Python, randomly creates addition/subtraction
-                problems, keeps score, and records results in a
-                separate file after each playthrough.
+                <a class="link" href="https://github.com/timmybytes/Hank_Math">Hank Math!</a>
+                is a simple quiz game I built for my son to practice his math skills. The program is
+                written in Python, randomly creates addition/subtraction problems, keeps score, and
+                records results in a separate file after each playthrough.
               </p>
 
               <div class="link__demos-container">
                 <div class="link__demos-link-wrapper">
-                  <a
-                    class="link__demos-link"
-                    href="https://github.com/timmybytes/Hank_Math"
+                  <a class="link__demos-link" href="https://github.com/timmybytes/Hank_Math"
                     >Github</a
                   >
                 </div>
@@ -279,9 +213,7 @@
             </div>
           </div>
           <!-- *Writer -->
-          <h4 id="writer" class="cards__post-sub-header">
-            writer
-          </h4>
+          <h4 id="writer" class="cards__post-sub-header">writer</h4>
           <hr />
           <div class="cards__post-content work__writing">
             <h5 class="work__writing-section-head">Prose</h5>
@@ -290,57 +222,38 @@
                 The Sun and Her Shadow - Deep Overstock #3 (2018)
               </li>
               <li class="work__writing-item-prose">
-                The Weaver and the Swarm - Deep Overstock #2
-                (2018)
+                The Weaver and the Swarm - Deep Overstock #2 (2018)
               </li>
-              <li class="work__writing-item-prose">
-                Invisible Enemies - Alchemy (2011)
-              </li>
-              <li class="work__writing-item-prose">
-                Fields of Fire - Alembic (2010)
-              </li>
+              <li class="work__writing-item-prose">Invisible Enemies - Alchemy (2011)</li>
+              <li class="work__writing-item-prose">Fields of Fire - Alembic (2010)</li>
             </ul>
             <h5 class="work__writing-section-head">Academic</h5>
             <ul class="work__writing-sec-academic">
               <li class="work__writing-item-academic">
-                An Apple Cleft in Two: Batman & Joker as Shadows
-                of a Self
+                An Apple Cleft in Two: Batman & Joker as Shadows of a Self
+              </li>
+              <li class="work__writing-item-academic">Individualism and Tyler Durden</li>
+              <li class="work__writing-item-academic">
+                The Unholy Trinity: Satan, Sin, and Death in Milton’s Paradise Lost
               </li>
               <li class="work__writing-item-academic">
-                Individualism and Tyler Durden
-              </li>
-              <li class="work__writing-item-academic">
-                The Unholy Trinity: Satan, Sin, and Death in
-                Milton’s Paradise Lost
-              </li>
-              <li class="work__writing-item-academic">
-                The Subversion of Avatar-Attachment in Naughty
-                Dog’s The Last of Us
+                The Subversion of Avatar-Attachment in Naughty Dog’s The Last of Us
               </li>
             </ul>
             <h5 class="work__writing-section-head">Copy</h5>
             <ul class="work__writing-sec-copy">
-              <li class="work__writing-item-copy">
-                Coming Up Comics Reviews & Interviews
-              </li>
+              <li class="work__writing-item-copy">Coming Up Comics Reviews & Interviews</li>
             </ul>
           </div>
           <!-- *Music -->
-          <h4 id="musician" class="cards__post-sub-header">
-            musician
-          </h4>
+          <h4 id="musician" class="cards__post-sub-header">musician</h4>
           <hr />
-          <h5 class="work__writing-section-head">
-            Animal Politik
-          </h5>
+          <h5 class="work__writing-section-head">Animal Politik</h5>
           <p class="cards__post-content">
             I'm a member of
-            <a class="link" href="https://animalpolitik.org"
-              >Animal Politik</a
-            >, a music collective, where I write songs, sing,
-            play guitar, and various other instruments. You can
-            get our music from the services below, or download it
-            for free from our website.
+            <a class="link" href="https://animalpolitik.org">Animal Politik</a>, a music collective,
+            where I write songs, sing, play guitar, and various other instruments. You can get our
+            music from the services below, or download it for free from our website.
           </p>
           <div class="music_icons">
             <a
@@ -353,9 +266,7 @@
               aria-label="Link to Apple Music"
               ><i class="fab fa-apple fa-2x"></i
             ></a>
-            <a
-              href="https://soundcloud.com/user-511973193"
-              aria-label="Link to SoundCloud"
+            <a href="https://soundcloud.com/user-511973193" aria-label="Link to SoundCloud"
               ><i class="fab fa-soundcloud fa-2x"></i
             ></a>
             <a
@@ -365,16 +276,12 @@
             ></a>
           </div>
           <!-- *Jobs -->
-          <h4 id="experience" class="cards__post-sub-header">
-            experience
-          </h4>
+          <h4 id="experience" class="cards__post-sub-header">experience</h4>
           <hr />
           <div class="work__job">
             <ul class="work__job-title">
               Inventory Lead
-              <li class="work__job-detail">
-                <i class="fas fa-book-open"></i> Powell's Books
-              </li>
+              <li class="work__job-detail"><i class="fas fa-book-open"></i> Powell's Books</li>
               <li class="work__job-detail">
                 <i class="far fa-calendar-alt fa-1x"></i>
                 2015-2020
@@ -384,9 +291,7 @@
           <div class="work__job">
             <ul class="work__job-title">
               Associate Editor/Reviewer
-              <li class="work__job-detail">
-                <i class="fas fa-comment"></i> Coming Up Comics
-              </li>
+              <li class="work__job-detail"><i class="fas fa-comment"></i> Coming Up Comics</li>
               <li class="work__job-detail">
                 <i class="far fa-calendar-alt fa-1x"></i>
                 2014-2015
@@ -396,9 +301,7 @@
           <div class="work__job">
             <ul class="work__job-title">
               Designer
-              <li class="work__job-detail">
-                <i class="fas fa-crop-alt"></i> Freelance
-              </li>
+              <li class="work__job-detail"><i class="fas fa-crop-alt"></i> Freelance</li>
               <li class="work__job-detail">
                 <i class="far fa-calendar-alt fa-1x"></i>
                 2011-2015
