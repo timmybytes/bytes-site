@@ -1,5 +1,10 @@
 const checkbox = document.getElementById('checkbox');
 
+if (localStorage.getItem('theme', 'dark')) {
+  document.body.classList.add('dark');
+  checkbox.checked = true;
+}
+
 // checkbox.addEventListener('change', () => {
 //   document.body.classList.toggle('dark');
 //   // Adding to localStorage
@@ -26,9 +31,4 @@ if (themeSwitch) {
       localStorage.removeItem('theme', 'dark'); // reset theme selection
     }
   }
-}
-
-if (localStorage.getItem('theme', 'dark')) {
-  document.body.classList.add('dark');
-  checkbox.checked = true;
 }
