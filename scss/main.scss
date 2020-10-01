@@ -255,7 +255,7 @@ article {
     }
     & .cards__post-sub-header {
       @include font-rules(h3, 800, normal, left);
-      text-shadow: 1px 1px $ColorLight;
+      // text-shadow: 1px 1px $ColorLight;
       font-size: $Size7;
       margin: $Size4 0;
       padding-top: $Size9;
