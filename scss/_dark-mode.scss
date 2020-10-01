@@ -114,6 +114,10 @@ body.dark {
     text-shadow: none;
   }
   .work__writing {
+    .work__writing-section-head {
+      color: $ColorDark;
+      background-color: $ColorPrimary;
+    }
     .work__writing-sec-prose {
       .work__writing-item-prose {
         list-style-image: none;

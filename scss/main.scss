@@ -410,7 +410,7 @@ article.work {
       color: $ColorDark;
       font-weight: 500;
       margin: $Size6 0 $Size1;
-      text-shadow: 1px 1px 1px $ColorLight;
+      // text-shadow: 1px 1px 0px $ColorLight;
       text-align: center;
       @include media('<450px') {
         font-size: $FontSize__large;
