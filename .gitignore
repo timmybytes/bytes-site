@@ -157,9 +157,6 @@ dist
 # Ignore all local history of files
 .history
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,node,sass
-
-
 # Lighthouse logs
 127*
 timmybytes.com_*
