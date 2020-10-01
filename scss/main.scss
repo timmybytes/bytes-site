@@ -433,7 +433,7 @@ article.work {
       margin-top: 3px;
     }
     img.work__dev-projects-img {
-      // size: 20%;
+      size: 100%;
       max-width: 100%;
       margin: 0 auto;
       padding: 0 auto;
@@ -547,6 +547,12 @@ hr {
   &:hover {
     color: $ColorLight;
   }
+}
+
+.link__demos-border-bottom {
+  padding: $Size2 0;
+  margin: 0 $Size7 $Size5 $Size7;
+  border-bottom: 2px solid $ColorDark;
 }
 
 .flex-container {

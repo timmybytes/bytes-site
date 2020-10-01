@@ -165,6 +165,9 @@ body.dark {
       color: $ColorLight;
     }
   }
+  .link__demos-border-bottom {
+    border-bottom: 2px solid $ColorPrimary;
+  }
 }
 
 .toggle-label {
