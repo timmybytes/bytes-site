@@ -450,9 +450,10 @@ article.work {
   }
   & .work__job {
     margin: $Size3 0 $Size3 0;
-    & ul.work__job-title {
+    & .work__job-title {
       font-size: $Size5;
       font-weight: 600;
+      list-style-type: none;
     }
     & li.work__job-detail {
       color: $ColorDark;
