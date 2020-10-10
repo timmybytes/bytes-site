@@ -26,9 +26,7 @@ body {
 main {
   display: grid;
   grid-template-columns:
-    minmax(1.2rem, 1fr)
-    minmax(auto, 60ch)
-    minmax(1.2rem, 1fr);
+    minmax(1.2rem, 1fr) minmax(auto, 60ch) minmax(1.2rem, 1fr);
   justify-items: stretch;
 }
 
@@ -44,31 +42,38 @@ main {
   scroll-snap-destination: 0 0;
   scroll-snap-type: y mandatory;
   scroll-snap-type: mandatory;
+
   & ul.navbar__list {
     @include font-rules(h2, 400, italic, center);
     padding: $Size4 0 $Size4 0;
     box-shadow: 0px 0px 4px $ColorDark;
+
     @include media('<760px') {
       padding: $Size4 $Size3 $Size4 $Size3;
       display: flex;
       justify-content: flex-start;
     }
+
     @include media('<725px') {
       padding: $Size5 $Size4 $Size4 $Size4;
       display: flex;
       justify-content: center;
     }
+
     @include media('<450px') {
       justify-content: flex-start;
     }
+
     @include media('<400px') {
       padding: $Size4 $Size3 $Size6 $Size3;
     }
   }
+
   & .navbar__item {
     list-style-type: none;
     display: inline;
   }
+
   & a.navbar__link {
     color: $ColorDark;
     font-size: $Size7;
@@ -76,29 +81,36 @@ main {
     text-transform: lowercase;
     padding: 0 $Size4 0 $Size4;
     font-weight: 600;
+
     @include media('<700px') {
       padding: 0 $Size5 0 $Size5;
       font-size: $Size7 - 9;
     }
+
     @include media('<725px') {
       padding: 0 $Size3 0 $Size3;
       font-size: $Size5;
     }
+
     @include media('<450px') {
       font-size: $Size5;
       padding: 0 $Size2 0 $Size2;
     }
+
     @include media('<405px') {
       font-size: $Size4 + 5;
       padding: 0 $Size2 0 $Size2;
     }
+
     @include media('<360px') {
       padding: 0 $Size2 $Size1 $Size2;
       font-size: $Size4;
     }
+
     &:hover {
       color: $ColorPrimary;
       text-shadow: 4px 4px $ColorDark;
+
       @include media('<450px') {
         text-shadow: 2px 2px $ColorDark;
       }
@@ -108,10 +120,12 @@ main {
 
 .active {
   border-bottom: 6px solid $ColorDark;
+
   &:hover {
     color: $ColorPrimary;
     text-shadow: 1px 1px $ColorDark;
   }
+
   @include media('<725px') {
     border-bottom: 3px solid $ColorDark;
   }
@@ -122,85 +136,108 @@ main {
   grid-column: 2/3;
   min-width: 75vw;
   margin-top: $Size11;
+
   @include media('<1000px') {
     margin: $Size10 $Size5 $Size8 $Size5;
   }
+
   @include media('<700px') {
     margin: $Size11 $Size4 $Size7 $Size4;
   }
+
   @include media('<500px') {
     margin: $Size11 $Size4 $Size6 $Size4;
   }
+
   @include media('<450px') {
     margin: $Size10 $Size4 $Size5 $Size4;
   }
+
   & .bio__tilt {
     background: $ColorDark;
     transform: rotate(-3deg);
   }
+
   & .bio__title {
     @include font-rules(h1, 800, italic, center);
     font-size: $Size10;
     color: $ColorPrimary;
     transform: rotate(2deg);
     text-shadow: 2px 2px 0px $ColorDark;
+
     @include media('<1300px') {
       font-size: $Size9;
     }
+
     @include media('<950px') {
       font-size: $Size8-2;
     }
+
     @include media('<700px') {
       font-size: $Size8;
     }
+
     @include media('<570px') {
       font-size: $Size7;
     }
+
     @include media('<450px') {
       font-size: $Size6-2;
     }
+
     @include media('<360px') {
       font-size: $Size6;
     }
   }
+
   & .bio__tagline {
     @include font-rules(h2, 600, italic, center);
     font-size: $Size7;
     margin-top: $Size9;
+
     @include media('<950px') {
       font-size: $Size6;
       margin-top: $Size8;
     }
+
     @include media('<700px') {
       font-size: $Size6;
       margin-top: $Size7;
     }
+
     @include media('<500px') {
       font-size: $Size6;
       margin-top: $Size6;
     }
+
     @include media('<450px') {
       font-size: $Size5;
     }
+
     a {
       font-size: $Size7;
       color: $ColorDark;
+
       &:hover {
         color: $ColorLight;
         text-shadow: 1px 1px $ColorDark;
       }
+
       @include media('<950px') {
         font-size: $Size6;
         margin-top: $Size8;
       }
+
       @include media('<700px') {
         font-size: $Size6;
         margin-top: $Size7;
       }
+
       @include media('<500px') {
         font-size: $Size6;
         margin-top: $Size6;
       }
+
       @include media('<450px') {
         font-size: $Size5;
       }
@@ -216,18 +253,22 @@ main {
   margin: $Size5 auto;
   max-width: 400px;
   justify-items: center;
+
   a {
     font-size: $Size6;
     padding: $Size2;
     color: $ColorDark;
+
     &:hover {
       color: $ColorLight;
       text-shadow: 1px 1px $ColorDark;
     }
+
     @include media('<450px') {
       padding: $Size3;
       font-size: $Size5;
     }
+
     i {
       @include media('<390px') {
         font-size: 1.2em;
@@ -244,9 +285,11 @@ article {
   grid-column: 2/3;
   margin: $Size4;
   justify-self: stretch;
+
   & .cards__post {
     margin: 0;
     justify-self: center;
+
     & .cards__post-header-tilt {
       display: flex;
       justify-content: center;
@@ -255,6 +298,7 @@ article {
       margin-top: $Size6;
       margin-bottom: $Size7;
     }
+
     & .cards__post-header {
       @include font-rules(h1, 800, italic, center);
       font-size: $Size8;
@@ -262,16 +306,19 @@ article {
       transform: rotate(2deg);
       text-shadow: 3px 3px 0px $ColorDark;
     }
+
     & .cards__post-sub-header {
       @include font-rules(h3, 800, normal, left);
       // text-shadow: 1px 1px $ColorLight;
       font-size: $Size7;
       margin: $Size4 0;
       padding-top: $Size9;
+
       @include media('<450px') {
         font-size: $Size6;
       }
     }
+
     & .cards__post-sub-header-hi {
       @include font-rules(h3, 800, normal, center);
       color: $ColorDark;
@@ -280,18 +327,22 @@ article {
       font-size: $Size7;
       margin: 0 0 $Size4;
       padding: $Size2 0;
+
       @include media('<450px') {
         font-size: $Size6;
       }
     }
+
     & .cards__post-content {
       @include font-rules(body, 400, normal, left);
       font-size: $FontSize__large;
     }
+
     & p {
       margin: 0 auto $Size3;
       line-height: 1.7;
     }
+
     // & a {
     //   text-shadow: 1px 1px $ColorDark;
     //   @include font-rules(body, 400, normal, left);
@@ -309,43 +360,52 @@ article {
       border-radius: 50%;
       background: $ColorLight;
       width: $Size13;
+
       @include media('<450px') {
         width: $Size12;
       }
+
       @include media('<400px') {
         width: $Size11;
       }
     }
+
     & div.cards__post-social {
       color: $ColorDark;
       text-align: center;
       padding-top: $Size6;
       margin-bottom: $Size5;
     }
+
     a {
       margin: 0;
       padding: 0;
+
       i {
         color: $ColorDark;
         font-size: $Size7;
         margin: $Size1;
         padding: $Size1 $Size2;
         padding: 0;
+
         @include media('<400px') {
           font-size: $Size6;
           padding: $Size1 $Size1;
         }
+
         &:hover {
           color: $ColorLight;
         }
       }
     }
   }
+
   & p.cards__post-content-about {
     @include font-rules(body, 400, normal, left);
     font-size: $FontSize__large;
     text-decoration: none;
     color: $ColorDark;
+
     @include media('<450px') {
       font-size: $Size4;
     }
@@ -366,24 +426,29 @@ article.work {
   display: grid;
   grid-template-columns: minmax(1rem, 1vw, 1rem);
   justify-items: space-between;
+
   @include media('<450px') {
     font-size: $Size4;
   }
+
   & .tech_icons {
     justify-self: center;
     padding-top: $Size3;
     padding-bottom: $Size4;
   }
+
   & .tech_icons i {
     color: $ColorDark;
     font-size: $Size7;
     margin: $Size1;
     padding: $Size1 $Size2;
     text-shadow: 1px 1px $ColorLight;
+
     @include media('<400px') {
       font-size: $Size6;
     }
   }
+
   & .music_icons {
     display: flex;
     flex-direction: row;
@@ -391,29 +456,35 @@ article.work {
     padding-bottom: $Size4;
     justify-content: space-between;
   }
+
   & .music_icons i {
     color: $ColorDark;
     font-size: $Size7;
     margin: $Size1;
     padding: $Size1 $Size2;
     text-shadow: 1px 1px $ColorDark;
+
     @include media('<400px') {
       font-size: $Size6;
     }
   }
+
   & li {
     @include font-rules(body, 400, normal, left);
     font-size: $FontSize__large;
     list-style-position: inside;
     line-height: 1.5;
+
     @include media('<450px') {
       font-size: $Size4;
     }
   }
+
   .work__dev-projects {
     display: grid;
     padding: 0;
     margin: 0;
+
     .work__dev-projects-project-title {
       font-size: $Size5;
       color: $ColorDark;
@@ -421,10 +492,12 @@ article.work {
       margin: $Size6 0 $Size1;
       text-align: center;
       font-style: italic;
+
       @include media('<450px') {
         font-size: $FontSize__xlarge;
       }
     }
+
     hr {
       border: none;
       height: 1px;
@@ -432,35 +505,42 @@ article.work {
       background-color: $ColorDark;
       margin-top: 3px;
     }
+
     img.work__dev-projects-img {
       size: 100%;
       max-width: 100%;
       margin: 0 auto;
       padding: 0 auto;
     }
+
     p.work__dev-projects-blurb {
       font-size: $FontSize__large;
       margin-bottom: $Size5;
       padding: 0 0 0 $Size4;
+
       @include media('<450px') {
         padding: 0 0 0 0;
         font-size: $FontSize__body;
       }
     }
   }
+
   & .work__job {
     margin: $Size3 0 $Size3 0;
+
     & .work__job-title {
       font-size: $Size5;
       font-weight: 600;
       list-style-type: none;
     }
+
     & li.work__job-detail {
       color: $ColorDark;
       // list-style-image: url(/img/id.svg);
       list-style-type: none;
       font-size: $Size5;
       text-shadow: 1px 1px $ColorPrimary;
+
       & i {
         margin: 0 $Size2 0 0;
         padding: 0;
@@ -475,11 +555,13 @@ article.work {
       list-style-image: url(/img/book.svg);
     }
   }
+
   .work__writing-sec-academic {
     .work__writing-item-academic {
       list-style-image: url(/img/award.svg);
     }
   }
+
   .work__writing-sec-copy {
     .work__writing-item-copy {
       list-style-image: url(/img/template.svg);
@@ -516,9 +598,11 @@ hr {
   text-shadow: none;
   font-weight: 400;
   font-size: 18px;
+
   &:hover {
     color: $ColorLight;
   }
+
   @include media('<450px') {
     font-size: $FontSize__body;
   }
@@ -544,6 +628,7 @@ hr {
   font-size: $FontSize__xlarge;
   font-style: italic;
   padding: 80px;
+
   &:hover {
     color: $ColorLight;
   }
