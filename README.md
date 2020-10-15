@@ -1,6 +1,7 @@
 # timmybytes.com
 
-This is my personal portfolio site.
+This is my personal portfolio site. It's currently a work in progress as
+I focus on building more projects for my portfolio.
 
 _To Do:_
 
@@ -8,7 +9,7 @@ _To Do:_
 
 - Refactor SCSS
 - Add build process
+- Add hooks & actions
 - Add resume
-- Add localStorage support for dark-mode setting
+- (Done) Add localStorage support for dark-mode setting
 - Add direct contact method
-- Add concise `tabindex` scheme
