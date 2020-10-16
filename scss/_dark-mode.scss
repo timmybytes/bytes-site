@@ -145,6 +145,7 @@ body.dark {
   .link {
     color: $ColorPrimary;
     border-bottom: 2px solid $ColorPrimary;
+    border-bottom: 2px solid $ColorLight;
     &:hover {
       color: $ColorLight;
     }
