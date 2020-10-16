@@ -6,6 +6,9 @@ _To Do:_
 
 <!-- TODO: -->
 
+- <main> grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 900px) minmax(1.2rem, 1fr)
+-
+
 - Refactor SCSS
 - Add build process
 - Add resume
