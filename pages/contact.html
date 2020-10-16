@@ -61,10 +61,31 @@
           <div class="cards__post-header-tilt">
             <h3 class="cards__post-header">contact</h3>
           </div>
-          <p class="cards__post-content">
-            You can contact me through any of the social media accounts below.
-          </p>
           <div class="cards__post-social">
+            <div class="grid-center">
+              <form action="https://formspree.io/f/xnqoprpl" method="POST">
+                <label for="contact_name">Your Name</label>
+                <input id="contact_name" type="text" placeholder="Name" name="name" required />
+                <label for="contact_email">Your Email</label>
+                <input
+                  id="contact_email"
+                  type="email"
+                  placeholder="Email"
+                  name="_replyto"
+                  required
+                />
+                <label for="contact_message">Your Message</label>
+                <textarea
+                  id="contact_message"
+                  name="message"
+                  id="message"
+                  cols="20"
+                  rows="10"
+                ></textarea>
+                <br />
+                <input type="submit" value="Send" />
+              </form>
+            </div>
             <a href="https://twitter.com/timmybytes"><i class="fab fa-twitter fa-2x"></i></a>
             <a href="https://github.com/timmybytes"><i class="fab fa-github fa-2x"></i></a>
             <a href="https://www.linkedin.com/in/timmybytes"
