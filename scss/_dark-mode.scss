@@ -169,6 +169,41 @@ body.dark {
   .link__demos-border-bottom {
     border-bottom: 2px solid $ColorPrimary;
   }
+  //* Contact Form
+  form {
+    input[type='text'] {
+      background: $ColorDark;
+      border: 2px solid $ColorPrimary;
+      box-shadow: 2px 2px $ColorPrimary;
+      color: $ColorLight;
+    }
+    input[type='email'] {
+      background: $ColorDark;
+      border: 2px solid $ColorPrimary;
+      box-shadow: 2px 2px $ColorPrimary;
+      color: $ColorLight;
+    }
+    textarea {
+      background: $ColorDark;
+      border: 2px solid $ColorPrimary;
+      box-shadow: 2px 2px $ColorPrimary;
+      color: $ColorLight;
+    }
+    input[type='submit'] {
+      background: $ColorDark;
+      border: 2px solid $ColorPrimary;
+      box-shadow: 2px 2px $ColorPrimary;
+      color: $ColorPrimary;
+      &:hover {
+        color: $ColorDark;
+        background: $ColorPrimary;
+        box-shadow: 2px 2px $ColorPrimary;
+      }
+    }
+  }
+  label {
+    color: $ColorPrimary;
+  }
 }
 
 .toggle-label {

@@ -475,7 +475,7 @@ article.work {
     flex-direction: row;
     padding-top: $Size3;
     padding-bottom: $Size4;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   & .music_icons i {
@@ -680,17 +680,21 @@ hr {
 
 .grid-center {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   justify-self: center;
+  line-height: 1.4;
 }
 
 //* Contact Form
 form {
+  // font-size: $Size1;
+  display: inline-grid;
   margin-bottom: $Size6;
   label {
     font-size: $Size5;
     font-weight: 600;
     margin-top: $Size5;
+    justify-self: left;
   }
   input[type='text'] {
     background: $ColorLight;
@@ -701,7 +705,8 @@ form {
     min-width: 400px;
     padding: 20px;
     @include media('<450px') {
-      min-width: 0;
+      font-size: $Size3;
+      min-width: 250px;
       max-width: fit-content;
       padding: 5px;
     }
@@ -715,7 +720,8 @@ form {
     min-width: 400px;
     padding: 20px;
     @include media('<450px') {
-      min-width: 0;
+      font-size: $Size3;
+      min-width: 250px;
       max-width: fit-content;
       padding: 5px;
     }
@@ -730,17 +736,26 @@ form {
     min-width: 400px;
     padding: 20px;
     @include media('<450px') {
-      min-width: 0;
+      font-size: $Size3;
+      min-width: 250px;
       max-width: fit-content;
       padding: 5px;
     }
   }
   input[type='submit'] {
+    color: $ColorDark;
     background: $ColorLight;
     border: 2px solid $ColorDark;
     box-shadow: 2px 2px $ColorDark;
-    color: $ColorDark;
+    font-weight: 600;
     margin: 10px 0;
     padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+      background: $ColorDark;
+      border: 2px solid $ColorPrimary;
+      box-shadow: 2px 2px $ColorDark;
+      color: $ColorLight;
+    }
   }
 }
