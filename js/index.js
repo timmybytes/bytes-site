@@ -1,19 +1,10 @@
+// Dark Mode
 const checkbox = document.getElementById('checkbox');
 
 if (localStorage.getItem('theme', 'dark')) {
   document.body.classList.add('dark');
   checkbox.checked = true;
 }
-
-// checkbox.addEventListener('change', () => {
-//   document.body.classList.toggle('dark');
-//   // Adding to localStorage
-//   // if (document.body.classList.contains('dark') {
-//   //   localStorage.setItem('theme', 'dark'); // save theme selection
-//   // } else if (!document.body.classList.contains('dark')) {
-//   //   localStorage.removeItem('theme', 'dark'); // reset theme selection
-//   // })
-// });
 
 var themeSwitch = document.getElementById('checkbox');
 if (themeSwitch) {
@@ -32,3 +23,9 @@ if (themeSwitch) {
     }
   }
 }
+
+// Footer Copyright
+const footer = document.getElementById('footer');
+const date = new Date().getFullYear();
+
+footer.innerHTML = `&copy ${date} Timothy Merritt`;
