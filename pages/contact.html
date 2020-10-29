@@ -61,10 +61,39 @@
           <div class="cards__post-header-tilt">
             <h3 class="cards__post-header">contact</h3>
           </div>
-          <p class="cards__post-content">
-            You can contact me through any of the social media accounts below.
-          </p>
           <div class="cards__post-social">
+            <div class="grid-center">
+              Send me a note, or find my social media below
+              <form action="https://formspree.io/f/xnqoprpl" method="POST">
+                <label for="contact_name">Name</label>
+                <input
+                  id="contact_name"
+                  type="text"
+                  placeholder="e.g., Molly Millions"
+                  name="name"
+                  required
+                />
+                <label for="contact_email">Email</label>
+                <input
+                  id="contact_email"
+                  type="email"
+                  placeholder="e.g., molly@chatsubo.net"
+                  name="_replyto"
+                  required
+                />
+                <label for="contact_message">Message</label>
+                <textarea
+                  placeholder="Enter your message"
+                  id="contact_message"
+                  name="message"
+                  id="message"
+                  cols="20"
+                  rows="10"
+                ></textarea>
+                <br />
+                <input type="submit" value="Send" />
+              </form>
+            </div>
             <a href="https://twitter.com/timmybytes"><i class="fab fa-twitter fa-2x"></i></a>
             <a href="https://github.com/timmybytes"><i class="fab fa-github fa-2x"></i></a>
             <a href="https://www.linkedin.com/in/timmybytes"
@@ -73,21 +102,13 @@
             <a href="https://dev.to/timmybytes">
               <i class="fab fa-dev fa-2x"></i>
             </a>
-            <a href="https://medium.com/@timmybytes">
-              <i class="fab fa-medium fa-2x"></i>
-            </a>
           </div>
           <form action=""></form>
           <div class="cards__footer"></div>
         </article>
       </section>
     </main>
-    <footer class="footer">
-      &copy Timothy Merritt
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
-    </footer>
+    <footer id="footer" class="footer"></footer>
     <script src="/js/index.js"></script>
   </body>
 </html>

@@ -19,5 +19,19 @@
       "savePath": "/css"
     }
   ],
-  "cSpell.words": ["tooltiptext"]
+  "cSpell.words": [
+    "tooltiptext"
+  ],
+  "workbench.colorCustomizations": {
+    "[Mirage]": {
+      "list.focusBackground": "#7b9f80",
+      "list.activeSelectionBackground": "#7b9f80",
+      "list.hoverBackground": "#b284be",
+      "list.hoverForeground": "#efefef",
+      "tab.inactiveForeground": "#738678",
+      "sideBarTitle.foreground": "#f08080",
+      "statusBar.foreground": "#f08080",
+      "editor.background": "#182333"
+    }
+  }
 }
