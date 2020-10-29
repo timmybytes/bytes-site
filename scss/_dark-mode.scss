@@ -204,6 +204,10 @@ body.dark {
   label {
     color: $ColorPrimary;
   }
+  code {
+    color: $ColorDark;
+    background: $ColorPrimary;
+  }
 }
 
 .toggle-label {

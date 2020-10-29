@@ -507,12 +507,13 @@ article.work {
     margin: 0;
 
     .work__dev-projects-project-title {
-      font-size: $Size5;
+      font-size: $Size6;
       color: $ColorDark;
       font-weight: 600;
       margin: $Size6 0 $Size1;
       text-align: center;
       font-style: italic;
+      line-height: 1.4;
 
       @include media('<450px') {
         font-size: $FontSize__xlarge;
@@ -758,4 +759,10 @@ form {
       color: $ColorLight;
     }
   }
+}
+code {
+  color: $ColorPrimary;
+  background: $ColorDark;
+  border-radius: 3px;
+  padding: 3px;
 }
