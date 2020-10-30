@@ -349,6 +349,12 @@ article {
     & .cards__post-content {
       @include font-rules(body, 400, normal, left);
       font-size: $FontSize__large;
+      span {
+        font-weight: 800;
+        font-style: italic;
+        font-size: inherit;
+        text-transform: uppercase;
+      }
     }
 
     & p {
@@ -530,7 +536,8 @@ article.work {
 
     img.work__dev-projects-img {
       size: 100%;
-      max-width: 100%;
+      width: 100%;
+      height: auto;
       margin: 0 auto;
       padding: 0 auto;
     }
@@ -765,4 +772,8 @@ code {
   background: $ColorDark;
   border-radius: 3px;
   padding: 3px;
+}
+
+em {
+  font-size: inherit;
 }
