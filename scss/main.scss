@@ -379,7 +379,7 @@ article {
       border-radius: 50%;
       background: $ColorLight;
       width: $Size13;
-      height: auto;
+      // height: auto;
 
       @include media('<450px') {
         width: $Size12;
@@ -538,7 +538,7 @@ article.work {
     img.work__dev-projects-img {
       // size: 100%;
       width: 100%;
-      height: auto;
+      // height: auto;
       margin: 0 auto;
       padding: 0 auto;
     }
