@@ -378,15 +378,15 @@ article {
       margin: 0 auto $Size5;
       border-radius: 50%;
       background: $ColorLight;
-      width: $Size13;
-      // height: auto;
+      width: 100%;
+      height: auto;
 
       @include media('<450px') {
-        width: $Size12;
+        width: 100%;
       }
 
       @include media('<400px') {
-        width: $Size11;
+        width: 100%;
       }
     }
 
@@ -539,8 +539,8 @@ article.work {
       // size: 100%;
       width: 100%;
       // height: auto;
-      margin: 0 auto;
-      padding: 0 auto;
+      // margin: 0 auto;
+      // padding: 0 auto;
     }
 
     p.work__dev-projects-blurb {
