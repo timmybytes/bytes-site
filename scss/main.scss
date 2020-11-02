@@ -282,7 +282,7 @@ article {
 
 .cards {
   grid-column: 2/3;
-  margin: $Size4;
+  // margin: $Size4;
   justify-self: stretch;
 
   & .cards__post {
@@ -545,12 +545,15 @@ article.work {
 
     p.work__dev-projects-blurb {
       font-size: $FontSize__large;
-      margin-bottom: $Size5;
-      padding: 0 0 0 $Size4;
+      margin: 0 0 $Size5 0;
+      // padding: 0 0 0 $Size4;
+      max-width: 65ch;
+      justify-self: center;
 
       @include media('<450px') {
         padding: 0 0 0 0;
         font-size: $FontSize__body;
+        line-height: 1.4;
       }
     }
   }
@@ -578,7 +581,7 @@ article.work {
     }
   }
 }
-
+// Moves project icons to newline on small screens
 .work__dev-projects--tech-icon-br {
   display: none;
   @include media('<350px') {
@@ -681,6 +684,10 @@ hr {
 .flex-container {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  flex: 1 1 100%;
 }
 
 .flex-container img {
