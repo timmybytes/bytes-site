@@ -537,8 +537,8 @@ article.work {
 
     .work__dev-projects-img {
       // size: 100%;
-      width: 100pt;
-      height: 50px;
+      max-width: 100%;
+      height: auto;
       // margin: 0 auto;
       // padding: 0 auto;
     }
