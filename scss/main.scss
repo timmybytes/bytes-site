@@ -681,18 +681,18 @@ hr {
   border-bottom: 2px solid $ColorDark;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-basis: 100%;
-  flex: 1 1 100%;
-}
+// .flex-container {
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: row;
+//   flex-wrap: nowrap;
+//   flex-basis: 100%;
+//   flex: 1 1 100%;
+// }
 
-.flex-container img {
-  // display: inline;
-}
+// .flex-container img {
+//   // display: inline;
+// }
 
 .grid-center {
   display: grid;
