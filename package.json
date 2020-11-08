@@ -4,7 +4,7 @@
   "description": "Timothy Merritt's Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "test": "echo No test defined"
+    "test": "lighthouse http://127.0.0.1:5501/ --view"
   },
   "repository": {
     "type": "git",
