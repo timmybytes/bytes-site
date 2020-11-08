@@ -22,5 +22,8 @@
     "eslint": "^7.9.0",
     "lighthouse": "^6.3.0",
     "node-forge": ">=0.10.0"
+  },
+  "devDependencies": {
+    "imagemin": "^7.0.1"
   }
 }
