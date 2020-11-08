@@ -4,7 +4,9 @@
   "description": "Timothy Merritt's Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "test": "lighthouse http://127.0.0.1:5501/ --view"
+    "test": "lighthouse http://127.0.0.1:5501/ --view",
+    "test:a11y": "lighthouse http://127.0.0.1:5501/ --only-categories=accessibility --view",
+    "test:perform": "lighthouse http://127.0.0.1:5501/ --only-categories=performance,best-practices --view"
   },
   "repository": {
     "type": "git",
