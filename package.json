@@ -6,7 +6,9 @@
   "scripts": {
     "test": "lighthouse http://127.0.0.1:5501/ --output-path=./tests/lighthouse-results.html --view",
     "test:a11y": "lighthouse http://127.0.0.1:5501/ --only-categories=accessibility --output-path=./tests/lighthouse-a11y-results.html --view",
-    "test:perform": "lighthouse http://127.0.0.1:5501/ --only-categories=performance,best-practices --output-path=./tests/lighthouse-perform-results.html --view"
+    "test:perform": "lighthouse http://127.0.0.1:5501/ --only-categories=performance,best-practices --output-path=./tests/lighthouse-perform-results.html --view",
+    "scss": "sass --no-source-map --style=compressed scss:css",
+    "scss:watch": "sass --watch --no-source-map --style=compressed scss:css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/timmybytes/timmybytes-website#readme",
   "devDependencies": {
     "eslint": "^7.13.0",
-    "lighthouse": "^6.4.1"
+    "lighthouse": "^6.4.1",
+    "sass": "^1.29.0"
   }
 }

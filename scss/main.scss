@@ -155,6 +155,9 @@ main {
   & .bio__tilt {
     background: $ColorDark;
     transform: rotate(-3deg);
+    margin: auto;
+    max-width: 750px;
+    padding: 3px;
   }
 
   & .bio__title {
