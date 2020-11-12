@@ -20,7 +20,6 @@
   "homepage": "https://github.com/timmybytes/timmybytes-website#readme",
   "devDependencies": {
     "eslint": "^7.13.0",
-    "lighthouse": "^6.4.1",
-    "node-forge": "^0.10.0"
+    "lighthouse": "^6.4.1"
   }
 }
