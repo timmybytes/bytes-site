@@ -13,7 +13,7 @@
     "url": "git+https://github.com/timmybytes/timmybytes-website.git"
   },
   "author": "Timothy Merritt",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/timmybytes/timmybytes-website/issues"
   },
