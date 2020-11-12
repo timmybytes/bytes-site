@@ -1,6 +1,10 @@
 # timmybytes.com
 
-![timmybytes website screenshot](./img/timmybytes_header.png)
+![timmybytes website screenshot](./img/timmybytes-screenshot.png)
+Light Mode
+
+![timmybytes website dark mode screenshot](./img/timmybytes-screenshot-dark.png)
+Dark Mode
 
 This is my personal portfolio site, built from scratch with HTML, SCSS, and Vanilla JavaScript. The goal of this project was to build a complete website and create a home for my web development projects.
 
