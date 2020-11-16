@@ -160,3 +160,4 @@ dist
 # Lighthouse logs
 127*
 timmybytes.com_*
+tests/
