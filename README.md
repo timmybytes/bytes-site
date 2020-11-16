@@ -1,18 +1,13 @@
 # timmybytes.com
 
-This is my personal portfolio site, built from scratch with HTML, SCSS, and Vanilla JavaScript. It's currently a work in progress as I focus on building more projects for my resume.
+![timmybytes website screenshot](./img/timmybytes-screenshot.png)
+Light Mode
 
+![timmybytes website dark mode screenshot](./img/timmybytes-screenshot-dark.png)
+Dark Mode
 
+This is my personal portfolio site, built from scratch with HTML, SCSS, and Vanilla JavaScript. The goal of this project was to build a complete website and create a home for my web development projects.
 
-<!-- _To Do:_
+While it isn't meant to be forked, since this site is tailored for my own needs, feel free to use anything useful you find within the site template for your own projects.
 
-- [ ] Refactor SCSS
-- [ ] Add build process
-- [ ] Add resume
-- [x] Add direct contact method
-- [ ] Revise projects
-  - [ ] Color Chooser - update screenshot with copy capabilites
-  - [ ] add Splate
-  - [ ] Add CRA-Template
-- [ ] Update README
- -->
+This work is all under the [MIT License](./LICENSE).

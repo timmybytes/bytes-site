@@ -4,21 +4,25 @@
   "description": "Timothy Merritt's Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "test": "echo No test defined"
+    "test": "lighthouse http://127.0.0.1:5501/ --output-path=./tests/lighthouse-results.html --view",
+    "test:a11y": "lighthouse http://127.0.0.1:5501/ --only-categories=accessibility --output-path=./tests/lighthouse-a11y-results.html --view",
+    "test:perform": "lighthouse http://127.0.0.1:5501/ --only-categories=performance,best-practices --output-path=./tests/lighthouse-perform-results.html --view",
+    "scss": "sass --no-source-map --style=compressed scss:css",
+    "scss:watch": "sass --watch --no-source-map --style=compressed scss:css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timmybytes/timmybytes-website.git"
   },
   "author": "Timothy Merritt",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/timmybytes/timmybytes-website/issues"
   },
   "homepage": "https://github.com/timmybytes/timmybytes-website#readme",
-  "dependencies": {
-    "eslint": "^7.9.0",
-    "lighthouse": "^6.3.0",
-    "node-forge": ">=0.10.0"
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "lighthouse": "^6.4.1",
+    "sass": "^1.29.0"
   }
 }

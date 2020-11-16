@@ -32,6 +32,7 @@
       "sideBarTitle.foreground": "#f08080",
       "statusBar.foreground": "#f08080",
       "editor.background": "#182333"
-    }
+    },
+    "panel.border": "#868d80"
   }
 }
