@@ -17,15 +17,15 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-STYLESHEET=../../css/main.css
+STYLESHEET=css/main.css
 
 COMMENTED='<!-- <link rel="stylesheet" href="/css/main.css" /> -->'
 LINK='<link rel="stylesheet" href="/css/main.css" />'
-PAGE1=../../index.html
-PAGE2=../../pages/about.html
-PAGE3=../../pages/work.html
-PAGE4=../../pages/contact.html
-ALL_PAGES=../../**/*.html
+PAGE1=index.html
+PAGE2=pages/about.html
+PAGE3=pages/work.html
+PAGE4=pages/contact.html
+ALL_PAGES=**/*.html
 
 echo -e "Validating css stylesheets..."
 sleep 1
@@ -65,15 +65,15 @@ else
   echo -e "${RED}𐄂${NC} Stylesheet not linked in Contact Page" && exit 1
 fi
 
-if grep -qr "$LINK" ../../**/*.html; then
+if grep -qr "$LINK" **/*.html; then
   echo -e "${GREEN}✔${NC} All stylsheet links found"
   sleep .15
 else
   echo -e "${RED}𐄂${NC} Not all stylsheet links were found" && exit 1
 fi
 
-if grep -qr "$COMMENTED" ../../**/*.html; then
+if grep -qr "$COMMENTED" **/*.html; then
   echo -e "${RED}WARNING${NC}: Stylesheet is commented out in the following places"
-  grep --color=always -rn "$COMMENTED" ../../**/*.html
+  grep --color=always -rn "$COMMENTED" **/*.html
   exit 1
 fi
