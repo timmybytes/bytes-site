@@ -539,11 +539,15 @@ article.work {
     }
 
     .work__dev-projects-img {
-      // size: 100%;
       max-width: 100%;
       height: auto;
-      // margin: 0 auto;
-      // padding: 0 auto;
+      &-shadow {
+        box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.3);
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 20px auto 50px auto;
+      }
     }
 
     p.work__dev-projects-blurb {
