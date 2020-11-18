@@ -1,9 +1,3 @@
-@import "config";
-@import "colors";
-@import "fonts";
-@import "mixins";
-@import "breakpoints";
-
 .blog {
   display: grid;
   margin: $Size3;

@@ -1,0 +1,19 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  flex: 1 1 100%;
+}
+
+.flex-container img {
+  align-self: center;
+}
+
+.grid-center {
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+  line-height: 1.4;
+}

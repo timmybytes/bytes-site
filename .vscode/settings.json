@@ -1,27 +1,5 @@
 {
-  "cSpell.ignoreWords": [
-    "as",
-    "bou",
-    "bouças’s",
-    "code",
-    "code stac kr",
-    "crossorigin",
-    "kr",
-    "s",
-    "stac"
-  ],
   "liveServer.settings.port": 5501,
-  //* Live SASS
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/css"
-    }
-  ],
-  "cSpell.words": [
-    "tooltiptext"
-  ],
   "workbench.colorCustomizations": {
     "[Mirage]": {
       "list.focusBackground": "#7b9f80",
@@ -34,5 +12,19 @@
       "editor.background": "#182333"
     },
     "panel.border": "#868d80"
+  },
+  "markdownlint.config": {
+    // Allow multiple blank lines
+    "MD012": false,
+    // Line length
+    "MD013": false,
+    // Allow duplicate headings
+    "MD024": false,
+    // Allow trailing heading punctuation
+    "MD026": false,
+    // Allow inline HTML
+    "MD033": false,
+    // Ignore first-line-heading
+    "MD041": false
   }
 }

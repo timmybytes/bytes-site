@@ -1,0 +1,50 @@
+// *Main----------------------
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include font-rules(body, 400, normal, left);
+  background: $ColorPrimary;
+  color: $ColorDark;
+  max-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 900px) minmax(1.2rem, 1fr);
+  justify-items: stretch;
+}
+
+article {
+  scroll-snap-type: proximity;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+hr {
+  margin: 0 0 $Size4 0;
+  color: $ColorDark;
+}
+
+.strong {
+  color: $ColorDark;
+  text-shadow: none;
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+code {
+  color: $ColorPrimary;
+  background: $ColorDark;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+em {
+  font-size: inherit;
+}

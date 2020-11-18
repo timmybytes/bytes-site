@@ -1,0 +1,173 @@
+// * WORK-------------------------------
+article.work {
+  display: grid;
+  grid-template-columns: minmax(1rem, 1vw, 1rem);
+  justify-items: space-between;
+
+  @include media('<450px') {
+    font-size: $Size4;
+  }
+
+  & .tech_icons {
+    justify-self: center;
+    padding-top: $Size3;
+    padding-bottom: $Size4;
+  }
+
+  & .tech_icons i {
+    color: $ColorDark;
+    font-size: $Size7;
+    margin: $Size1;
+    padding: $Size1 $Size2;
+    text-shadow: 1px 1px $ColorLight;
+
+    @include media('<400px') {
+      font-size: $Size6;
+    }
+  }
+
+  & .music_icons {
+    display: flex;
+    flex-direction: row;
+    padding-top: $Size3;
+    padding-bottom: $Size4;
+    justify-content: space-around;
+  }
+
+  & .music_icons i {
+    color: $ColorDark;
+    font-size: $Size7;
+    margin: $Size1;
+    padding: $Size1 $Size2;
+    text-shadow: 1px 1px $ColorDark;
+
+    @include media('<400px') {
+      font-size: $Size6;
+    }
+  }
+
+  & li {
+    @include font-rules(body, 400, normal, left);
+    font-size: $FontSize__large;
+    list-style-position: inside;
+    line-height: 1.5;
+
+    @include media('<450px') {
+      font-size: $Size4;
+    }
+  }
+
+  .work__dev-projects {
+    display: grid;
+    padding: 0;
+    margin: 0;
+
+    .work__dev-projects-project-title {
+      font-size: $Size6;
+      color: $ColorDark;
+      font-weight: 600;
+      margin: $Size6 0 $Size1;
+      text-align: center;
+      font-style: italic;
+      line-height: 1.4;
+
+      @include media('<450px') {
+        font-size: $FontSize__xlarge;
+      }
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      color: $ColorDark;
+      background-color: $ColorDark;
+      margin-top: 3px;
+    }
+
+    .work__dev-projects-img {
+      max-width: 100%;
+      height: auto;
+      &-shadow {
+        box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.3);
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin: 20px auto 50px auto;
+      }
+    }
+
+    p.work__dev-projects-blurb {
+      font-size: $FontSize__large;
+      margin: 0 0 $Size5 0;
+      // padding: 0 0 0 $Size4;
+      max-width: 65ch;
+      justify-self: center;
+
+      @include media('<450px') {
+        padding: 0 0 0 0;
+        font-size: $FontSize__body;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  & .work__job {
+    margin: $Size3 0 $Size3 0;
+
+    & .work__job-title {
+      font-size: $Size5;
+      font-weight: 600;
+      list-style-type: none;
+    }
+
+    & li.work__job-detail {
+      color: $ColorDark;
+      // list-style-image: url(/img/id.svg);
+      list-style-type: none;
+      font-size: $Size5;
+      text-shadow: 1px 1px $ColorPrimary;
+
+      & i {
+        margin: 0 $Size2 0 0;
+        padding: 0;
+      }
+    }
+  }
+}
+// Moves project icons to newline on small screens
+.work__dev-projects--tech-icon-br {
+  display: none;
+  @include media('<350px') {
+    display: block;
+    margin-top: $Size3;
+  }
+}
+
+.work__writing {
+  .work__writing-sec-prose {
+    .work__writing-item-prose {
+      list-style-image: url(/img/book.svg);
+    }
+  }
+
+  .work__writing-sec-academic {
+    .work__writing-item-academic {
+      list-style-image: url(/img/award.svg);
+    }
+  }
+
+  .work__writing-sec-copy {
+    .work__writing-item-copy {
+      list-style-image: url(/img/template.svg);
+    }
+  }
+}
+
+.work__writing-section-head {
+  color: $ColorPrimary;
+  background-color: $ColorDark;
+  font-size: $Size6;
+  font-weight: 600;
+  margin: $Size3 0;
+  padding: 5px;
+}

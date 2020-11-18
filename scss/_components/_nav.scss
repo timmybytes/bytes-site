@@ -1,0 +1,100 @@
+// *Nav----------------------
+.navbar {
+  grid-column: 1/4;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  background: $ColorPrimary;
+  overflow-y: scroll;
+  scroll-snap-points-y: repeat(320px);
+  scroll-snap-destination: 0 0;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+
+  & ul.navbar__list {
+    @include font-rules(h2, 400, italic, center);
+    padding: $Size4 0 $Size4 0;
+    box-shadow: 0px 0px 4px $ColorDark;
+
+    @include media('<760px') {
+      padding: $Size4 $Size3 $Size4 $Size3;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    @include media('<725px') {
+      padding: $Size5 $Size4 $Size4 $Size4;
+      display: flex;
+      justify-content: center;
+    }
+
+    @include media('<450px') {
+      justify-content: flex-start;
+    }
+
+    @include media('<400px') {
+      padding: $Size4 $Size3 $Size6 $Size3;
+    }
+  }
+
+  & .navbar__item {
+    list-style-type: none;
+    display: inline;
+  }
+
+  & a.navbar__link {
+    color: $ColorDark;
+    font-size: $Size7;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 0 $Size4 0 $Size4;
+    font-weight: 600;
+
+    @include media('<700px') {
+      padding: 0 $Size5 0 $Size5;
+      font-size: $Size7 - 9;
+    }
+
+    @include media('<725px') {
+      padding: 0 $Size3 0 $Size3;
+      font-size: $Size5;
+    }
+
+    @include media('<450px') {
+      font-size: $Size5;
+      padding: 0 $Size2 0 $Size2;
+    }
+
+    @include media('<405px') {
+      font-size: $Size4 + 5;
+      padding: 0 $Size2 0 $Size2;
+    }
+
+    @include media('<360px') {
+      padding: 0 $Size2 $Size1 $Size2;
+      font-size: $Size4;
+    }
+
+    &:hover {
+      color: $ColorPrimary;
+      text-shadow: 4px 4px $ColorDark;
+
+      @include media('<450px') {
+        text-shadow: 2px 2px $ColorDark;
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 6px solid $ColorDark;
+
+  &:hover {
+    color: $ColorPrimary;
+    text-shadow: 1px 1px $ColorDark;
+  }
+
+  @include media('<725px') {
+    border-bottom: 3px solid $ColorDark;
+  }
+}
