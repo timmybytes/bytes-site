@@ -1,3 +1,40 @@
+@keyframes tilt {
+  0% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes anti-tilt {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
 // *Bio----------------------
 .bio {
   grid-column: 2/3;
@@ -23,6 +60,8 @@
   & .bio__tilt {
     background: $ColorDark;
     transform: rotate(-3deg);
+    animation-name: tilt;
+    animation-duration: 2s;
     margin: auto;
     max-width: 750px;
     padding: 3px;
@@ -33,6 +72,8 @@
     font-size: $Size10;
     color: $ColorPrimary;
     transform: rotate(2deg);
+    animation-name: anti-tilt;
+    animation-duration: 2s;
     text-shadow: 2px 2px 0px $ColorDark;
 
     @include media('<1300px') {
@@ -61,6 +102,10 @@
   }
 
   & .bio__tagline {
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
     @include font-rules(h2, 600, italic, center);
     font-size: $Size7;
     margin-top: $Size9;
@@ -85,6 +130,11 @@
     }
 
     a {
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      display: none;
       font-size: $Size7;
       color: $ColorDark;
 
@@ -116,6 +166,10 @@
 }
 
 .bio__tagline-icons {
+  // animation-name: fadeInOpacity;
+  // animation-iteration-count: 1;
+  // animation-timing-function: ease-in;
+  // animation-duration: 1s;
   @include font-rules(h2, 600, italic, center);
   grid-column: 2/3;
   // display: grid;
@@ -123,6 +177,7 @@
   margin: $Size5 auto;
   max-width: 400px;
   justify-items: center;
+  visibility: hidden;
 
   a {
     font-size: $Size6;
