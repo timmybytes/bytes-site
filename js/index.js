@@ -31,35 +31,46 @@ const date = new Date().getFullYear();
 footer.innerHTML = `&copy ${date} Timothy Merritt`;
 
 const tagline = document.body.querySelector('.bio__tagline');
-const icons = document.body.querySelector('.bio__tagline-icons');
+const tilt = document.body.querySelector('.bio__tilt');
+const title = document.body.querySelector('.bio__title').style;
+const iconGit = document.body.querySelector('.bio__tagline-icons').childNodes[1].style;
+const iconDev = document.body.querySelector('.bio__tagline-icons').childNodes[3].style;
+const iconLinked = document.body.querySelector('.bio__tagline-icons').childNodes[5].style;
+const iconMusic = document.body.querySelector('.bio__tagline-icons').childNodes[7].style;
+const iconTwit = document.body.querySelector('.bio__tagline-icons').childNodes[9].style;
 const links = document.body.querySelector('.bio__tagline').childNodes;
-const link1 = document.body.querySelector('.bio__tagline').childNodes[1].style;
-const link2 = document.body.querySelector('.bio__tagline').childNodes[2].style;
-const link3 = document.body.querySelector('.bio__tagline').childNodes[3].style;
-const link4 = document.body.querySelector('.bio__tagline').childNodes[4].style;
-const link5 = document.body.querySelector('.bio__tagline').childNodes[5].style;
+const linkDev = document.body.querySelector('.bio__tagline').childNodes[1].style;
+const linkWrite = document.body.querySelector('.bio__tagline').childNodes[3].style;
+const linkMusic = document.body.querySelector('.bio__tagline').childNodes[5].style;
 
-tagline.style.display = 'hidden';
-// icons.style.visibility = 'hidden';
-// link1.display = 'none';
-// link3.display = 'none';
-// link5.display = 'none';
-const test = () => {
+console.log(iconGit, iconDev, iconLinked, iconMusic);
+
+const fade = () => {
+  title.visibility = 'hidden';
+  iconGit.visibility = 'hidden';
   setTimeout(() => {
-    tagline.style.visibility = 'visible';
+    title.visibility = 'visible';
   }, 500);
   setTimeout(() => {
-    link1.display = 'inline';
+    linkDev.display = 'inline';
+    linkWrite.display = 'inline';
+    linkMusic.display = 'inline';
   }, 900);
   setTimeout(() => {
-    link3.display = 'inline';
+    iconGit.visibility = 'visible';
   }, 1400);
   setTimeout(() => {
-    link5.display = 'inline';
-  }, 1900);
+    iconDev.visibility = 'visible';
+  }, 1800);
   setTimeout(() => {
-    icons.style.visibility = 'visible';
-  }, 2800);
+    iconLinked.visibility = 'visible';
+  }, 2200);
+  setTimeout(() => {
+    iconMusic.visibility = 'visible';
+  }, 2600);
+  setTimeout(() => {
+    iconTwit.visibility = 'visible';
+  }, 3000);
 };
 
-test();
+fade();
