@@ -72,6 +72,9 @@
     @extend .bio__title;
     animation-name: color-shift;
     display: none;
+    @include media('<340px') {
+      font-size: 26px;
+    }
   }
 
   & .bio__tagline {
