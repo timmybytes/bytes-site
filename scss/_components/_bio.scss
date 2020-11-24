@@ -23,8 +23,10 @@
   & .bio__tilt {
     background: $ColorDark;
     transform: rotate(-3deg);
+    animation-name: tilt;
+    animation-duration: 2s;
     margin: auto;
-    max-width: 750px;
+    max-width: 915px;
     padding: 3px;
   }
 
@@ -33,6 +35,9 @@
     font-size: $Size10;
     color: $ColorPrimary;
     transform: rotate(2deg);
+    animation-name: anti-tilt;
+    animation-name: fadeInOpacity;
+    animation-duration: 2s;
     text-shadow: 2px 2px 0px $ColorDark;
 
     @include media('<1300px') {
@@ -60,14 +65,24 @@
     }
   }
 
+  & .bio__title-fade {
+    @extend .bio__title;
+    animation-name: color-shift;
+    display: none;
+  }
+
   & .bio__tagline {
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
     @include font-rules(h2, 600, italic, center);
     font-size: $Size7;
-    margin-top: $Size9;
+    margin: $Size8 auto $Size6;
 
     @include media('<950px') {
       font-size: $Size6;
-      margin-top: $Size8;
+      margin: $Size8 auto $Size4;
     }
 
     @include media('<700px') {
@@ -76,15 +91,21 @@
     }
 
     @include media('<500px') {
-      font-size: $Size6;
-      margin-top: $Size6;
+      font-size: $Size5;
+      margin: $Size6 auto $Size3;
     }
 
     @include media('<450px') {
       font-size: $Size5;
+      font-size: $FontSize__large;
     }
 
     a {
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      display: none;
       font-size: $Size7;
       color: $ColorDark;
 
@@ -104,12 +125,13 @@
       }
 
       @include media('<500px') {
-        font-size: $Size6;
+        font-size: $Size5;
         margin-top: $Size6;
       }
 
       @include media('<450px') {
         font-size: $Size5;
+        font-size: $FontSize__large;
       }
     }
   }
@@ -118,13 +140,16 @@
 .bio__tagline-icons {
   @include font-rules(h2, 600, italic, center);
   grid-column: 2/3;
-  // display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: $Size5 auto;
-  max-width: 400px;
+  margin: $Size3 auto;
+  max-width: 500px;
   justify-items: center;
 
   a {
+    animation-name: fadeInOpacity;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    visibility: hidden;
     font-size: $Size6;
     padding: $Size2;
     color: $ColorDark;
@@ -136,12 +161,24 @@
 
     @include media('<450px') {
       padding: $Size3;
-      font-size: $Size5;
+      font-size: $Size4;
     }
 
     i {
-      @include media('<390px') {
-        font-size: 1.2em;
+      @include media('<950px') {
+        font-size: $Size6;
+      }
+
+      @include media('<700px') {
+        font-size: $Size6;
+      }
+
+      @include media('<500px') {
+        font-size: $Size5;
+      }
+
+      @include media('<450px') {
+        font-size: $FontSize__large;
       }
     }
   }
