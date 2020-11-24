@@ -33,6 +33,7 @@ footer.innerHTML = `&copy ${date} Timothy Merritt`;
 const tagline = document.body.querySelector('.bio__tagline');
 const tilt = document.body.querySelector('.bio__tilt');
 const title = document.body.querySelector('.bio__title').style;
+const titleFade = document.body.querySelector('.bio__title-fade').style;
 const iconGit = document.body.querySelector('.bio__tagline-icons').childNodes[1].style;
 const iconDev = document.body.querySelector('.bio__tagline-icons').childNodes[3].style;
 const iconLinked = document.body.querySelector('.bio__tagline-icons').childNodes[5].style;
@@ -43,11 +44,8 @@ const linkDev = document.body.querySelector('.bio__tagline').childNodes[1].style
 const linkWrite = document.body.querySelector('.bio__tagline').childNodes[3].style;
 const linkMusic = document.body.querySelector('.bio__tagline').childNodes[5].style;
 
-console.log(iconGit, iconDev, iconLinked, iconMusic);
-
 const fade = () => {
   title.visibility = 'hidden';
-  iconGit.visibility = 'hidden';
   setTimeout(() => {
     title.visibility = 'visible';
   }, 500);
@@ -57,20 +55,17 @@ const fade = () => {
     linkMusic.display = 'inline';
   }, 900);
   setTimeout(() => {
+    title.display = 'none';
+    titleFade.display = 'block';
     iconGit.visibility = 'visible';
-  }, 1400);
-  setTimeout(() => {
     iconDev.visibility = 'visible';
+    iconLinked.visibility = 'visible';
+    iconMusic.visibility = 'visible';
+    iconTwit.visibility = 'visible';
   }, 1800);
   setTimeout(() => {
-    iconLinked.visibility = 'visible';
+    footer.style.visibility = 'visible';
   }, 2200);
-  setTimeout(() => {
-    iconMusic.visibility = 'visible';
-  }, 2600);
-  setTimeout(() => {
-    iconTwit.visibility = 'visible';
-  }, 3000);
 };
 
 fade();

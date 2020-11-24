@@ -52,6 +52,21 @@
   }
 }
 
+@keyframes color-shift {
+  0% {
+    color: $ColorPrimary;
+  }
+  20% {
+    color: $ColorLight;
+  }
+  40% {
+    color: $ColorLight;
+  }
+  100% {
+    color: $ColorPrimary;
+  }
+}
+
 // Arrows
 @mixin arrow($direction: down, $size: 5px, $color: #555) {
   width: 0;

@@ -1,13 +1,14 @@
 // *Main----------------------
 html {
   scroll-behavior: smooth;
+  max-height: 100vh;
+  max-width: 99vw;
 }
 
 body {
   @include font-rules(body, 400, normal, left);
   background: $ColorPrimary;
   color: $ColorDark;
-  max-height: 100vh;
 }
 
 main {
