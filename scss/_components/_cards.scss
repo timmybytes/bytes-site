@@ -1,6 +1,5 @@
 .cards {
   grid-column: 2/3;
-  // margin: $Size4;
   justify-self: stretch;
 
   & .cards__post {
@@ -16,6 +15,9 @@
       margin-top: $Size6;
       margin-bottom: $Size7;
       padding: 0 $Size6;
+      animation-name: tilt;
+      animation-duration: 2s;
+      max-width: 915px;
       @include media('<500px') {
         margin-top: $Size3;
         margin-bottom: $Size5;
@@ -28,6 +30,9 @@
       color: $ColorPrimary;
       transform: rotate(2deg);
       text-shadow: 3px 3px 0px $ColorDark;
+      animation-name: anti-tilt;
+      animation-name: fadeInOpacity;
+      animation-duration: 2s;
       @include media('<550px') {
         font-size: $Size8;
       }
@@ -38,7 +43,6 @@
 
     & .cards__post-sub-header {
       @include font-rules(h3, 800, normal, left);
-      // text-shadow: 1px 1px $ColorLight;
       font-size: $Size7;
       margin: $Size4 0;
       padding-top: $Size9;
@@ -53,14 +57,15 @@
       @include font-rules(h3, 800, normal, center);
       color: $ColorDark;
       line-height: 1.3;
-      // background-color: $ColorDark;
-      // text-shadow: 1px 1px $ColorDark;
       font-size: $Size7;
       margin: 0 0 $Size4;
       padding: $Size2 0;
 
+      @include media('<475px') {
+        font-size: $Size6-2;
+      }
       @include media('<450px') {
-        font-size: $Size6;
+        font-size: $Size5-2;
       }
     }
 
@@ -80,17 +85,6 @@
       line-height: 1.7;
     }
 
-    // & a {
-    //   text-shadow: 1px 1px $ColorDark;
-    //   @include font-rules(body, 400, normal, left);
-    //   font-size: $FontSize__large;
-    //   text-decoration: none;
-    //   color: $ColorLight;
-    //   &:hover {
-    //     color: $ColorDark;
-    //     text-shadow: 1px 1px $ColorLight;
-    //   }
-    // }
     & img.cards__post-photo {
       display: block;
       margin: 0 auto $Size5;

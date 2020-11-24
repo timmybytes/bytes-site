@@ -64,6 +64,10 @@ body.dark {
       color: $ColorDark;
       text-shadow: 2px 2px 0px $ColorPrimary;
     }
+    & .bio__title-fade {
+      @extend .bio__title;
+      animation-name: color-shift-dark;
+    }
   }
   .bio__tagline {
     background-color: $ColorDark;
