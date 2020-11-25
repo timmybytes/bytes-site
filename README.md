@@ -18,20 +18,32 @@
   <a href="https://timmybytes.com">Timothy Merritt</a>
 </div>
 
+
 This is the repository for my personal website/portfolio <https://timmybytes.com>. It was built with HTML, SCSS, JavaScript, and some NPM scripts for automating compiling/deployment.
 
 The site was created to my own tastes as I was (and am) learning to better refine things to my own preferences and best practices. As such, it is not a project intended to be maintained broadly, or meant to be forked, so it might break your stuff.
 
 Feel free to take anything that's helpful, however!
 
+## Screens
+
+<div align="center">
+<img src="./img/timmy.gif" style="box-shadow: 2px 2px 9px black;" width="90%" />
+  <sub>Landing page animations</sub>
+</div>
+
 ![timmybytes website screenshot](./img/timmybytes-screenshot.png)
-Light Mode
+<p align="center">
+  <sub>Light mode</sub>
+</p>
 
 ![timmybytes website dark mode screenshot](./img/timmybytes-screenshot-dark.png)
-Dark Mode
+<p align="center">
+  <sub>Dark mode</sub>
+</p>
 
-This is my personal portfolio site, built from scratch with HTML, SCSS, and Vanilla JavaScript. The goal of this project was to build a complete website and create a home for my web development projects.
+## License
 
-While it isn't meant to be forked, since this site is tailored for my own needs, feel free to use anything useful you find within the site template for your own projects.
+This template is under the [MIT License](./LICENSE).
 
-This work is all under the [MIT License](./LICENSE).
+Original works on timmybytes.com and the **timmybytes** name are © Timothy Merritt.
