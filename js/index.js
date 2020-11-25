@@ -30,8 +30,6 @@ const date = new Date().getFullYear();
 
 footer.innerHTML = `&copy ${date} Timothy Merritt`;
 
-const tagline = document.body.querySelector('.bio__tagline');
-const tilt = document.body.querySelector('.bio__tilt');
 const title = document.body.querySelector('.bio__title').style;
 const titleFade = document.body.querySelector('.bio__title-fade').style;
 const iconGit = document.body.querySelector('.bio__tagline-icons').childNodes[1].style;
@@ -39,7 +37,6 @@ const iconDev = document.body.querySelector('.bio__tagline-icons').childNodes[3]
 const iconLinked = document.body.querySelector('.bio__tagline-icons').childNodes[5].style;
 const iconMusic = document.body.querySelector('.bio__tagline-icons').childNodes[7].style;
 const iconTwit = document.body.querySelector('.bio__tagline-icons').childNodes[9].style;
-const links = document.body.querySelector('.bio__tagline').childNodes;
 const linkDev = document.body.querySelector('.bio__tagline').childNodes[1].style;
 const linkWrite = document.body.querySelector('.bio__tagline').childNodes[3].style;
 const linkMusic = document.body.querySelector('.bio__tagline').childNodes[5].style;
