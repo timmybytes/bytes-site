@@ -43,8 +43,6 @@ const linkDev = document.body.querySelector('.bio__tagline').childNodes[1].style
 const linkWrite = document.body.querySelector('.bio__tagline').childNodes[3].style;
 const linkMusic = document.body.querySelector('.bio__tagline').childNodes[5].style;
 
-console.log(title);
-
 const fade = () => {
   title.visibility = 'hidden';
   setTimeout(() => {
