@@ -1,6 +1,7 @@
 // Dark Mode
 const checkbox = document.getElementById('checkbox');
 
+// Save preference locally
 if (localStorage.getItem('theme', 'dark')) {
   document.body.classList.add('dark');
   checkbox.checked = true;
@@ -27,9 +28,9 @@ if (themeSwitch) {
 // Footer Copyright
 const footer = document.getElementById('footer');
 const date = new Date().getFullYear();
-
 footer.innerHTML = `&copy ${date} Timothy Merritt`;
 
+// Homepage & header animations
 // TODO: REFACTOR
 const title = document.body.querySelector('.bio__title').style;
 const titleFade = document.body.querySelector('.bio__title-fade').style;
