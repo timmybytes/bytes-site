@@ -157,7 +157,7 @@
     animation-duration: 1s;
     visibility: hidden;
     font-size: $Size6;
-    padding: $Size2;
+    // padding: $Size2;
     color: $ColorDark;
 
     &:hover {
@@ -166,25 +166,21 @@
     }
 
     @include media('<450px') {
-      padding: $Size3;
+      // padding: $Size3;
       font-size: $Size4;
     }
-
     i {
-      @include media('<950px') {
-        font-size: $Size6;
-      }
-
-      @include media('<700px') {
-        font-size: $Size6;
-      }
-
-      @include media('<500px') {
-        font-size: $Size5;
-      }
+      color: $ColorDark;
+      font-size: $Size7;
+      // margin: $Size1;
+      padding: $Size1 $Size2;
 
       @include media('<450px') {
-        font-size: $FontSize__large;
+        font-size: $FontSize__xlarge;
+      }
+
+      &:hover {
+        color: $ColorLight;
       }
     }
   }
