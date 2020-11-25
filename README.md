@@ -44,11 +44,10 @@ This template is under the [MIT License](./LICENSE).
 Original works on timmybytes.com and the **timmybytes** name are © Timothy Merritt.
 
 <!-- TODO:
-- Consolidate font weights in google api call: 900 800 600 400 100
-- Fix footer not becoming visible
-- Add CSP to each page
-- Fix homepage animation to fade-OUT timmybytes and fade-IN timothy merritt
+- FAIL, current CSP implementations break site; more research needed: Add CSP to each page
 - Optimize image sizes/formats
 - Conduct Accessibility review
+- Fix footer not becoming visible
+- Fix homepage animation to fade-OUT timmybytes and fade-IN timothy merritt
 -
  -->

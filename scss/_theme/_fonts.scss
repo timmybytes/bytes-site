@@ -5,8 +5,8 @@
 // Font Families
 $FontHeadings: 'Roboto', sans-serif;
 $FontBody: 'Roboto', sans-serif;
-$FontCode: 'Source Code Pro', monospace;
-$FontSerif: 'Cormorant Garamond', serif;
+$FontCode: Courier, monospace;
+$FontSerif: Georgia, Times, Courier, serif;
 
 @mixin font-rules($type, $weight, $style, $align) {
   @if $type == 'h1' {
