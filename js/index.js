@@ -30,6 +30,7 @@ const date = new Date().getFullYear();
 
 footer.innerHTML = `&copy ${date} Timothy Merritt`;
 
+// TODO: REFACTOR
 const title = document.body.querySelector('.bio__title').style;
 const titleFade = document.body.querySelector('.bio__title-fade').style;
 const iconGit = document.body.querySelector('.bio__tagline-icons').childNodes[1].style;
