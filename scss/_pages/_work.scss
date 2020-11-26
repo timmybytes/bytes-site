@@ -85,11 +85,11 @@ article.work {
     }
 
     .work__dev-projects-img {
-      max-width: 100%;
+      max-width: 800px;
       height: auto;
       &-shadow {
         box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.3);
-        max-width: 100%;
+        max-width: 800px;
         height: auto;
         border-radius: 5px;
         margin: 20px auto 50px auto;
@@ -122,7 +122,7 @@ article.work {
 
     & li.work__job-detail {
       color: $ColorDark;
-      // list-style-image: url(/img/id.svg);
+      list-style-image: url(/img/id.svg);
       list-style-type: none;
       font-size: $Size5;
       text-shadow: 1px 1px $ColorPrimary;
@@ -146,19 +146,19 @@ article.work {
 .work__writing {
   .work__writing-sec-prose {
     .work__writing-item-prose {
-      list-style-image: url(/img/book.svg);
+      list-style-image: url(/img/icons/book.svg);
     }
   }
 
   .work__writing-sec-academic {
     .work__writing-item-academic {
-      list-style-image: url(/img/award.svg);
+      list-style-image: url(/img/icons/award.svg);
     }
   }
 
   .work__writing-sec-copy {
     .work__writing-item-copy {
-      list-style-image: url(/img/template.svg);
+      list-style-image: url(/img/icons/template.svg);
     }
   }
 }
