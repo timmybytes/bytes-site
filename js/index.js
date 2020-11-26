@@ -2,6 +2,7 @@
 const checkbox = document.getElementById('checkbox');
 
 // Save preference locally
+/** global: localStorage */
 if (localStorage.getItem('theme', 'dark')) {
   document.body.classList.add('dark');
   checkbox.checked = true;
@@ -13,7 +14,7 @@ if (themeSwitch) {
     resetTheme(); // update color theme
   });
 
-  function resetTheme() {
+  var resetTheme = () => {
     if (themeSwitch.checked) {
       // dark theme has been selected
       document.body.classList.add('dark');
@@ -22,7 +23,7 @@ if (themeSwitch) {
       document.body.classList.remove('dark');
       localStorage.removeItem('theme', 'dark'); // reset theme selection
     }
-  }
+  };
 }
 
 // Footer Copyright
