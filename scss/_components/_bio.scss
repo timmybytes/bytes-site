@@ -170,13 +170,25 @@
       font-size: $Size4;
     }
     i {
-      color: $ColorDark;
+      // color: $ColorDark;
       font-size: $Size7;
       // margin: $Size1;
       padding: $Size1 $Size2;
 
+      @include media('<950px') {
+        font-size: $Size6;
+      }
+
+      @include media('<700px') {
+        font-size: $Size6;
+      }
+
+      @include media('<500px') {
+        font-size: $Size5;
+      }
+
       @include media('<450px') {
-        font-size: $FontSize__xlarge;
+        font-size: $Size5;
       }
 
       &:hover {
