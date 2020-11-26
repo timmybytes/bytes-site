@@ -85,10 +85,12 @@ article.work {
     }
 
     .work__dev-projects-img {
+      width: 100%;
       max-width: 800px;
       height: auto;
       &-shadow {
         box-shadow: 4px 4px 20px hsla(0, 0%, 0%, 0.3);
+        width: 100%;
         max-width: 800px;
         height: auto;
         border-radius: 5px;
