@@ -1,0 +1,7 @@
+{
+    "ignoredFiles": [
+        "/webfonts*",
+        "*.svg",
+        "public/special_images/*"
+    ]
+}

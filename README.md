@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./img/timmybytes_banner.png" alt="Timmybytes logo banenr" />
+  <img src="./img/timmybytes-banner.png" alt="Timmybytes logo banenr" />
 </h1>
 
 <div align="center">
@@ -45,7 +45,6 @@ Original works on timmybytes.com and the **timmybytes** name are © Timothy Merr
 
 <!-- TODO:
 - FAIL, current CSP implementations break site; more research needed: Add CSP to each page
-- Optimize image sizes/formats
 - Conduct Accessibility review
 - Fix footer not becoming visible
 - Fix homepage animation to fade-OUT timmybytes and fade-IN timothy merritt
