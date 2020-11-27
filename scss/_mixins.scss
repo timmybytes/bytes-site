@@ -34,9 +34,27 @@
     opacity: 0;
     visibility: hidden;
   }
+  50% {
+    opacity: 0.5;
+    visibility: visible;
+  }
   100% {
     opacity: 1;
     visibility: visible;
+  }
+}
+@keyframes fadeInOutOpacity {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes opacity {
@@ -53,13 +71,13 @@
     color: $ColorPrimary;
   }
   20% {
-    color: $ColorLight;
+    color: $ColorPrimary;
   }
   40% {
     color: $ColorLight;
   }
   100% {
-    color: $ColorPrimary;
+    color: $ColorLight;
   }
 }
 @keyframes color-shift-dark {
@@ -67,13 +85,13 @@
     color: $ColorDark;
   }
   25% {
-    color: $ColorLight;
+    color: $ColorDark;
   }
   40% {
     color: $ColorLight;
   }
   100% {
-    color: $ColorDark;
+    color: $ColorLight;
   }
 }
 

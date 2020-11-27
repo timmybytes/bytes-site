@@ -48,12 +48,14 @@ const fade = () => {
   title.visibility = 'hidden';
   setTimeout(() => {
     title.visibility = 'visible';
-  }, 500);
+  }, 200);
   setTimeout(() => {
     linkDev.display = 'inline';
     linkWrite.display = 'inline';
     linkMusic.display = 'inline';
   }, 900);
+  // setTimeout(() => {
+  // }, 1400);
   setTimeout(() => {
     title.display = 'none';
     titleFade.display = 'block';

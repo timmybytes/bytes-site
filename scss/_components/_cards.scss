@@ -14,7 +14,7 @@
       transform: rotate(-3deg);
       margin-top: $Size6;
       margin-bottom: $Size7;
-      padding: 0 $Size6;
+      padding: 0 $Size5 0 $Size4;
       animation-name: tilt;
       animation-duration: 2s;
       max-width: 915px;
@@ -27,11 +27,12 @@
     & .cards__post-header {
       @include font-rules(h1, 800, italic, center);
       font-size: $Size9;
-      color: $ColorPrimary;
+      color: $ColorLight;
       transform: rotate(2deg);
       text-shadow: 3px 3px 0px $ColorDark;
       animation-name: anti-tilt;
       animation-name: fadeInOpacity;
+      animation-name: color-shift;
       animation-duration: 2s;
       @include media('<550px') {
         font-size: $Size8;

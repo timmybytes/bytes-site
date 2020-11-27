@@ -66,6 +66,7 @@ body.dark {
     }
     & .bio__title-fade {
       @extend .bio__title;
+      color: $ColorLight;
       animation-name: color-shift-dark;
     }
   }
@@ -100,7 +101,8 @@ body.dark {
       color: $ColorDark;
     }
     .cards__post-header {
-      color: $ColorDark;
+      color: $ColorLight;
+      animation-name: color-shift-dark;
       text-shadow: 3px 3px 0 $ColorPrimary;
     }
     .cards__post-sub-header-hi {
