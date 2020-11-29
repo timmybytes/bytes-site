@@ -28,7 +28,7 @@ Feel free to take anything that's helpful, however!
 ## Screens
 
 <p align="center">
-  <img src="./img/timmybytes-screenshot.png" alt="Screenshot of timmybytes.com in light mode" />
+  <img src="./img/timmybytes-screenshot-light.png" alt="Screenshot of timmybytes.com in light mode" />
   <sub>Light mode</sub>
 </p>
 

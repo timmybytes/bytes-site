@@ -32,7 +32,7 @@
 
   & .bio__title {
     @include font-rules(h1, 800, italic, center);
-    font-size: $Size10;
+    font-size: $Size10-2;
     color: $ColorPrimary;
     transform: rotate(2deg);
     animation-name: anti-tilt;
@@ -40,16 +40,12 @@
     animation-duration: 2s;
     text-shadow: 2px 2px 0px $ColorDark;
 
-    @include media('<1300px') {
-      font-size: $Size9;
-    }
-
     @include media('<950px') {
-      font-size: $Size8-2;
+      font-size: $Size10;
     }
 
     @include media('<700px') {
-      font-size: $Size8;
+      font-size: $Size9;
     }
 
     @include media('<570px') {
@@ -72,7 +68,15 @@
     @extend .bio__title;
     animation-name: color-shift;
     display: none;
+    font-size: $Size10;
     color: $ColorLight;
+    @include media('<1300px') {
+      font-size: $Size9;
+    }
+
+    @include media('<950px') {
+      font-size: $Size8-2;
+    }
     @include media('<340px') {
       font-size: 26px;
     }
