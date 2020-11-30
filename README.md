@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./img/timmybytes_banner.png" alt="Timmybytes logo banener" />
+  <img src="./img/timmybytes-header-subtitle.png" alt="Timmybytes logo banner, which reads: timmybytes, developer, writer, musician" />
 </h1>
 
 <div align="center">
@@ -21,9 +21,7 @@
 
 This is the repository for my personal website/portfolio <https://timmybytes.com>. It was built with HTML, SCSS, JavaScript, and some NPM and bash scripts for automating compiling/deployment.
 
-The site was created to my own tastes as I was (and am) learning to better refine things to my own preferences and best practices. As such, it is not a project intended to be maintained broadly, or meant to be forked, so it might break your stuff.
-
-Feel free to take anything that's helpful, however!
+The site is not a project intended to be maintained broadly, so it might break your stuff!
 
 ## Screens
 
@@ -44,9 +42,6 @@ This template is under the [MIT License](./LICENSE).
 Original works on timmybytes.com and the **timmybytes** name are © Timothy Merritt.
 
 <!-- TODO:
-- FAIL, current CSP implementations break site; more research needed: Add CSP to each page
 - Conduct Accessibility review
 - Fix footer not becoming visible
-- Fix homepage animation to fade-OUT timmybytes and fade-IN timothy merritt
--
  -->
