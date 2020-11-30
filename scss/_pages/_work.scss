@@ -26,6 +26,16 @@ article.work {
     }
   }
 
+  .work__dev-projects--tech-icon-bash {
+    fill: $ColorDark;
+    width: 40px;
+    transform: translate(0, 10px);
+    @include media('<400px') {
+      transform: translate(0, 5px);
+      width: 25px;
+    }
+  }
+
   & .music_icons {
     display: flex;
     flex-direction: row;

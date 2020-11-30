@@ -118,6 +118,9 @@ body.dark {
   article.work .work__dev-projects h6 {
     color: $ColorPrimary;
     text-shadow: none;
+    .work__dev-projects--tech-icon-bash {
+      fill: $ColorPrimary;
+    }
   }
   .work__writing {
     .work__writing-section-head {
