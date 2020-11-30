@@ -156,6 +156,5 @@ dist
 # Lighthouse logs
 127*
 timmybytes.com_*
-
-tests/
-tests/*.html
+tests/lighthouse*.html
+tests/127*.html

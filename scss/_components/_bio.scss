@@ -32,7 +32,7 @@
 
   & .bio__title {
     @include font-rules(h1, 800, italic, center);
-    font-size: $Size10-2;
+    font-size: $Size10;
     color: $ColorPrimary;
     transform: rotate(2deg);
     animation-name: anti-tilt;
@@ -71,7 +71,7 @@
     font-size: $Size10;
     color: $ColorLight;
     @include media('<1300px') {
-      font-size: $Size9;
+      font-size: $Size10;
     }
 
     @include media('<950px') {
@@ -162,7 +162,6 @@
     animation-duration: 1s;
     visibility: hidden;
     font-size: $Size6;
-    // padding: $Size2;
     color: $ColorDark;
 
     &:hover {
@@ -171,13 +170,10 @@
     }
 
     @include media('<450px') {
-      // padding: $Size3;
       font-size: $Size4;
     }
     i {
-      // color: $ColorDark;
       font-size: $Size7;
-      // margin: $Size1;
       padding: $Size1 $Size2;
 
       @include media('<950px') {
