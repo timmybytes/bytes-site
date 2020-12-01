@@ -74,11 +74,20 @@
       font-size: $Size10;
     }
 
-    @include media('<950px') {
-      font-size: $Size8-2;
+    @include media('<1000px') {
+      font-size: $Size9;
     }
-    @include media('<340px') {
-      font-size: 26px;
+    @include media('<775px') {
+      font-size: $Size8;
+    }
+    @include media('<550px') {
+      font-size: $Size7;
+    }
+    @include media('<415px') {
+      font-size: $Size6-2;
+    }
+    @include media('<370px') {
+      font-size: $Size6;
     }
   }
 
