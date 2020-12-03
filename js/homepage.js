@@ -1,6 +1,5 @@
 // Homepage & header animations
 // TODO: REFACTOR
-const footer = document.getElementById('footer');
 const title = document.body.querySelector('.bio__title').style;
 const titleFade = document.body.querySelector('.bio__title-fade').style;
 const iconResume = document.body.querySelector('.bio__tagline-icons').childNodes[1].style;
@@ -33,9 +32,6 @@ const fade = () => {
     iconMusic.visibility = 'visible';
     iconTwit.visibility = 'visible';
   }, 1800);
-  setTimeout(() => {
-    footer.style.visibility = 'visible';
-  }, 2200);
 };
 
 fade();

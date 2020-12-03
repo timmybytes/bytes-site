@@ -33,3 +33,9 @@ if (themeSwitch) {
 const footer = document.getElementById('footer');
 const date = new Date().getFullYear();
 footer.innerHTML = `&copy ${date} Timothy Merritt`;
+const showFooter = () => {
+  setTimeout(() => {
+    footer.style.visibility = 'visible';
+  }, 2200);
+};
+showFooter();
