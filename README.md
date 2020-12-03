@@ -21,7 +21,7 @@
 
 This is the repository for my personal website/portfolio <https://timmybytes.com>. It was built with HTML, SCSS, JavaScript, and some NPM and bash scripts for automating compiling/deployment.
 
-The site is not a project intended to be maintained broadly, so it might break your stuff!
+The site is not a project intended to be used broadly, so it might break your stuff!
 
 ## Screens
 
@@ -39,7 +39,7 @@ The site is not a project intended to be maintained broadly, so it might break y
 
 This template is under the [MIT License](./LICENSE).
 
-Original works on timmybytes.com and the **timmybytes** name are © Timothy Merritt.
+Original works and graphics on timmybytes.com and the **timmybytes** name are © Timothy Merritt.
 
 <!-- TODO:
 - Conduct Accessibility review
