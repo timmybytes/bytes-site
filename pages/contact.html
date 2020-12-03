@@ -76,8 +76,22 @@
           <li class="navbar__item dark-mode">
             <input type="checkbox" class="checkbox" id="checkbox" />
             <label for="checkbox" class="toggle-label">
-              <i class="fas fa-sun toggle-icons"></i>
-              <i class="fas fa-moon toggle-icons"></i>
+              <i
+                rel="preload"
+                id="light-switch"
+                class="fas fa-sun toggle-icons"
+                tabindex="0"
+                aria-label="Enable light theme"
+                aria-pressed="false"
+              ></i>
+              <i
+                rel="preload"
+                id="dark-switch"
+                class="fas fa-moon toggle-icons"
+                tabindex="0"
+                aria-label="Enable dark theme"
+                aria-pressed="false"
+              ></i>
               <div class="ball"></div>
             </label>
           </li>

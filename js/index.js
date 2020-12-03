@@ -1,5 +1,7 @@
 // Dark Mode
 const checkbox = document.getElementById('checkbox');
+const lightSwitch = document.getElementById('light-switch');
+const darkSwitch = document.getElementById('dark-switch');
 
 // Save preference locally
 /** global: localStorage */
@@ -16,10 +18,11 @@ if (themeSwitch) {
 
   var resetTheme = () => {
     if (themeSwitch.checked) {
-      // dark theme has been selected
+      darkSwitch.setAttribute('aria-pressed', true);
       document.body.classList.add('dark');
       localStorage.setItem('theme', 'dark'); // save theme selection
     } else {
+      lightSwitch.setAttribute('aria-pressed', true);
       document.body.classList.remove('dark');
       localStorage.removeItem('theme', 'dark'); // reset theme selection
     }
