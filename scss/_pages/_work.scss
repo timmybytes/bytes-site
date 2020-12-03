@@ -131,19 +131,6 @@ article.work {
       font-weight: 600;
       list-style-type: none;
     }
-
-    & li.work__job-detail {
-      color: $ColorDark;
-      list-style-image: url(/img/id.svg);
-      list-style-type: none;
-      font-size: $Size5;
-      text-shadow: 1px 1px $ColorPrimary;
-
-      & i {
-        margin: 0 $Size2 0 0;
-        padding: 0;
-      }
-    }
   }
 }
 // Moves project icons to newline on small screens
