@@ -36,6 +36,6 @@ footer.innerHTML = `&copy ${date} Timothy Merritt`;
 const showFooter = () => {
   setTimeout(() => {
     footer.style.visibility = 'visible';
-  }, 2200);
+  }, 1800);
 };
 showFooter();
