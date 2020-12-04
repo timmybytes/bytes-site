@@ -30,3 +30,4 @@ jobs:
             https://timmybytes.com/pages/work.html
             https://timmybytes.com/pages/contact.html
           uploadArtifacts: true # save results as an action artifacts
+          resultsPath: ./tests/.lighthouseci
