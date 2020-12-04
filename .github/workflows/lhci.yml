@@ -31,3 +31,7 @@ jobs:
             https://timmybytes.com/pages/contact.html
           uploadArtifacts: true # save results as an action artifacts
           resultsPath: ./tests/.lighthouseci
+  test-bash:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
