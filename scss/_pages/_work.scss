@@ -26,13 +26,57 @@ article.work {
     }
   }
 
-  .work__dev-projects--tech-icon-bash {
+  .work__dev-projects--tech-icon {
     fill: $ColorDark;
-    width: 40px;
-    transform: translate(0, 10px);
-    @include media('<400px') {
-      transform: translate(0, 5px);
-      width: 25px;
+    &-bash {
+      width: 40px;
+      transform: translate(0, 10px);
+      @include media('<400px') {
+        transform: translate(0, 5px);
+        width: 25px;
+      }
+    }
+    &-redux {
+      padding-bottom: 5px;
+      width: 30px;
+      transform: translate(0, 8px);
+      @include media('<400px') {
+        transform: translate(0, 9px);
+        width: 20px;
+      }
+    }
+    &-firebase {
+      transform: translate(0, 2px);
+      width: 22px;
+      .st0 {
+        fill: #ffa000;
+        fill: $ColorDark;
+        fill-opacity: 0.7;
+      }
+      .st1 {
+        fill: #f57c00;
+        fill: $ColorDark;
+        fill-opacity: 0.5;
+      }
+      .st2 {
+        fill: #ffca28;
+        fill: $ColorDark;
+        fill-opacity: 0.9;
+      }
+      .st5 {
+        fill: url(#b_1_);
+      }
+      @include media('<400px') {
+        transform: translate(0, 5px);
+        width: 18px;
+      }
+    }
+    &-stripe {
+      width: 55px;
+      @include media('<400px') {
+        transform: translate(0, 2px);
+        width: 35px;
+      }
     }
   }
 
