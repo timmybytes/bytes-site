@@ -118,8 +118,31 @@ body.dark {
   article.work .work__dev-projects h6 {
     color: $ColorPrimary;
     text-shadow: none;
-    .work__dev-projects--tech-icon-bash {
+    .work__dev-projects--tech-icon {
       fill: $ColorPrimary;
+      &-redux {
+        fill: $ColorPrimary;
+      }
+      &-stripe {
+        fill: $ColorPrimary;
+      }
+      &-firebase {
+        .st0 {
+          fill: $ColorPrimary;
+          fill-opacity: 0.7;
+        }
+        .st1 {
+          fill: $ColorPrimary;
+          fill-opacity: 0.5;
+        }
+        .st2 {
+          fill: $ColorPrimary;
+          fill-opacity: 0.9;
+        }
+        .st5 {
+          fill: url(#b_1_);
+        }
+      }
     }
   }
   .work__writing {
