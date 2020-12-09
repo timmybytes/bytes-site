@@ -30,7 +30,7 @@ jobs:
             https://timmybytes.com/pages/work.html
             https://timmybytes.com/pages/contact.html
           uploadArtifacts: true # save results as an action artifacts
-          configPath: ./tests/.lighthouseci
+          # configPath: ./tests/.lighthouseci
           temporaryPublicStorage: true
 
       - name: Format lighthouse score
@@ -55,7 +55,6 @@ jobs:
                 ' ',
                 `*Lighthouse ran on [${Object.keys(links)[0]}](${Object.keys(links)[0]})*`
             ].join('\n')
-            #  core.setOutput("comment", comment);
             console.log(comment)
   # test-bash:
   #   runs-on: ubuntu-20.04
