@@ -19,10 +19,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checking out repo...
       - uses: actions/checkout@v2
 
-      - name: Auditing URLs using Lighthouse
+      - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v3
         with:
           urls: |
