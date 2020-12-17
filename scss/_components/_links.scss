@@ -27,6 +27,22 @@
   box-shadow: 2px 2px $ColorDark;
 }
 
+button.link__demos-link-wrapper {
+  padding: $Size2;
+  border: 2px solid $ColorDark;
+  box-shadow: 2px 2px $ColorDark;
+  margin: $Size2 auto;
+  max-width: 195px;
+  & a {
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  &:hover {
+    color: $ColorLight;
+    background: $ColorDark;
+  }
+}
+
 .link__demos-link {
   color: $ColorDark;
   text-shadow: none;

@@ -184,8 +184,26 @@ body.dark {
   }
   .link__demos-link-wrapper {
     padding: $Size2;
-    border: 2px solid $ColorPrimary;
     box-shadow: 2px 2px $ColorPrimary;
+    border: 2px solid $ColorPrimary;
+  }
+  button.link__demos-link-wrapper {
+    background: $ColorDark;
+    border: 2px solid $ColorPrimary;
+    box-shadow: 2px 2px $ColorDark;
+    box-shadow: 2px 2px $ColorPrimary;
+    color: $ColorDark;
+    margin: $Size2 auto;
+    max-width: 195px;
+    padding: $Size2;
+    & a {
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    &:hover {
+      color: $ColorLight;
+      background: $ColorDark;
+    }
   }
   .link__demos-link {
     color: $ColorPrimary;
