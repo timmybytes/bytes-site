@@ -179,6 +179,7 @@ body.dark {
     border-bottom: 2px solid $ColorPrimary;
     border-bottom: 2px solid $ColorLight;
     &:hover {
+      box-shadow: inset 0 -2px 0 $ColorLight;
       color: $ColorLight;
     }
   }

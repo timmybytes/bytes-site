@@ -1,12 +1,13 @@
 .link {
   color: $ColorDark;
-  border-bottom: 2px solid $ColorLight;
+  border-bottom: 4px solid $ColorLight;
   text-shadow: none;
   font-weight: 400;
   font-size: 18px;
+  transition: 0.2s;
 
   &:hover {
-    color: $ColorLight;
+    box-shadow: inset 0 -8px 0 $ColorLight;
   }
 
   @include media('<450px') {
