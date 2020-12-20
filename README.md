@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./img/timmybytes-header-subtitle.png" alt="Timmybytes logo banner, which reads: timmybytes, developer, writer, musician" />
+  <img src="./img/timmybytes-header.png" alt="Timmybytes logo banner, which reads: timmybytes, developer, writer, musician" />
 </h1>
 
 <div align="center">
