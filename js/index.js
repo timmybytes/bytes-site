@@ -3,28 +3,29 @@ const checkbox = document.getElementById('checkbox');
 const lightSwitch = document.getElementById('light-switch');
 const darkSwitch = document.getElementById('dark-switch');
 
-// Save preference locally
-/** global: localStorage */
 if (localStorage.getItem('theme', 'dark')) {
   document.body.classList.add('dark');
   checkbox.checked = true;
 }
 
-var themeSwitch = document.getElementById('checkbox');
-if (themeSwitch) {
-  themeSwitch.addEventListener('change', function (event) {
-    resetTheme(); // update color theme
+if (checkbox) {
+  checkbox.addEventListener('change', function (event) {
+    resetTheme();
   });
+  // For a11y
+  checkbox.onkeydown = () => {
+    resetTheme();
+  };
 
   var resetTheme = () => {
-    if (themeSwitch.checked) {
+    if (checkbox.checked) {
       darkSwitch.setAttribute('aria-pressed', true);
       document.body.classList.add('dark');
-      localStorage.setItem('theme', 'dark'); // save theme selection
+      localStorage.setItem('theme', 'dark');
     } else {
       lightSwitch.setAttribute('aria-pressed', true);
       document.body.classList.remove('dark');
-      localStorage.removeItem('theme', 'dark'); // reset theme selection
+      localStorage.removeItem('theme', 'dark');
     }
   };
 }
