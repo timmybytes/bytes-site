@@ -3,7 +3,7 @@
   border-bottom: 4px solid $ColorLight;
   text-shadow: none;
   font-weight: 400;
-  font-size: 18px;
+  font-size: inherit;
   transition: 0.2s;
 
   &:hover {
@@ -11,7 +11,7 @@
   }
 
   @include media('<450px') {
-    font-size: $FontSize__body;
+    font-size: inherit;
   }
 }
 

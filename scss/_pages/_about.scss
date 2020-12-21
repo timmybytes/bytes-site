@@ -5,3 +5,11 @@
 .mw {
   max-width: 65ch;
 }
+
+.cards__post-content ul {
+  line-height: 1.7;
+  padding: $Size2 0 $Size2 $Size5;
+  li {
+    padding: $Size1 0;
+  }
+}
