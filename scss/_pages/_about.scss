@@ -6,10 +6,14 @@
   max-width: 65ch;
 }
 
-.cards__post-content ul {
-  line-height: 1.7;
-  padding: $Size2 0 $Size2 $Size5;
-  li {
-    padding: $Size1 0;
+.cards__post-content {
+  margin: 0 auto;
+  ul {
+    line-height: 1.7;
+    padding: 0 0 $Size1 $Size5;
+    li {
+      font-size: 18px;
+      padding: $Size2 0 $Size1;
+    }
   }
 }
