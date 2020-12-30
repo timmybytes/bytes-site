@@ -120,6 +120,9 @@ body.dark {
     text-shadow: none;
     .work__dev-projects--tech-icon {
       fill: $ColorPrimary;
+      &-bash {
+        fill: $ColorPrimary;
+      }
       &-redux {
         fill: $ColorPrimary;
       }
