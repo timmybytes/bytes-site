@@ -5,9 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "light": "lighthouse http://127.0.0.1:5501/ --output-path=./tests/lighthouse-results.html --view",
-    "light:a11y": "lighthouse http://127.0.0.1:5501/ --only-categories=accessibility --output-path=./tests/lighthouse-a11y-results.html --view",
-    "light:perform": "lighthouse http://127.0.0.1:5501/ --only-categories=performance,best-practices --output-path=./tests/lighthouse-perform-results.html --view",
     "scss": "sass --no-source-map --style=compressed scss:css",
     "scss:watch": "sass --watch --no-source-map --style=compressed scss:css"
   },
@@ -24,8 +21,6 @@
   "devDependencies": {
     "eslint": "^7.14.0",
     "jest": "^26.6.3",
-    "lighthouse": "^6.4.1",
     "sass": "^1.29.0"
-  },
-  "dependencies": {}
+  }
 }
