@@ -14,23 +14,23 @@
 
 <p align="center">
   <sub>Built with ❤︎ by (and for)
-  <a href="https://timmybytes.com">Timothy Merritt</a>
+Timothy Merritt
 </div>
 
 
-This is the repository for my personal website/portfolio <https://timmybytes.com>. It was built with HTML, SCSS, JavaScript, and some NPM and bash scripts for automating compiling/deployment.
+This ~~is~~ **was** the repository for my personal website/portfolio (current site repo can be found [here](https://github.com/timmybytes/timmybytes-blog)). It was built with HTML, SCSS, JavaScript, and some NPM and bash scripts for automating compiling/deployment.
 
 The site is not a project intended to be used broadly, so it might break your stuff!
 
 ## Screens
 
 <p align="center">
-  <img src="./img/timmybytes-screenshot-light.png" alt="Screenshot of timmybytes.com in light mode" />
+  <img src="./img/timmybytes-screenshot-light.png" alt="Screenshot of old timmybytes.com in light mode" />
   <sub>Light mode</sub>
 </p>
 
 <p align="center">
-  <img src="./img/timmybytes-screenshot-dark.png" alt="Screenshot of timmybytes.com in dark mode" />
+  <img src="./img/timmybytes-screenshot-dark.png" alt="Screenshot of old timmybytes.com in dark mode" />
   <sub>Dark mode</sub>
 </p>
 
