@@ -18,7 +18,7 @@ Timothy Merritt
 </div>
 
 
-This ~~is~~ **was** the repository for my personal website/portfolio (current site repo can be found [here](https://github.com/timmybytes/timmybytes-blog)). It was built with HTML, SCSS, JavaScript, and some NPM and bash scripts for automating compiling/deployment.
+This ~~is~~ **was** (archived) the repository for my personal website/portfolio (current site repo can be found [here](https://github.com/timmybytes/timmybytes-blog)). It was built with HTML, SCSS, JavaScript, and some NPM and bash scripts for automating compiling/deployment.
 
 The site is not a project intended to be used broadly, so it might break your stuff!
 
